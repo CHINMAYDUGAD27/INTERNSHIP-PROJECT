@@ -1,4 +1,6 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
+from fastapi.responses import JSONResponse
+import traceback
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.database.database import Base, engine
@@ -42,6 +44,16 @@ app = FastAPI(
     title="AI-Powered Smart Kumbh Mela Administration & Decision Support System",
     version="1.0.0"
 )
+
+# Global exception handler to expose real errors (debug mode)
+@app.exception_handler(Exception)
+async def global_exception_handler(request: Request, exc: Exception):
+    error_detail = traceback.format_exc()
+    print(f"UNHANDLED EXCEPTION: {error_detail}")
+    return JSONResponse(
+        status_code=500,
+        content={"detail": str(exc), "traceback": error_detail}
+    )
 
 # Configure CORS
 origins = [
