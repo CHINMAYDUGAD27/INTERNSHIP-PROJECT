@@ -26,8 +26,8 @@ ENV/
 *.sqlite3
 
 # ── ML Models ────────────────────────────────────────────────────
-*.pkl
-*.joblib
+# *.pkl (Commented out to allow your crowd_model.pkl to push to GitHub)
+# *.joblib
 *.h5
 *.pt
 *.pth
