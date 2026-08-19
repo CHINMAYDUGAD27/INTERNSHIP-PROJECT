@@ -1,5 +1,5 @@
-﻿import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from 'react';
+import api from '../api';
 import { Wallet, PlusCircle, X } from 'lucide-react';
 
 export default function Budget() {
@@ -11,7 +11,7 @@ export default function Budget() {
   const fetchBudgets = async () => {
     try {
       const token = localStorage.getItem('token');
-      const res = await axios.get('/api/budgets/', {
+      const res = await api.get('/api/budgets/', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setRecords(res.data);
@@ -28,7 +28,7 @@ export default function Budget() {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post('/api/budgets/', formData, {
+      await api.post('/api/budgets/', formData, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setShowModal(false);
@@ -76,9 +76,9 @@ export default function Budget() {
                   <tr key={r.id}>
                     <td>{r.id}</td>
                     <td>{r.department}</td>
-                    <td>₹{alloc.toLocaleString()}</td>
-                    <td>₹{spent.toLocaleString()}</td>
-                    <td>₹{remaining.toLocaleString()}</td>
+                    <td>?{alloc.toLocaleString()}</td>
+                    <td>?{spent.toLocaleString()}</td>
+                    <td>?{remaining.toLocaleString()}</td>
                     <td>
                       <span className={`badge ${percentSpent > 90 ? 'danger' : percentSpent > 75 ? 'warning' : 'success'}`}>
                         {r.remarks || 'Active'}

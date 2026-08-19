@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../api';
 import { Activity, Users, AlertTriangle, CloudSun, Rocket, X, CheckCircle, XCircle, Loader, Copy, Terminal, CalendarDays, Calendar, ChevronRight } from 'lucide-react';
 import MapWidget from './MapWidget';
 import ChartsWidget from './ChartsWidget';
@@ -25,7 +25,7 @@ function DeployPanel() {
 
     // 1. Backend ping
     try {
-      const res = await axios.get('/api/', { timeout: 3000 });
+      const res = await api.get('/api/', { timeout: 3000 });
       backendOk = res.status === 200;
     } catch { backendOk = false; }
 
@@ -301,14 +301,14 @@ export default function Dashboard() {
       // Fetch real weather using Open-Meteo for Nashik (20.0110Â° N, 73.7902Â° E)
       let temp = 31;
       try {
-        const weatherRes = await axios.get('https://api.open-meteo.com/v1/forecast?latitude=20.0110&longitude=73.7902&current_weather=true');
+        const weatherRes = await api.get('https://api.open-meteo.com/v1/forecast?latitude=20.0110&longitude=73.7902&current_weather=true');
         if (weatherRes.data && weatherRes.data.current_weather) {
           temp = weatherRes.data.current_weather.temperature;
         }
       } catch(e) { console.error("Weather fetch err", e) }
         
         // Fetch real crowd records to calculate total expected vs actual
-        const crowdRes = await axios.get('/api/crowd/', { headers: { Authorization: `Bearer ${token}` } });
+        const crowdRes = await api.get('/api/crowd/', { headers: { Authorization: `Bearer ${token}` } });
         let expected = 0;
         let actual = 0;
         if (crowdRes.data && Array.isArray(crowdRes.data)) {
@@ -319,7 +319,7 @@ export default function Dashboard() {
         }
 
         // Fetch medical to count active incidents (high/critical cases)
-        const medRes = await axios.get('/api/medical/', { headers: { Authorization: `Bearer ${token}` } });
+        const medRes = await api.get('/api/medical/', { headers: { Authorization: `Bearer ${token}` } });
         let incidents = 0;
         if (medRes.data && Array.isArray(medRes.data)) {
           medRes.data.forEach(m => {
@@ -333,7 +333,7 @@ export default function Dashboard() {
         let safetyOfficers = 0;
         let openGates = 0;
         try {
-          const safetyRes = await axios.get('/api/safety/', { headers: { Authorization: `Bearer ${token}` } });
+          const safetyRes = await api.get('/api/safety/', { headers: { Authorization: `Bearer ${token}` } });
           if (safetyRes.data && Array.isArray(safetyRes.data)) {
             safetyRes.data.forEach(s => {
               if (s.crowd_density === 'High') incidents += 1;
@@ -347,7 +347,7 @@ export default function Dashboard() {
         let sadhuCount = 0;
         let akharas = 0;
         try {
-          const res = await axios.get('/api/sadhu-gram/', { headers: { Authorization: `Bearer ${token}` } });
+          const res = await api.get('/api/sadhu-gram/', { headers: { Authorization: `Bearer ${token}` } });
           if (res.data) {
             akharas = res.data.length;
             res.data.forEach(item => sadhuCount += (item.sadhu_count || 0));
@@ -357,7 +357,7 @@ export default function Dashboard() {
         // Fetch Accommodation
         let accommodationBooked = 0;
         try {
-          const res = await axios.get('/api/accommodation/', { headers: { Authorization: `Bearer ${token}` } });
+          const res = await api.get('/api/accommodation/', { headers: { Authorization: `Bearer ${token}` } });
           if (res.data) {
             accommodationBooked = res.data.length; // or filter by status
           }
@@ -366,7 +366,7 @@ export default function Dashboard() {
         // Fetch Cleanliness
         let cleanlinessScore = 0;
         try {
-          const res = await axios.get('/api/cleanliness/', { headers: { Authorization: `Bearer ${token}` } });
+          const res = await api.get('/api/cleanliness/', { headers: { Authorization: `Bearer ${token}` } });
           if (res.data && res.data.length > 0) {
             let totalWQI = 0;
             res.data.forEach(item => totalWQI += (item.water_quality_index || 0));
@@ -377,7 +377,7 @@ export default function Dashboard() {
         // Fetch Land
         let landAcquiredSqM = 0;
         try {
-          const res = await axios.get('/api/land-acquisition/', { headers: { Authorization: `Bearer ${token}` } });
+          const res = await api.get('/api/land-acquisition/', { headers: { Authorization: `Bearer ${token}` } });
           if (res.data) {
             res.data.forEach(item => {
               if (item.status === 'Acquired') landAcquiredSqM += (item.area_sqm || 0);

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import axios from 'axios';
+import api from '../api';
 import { Send, Bot, User } from 'lucide-react';
 
 export default function AIChatAssistant() {
@@ -27,7 +27,7 @@ export default function AIChatAssistant() {
     setLoading(true);
 
     try {
-      const res = await axios.post('/api/ai/chat', { message: userMsg.content });
+      const res = await api.post('/api/ai/chat', { message: userMsg.content });
       setMessages(prev => [...prev, { role: 'ai', content: res.data.response }]);
     } catch (error) {
       console.error("AI Assistant Error:", error);

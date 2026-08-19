@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../api';
 import { ShieldCheck, PlusCircle, X, Edit2, Trash2 } from 'lucide-react';
 
 const API = '/api/safety';
@@ -34,7 +34,7 @@ export default function Safety() {
   const fetchRecords = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(`${API}/`, { headers: headers() });
+      const res = await api.get(`${API}/`, { headers: headers() });
       setRecords(res.data);
     } catch (err) { console.error(err); }
     finally { setLoading(false); }
@@ -59,9 +59,9 @@ export default function Safety() {
     const payload = { ...formData, remarks: formData.remarks || null };
     try {
       if (editRecord) {
-        await axios.put(`${API}/${editRecord.id}`, payload, { headers: headers() });
+        await api.put(`${API}/${editRecord.id}`, payload, { headers: headers() });
       } else {
-        await axios.post(`${API}/`, payload, { headers: headers() });
+        await api.post(`${API}/`, payload, { headers: headers() });
       }
       setShowModal(false);
       fetchRecords();
@@ -71,7 +71,7 @@ export default function Safety() {
   const handleDelete = async (id) => {
     if (!window.confirm('Delete this checkpoint record?')) return;
     try {
-      await axios.delete(`${API}/${id}`, { headers: headers() });
+      await api.delete(`${API}/${id}`, { headers: headers() });
       fetchRecords();
     } catch (err) { console.error(err); }
   };
@@ -80,7 +80,7 @@ export default function Safety() {
   const toggleGate = async (r) => {
     const newStatus = r.gate_status === 'Open' ? 'Closed' : 'Open';
     try {
-      await axios.put(`${API}/${r.id}`, { ...r, gate_status: newStatus, last_updated: today, remarks: r.remarks || null }, { headers: headers() });
+      await api.put(`${API}/${r.id}`, { ...r, gate_status: newStatus, last_updated: today, remarks: r.remarks || null }, { headers: headers() });
       fetchRecords();
     } catch (err) { console.error(err); }
   };

@@ -1,5 +1,5 @@
-﻿import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from 'react';
+import api from '../api';
 import { Navigation, PlusCircle, X } from 'lucide-react';
 
 export default function Traffic() {
@@ -11,7 +11,7 @@ export default function Traffic() {
   const fetchTraffic = async () => {
     try {
       const token = localStorage.getItem('token');
-      const res = await axios.get('/api/traffic/', {
+      const res = await api.get('/api/traffic/', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setRecords(res.data);
@@ -28,7 +28,7 @@ export default function Traffic() {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post(`/api/traffic/?location=${formData.location}&road_name=${formData.road_name}&vehicle_count=${formData.vehicle_count}&average_speed=${formData.average_speed}&weather_condition=${formData.weather_condition}&event_type=${formData.event_type}`, {}, {
+      await api.post(`/api/traffic/?location=${formData.location}&road_name=${formData.road_name}&vehicle_count=${formData.vehicle_count}&average_speed=${formData.average_speed}&weather_condition=${formData.weather_condition}&event_type=${formData.event_type}`, {}, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setShowModal(false);

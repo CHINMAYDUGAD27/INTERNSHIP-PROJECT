@@ -1,5 +1,5 @@
-﻿import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from 'react';
+import api from '../api';
 import { ShieldAlert, PlusCircle, X } from 'lucide-react';
 
 export default function Crowd() {
@@ -11,7 +11,7 @@ export default function Crowd() {
   const fetchCrowd = async () => {
     try {
       const token = localStorage.getItem('token');
-      const res = await axios.get('/api/crowd/', {
+      const res = await api.get('/api/crowd/', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setRecords(res.data);
@@ -28,7 +28,7 @@ export default function Crowd() {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post('/api/crowd/', formData, {
+      await api.post('/api/crowd/', formData, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setShowModal(false);
@@ -77,7 +77,7 @@ export default function Crowd() {
                       {r.risk_level}
                     </span>
                   </td>
-                  <td>{r.date && !isNaN(new Date(r.date).getTime()) ? new Date(r.date).toLocaleDateString('en-IN') : (r.date || '—')}</td>
+                  <td>{r.date && !isNaN(new Date(r.date).getTime()) ? new Date(r.date).toLocaleDateString('en-IN') : (r.date || '�')}</td>
                 </tr>
               ))
             )}

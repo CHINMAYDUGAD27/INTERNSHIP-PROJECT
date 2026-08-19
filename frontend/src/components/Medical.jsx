@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../api';
 import { Activity, PlusCircle, X } from 'lucide-react';
 
 export default function Medical() {
@@ -20,7 +20,7 @@ export default function Medical() {
   const fetchMedical = async () => {
     try {
       const token = localStorage.getItem('token');
-      const res = await axios.get('/api/medical/', {
+      const res = await api.get('/api/medical/', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setRecords(res.data);
@@ -37,7 +37,7 @@ export default function Medical() {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post(`/api/medical/`, formData, {
+      await api.post(`/api/medical/`, formData, {
         headers: { 
           Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json'

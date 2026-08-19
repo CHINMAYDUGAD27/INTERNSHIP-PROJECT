@@ -45,11 +45,11 @@ services:
     buildCommand: npm install && npm run build
     staticPublishPath: dist
     envVars:
-      - key: VITE_API_URL
+      - key: VITE_API_BASE_URL
         fromService:
           name: kumbh-backend
           type: web
-          property: host
+          property: hostWithScheme
     routes:
       # Send all routes to index.html for React Router (SPA routing)
       - type: rewrite

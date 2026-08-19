@@ -1,6 +1,6 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import axios from 'axios';
+import api from '../api';
 
 export default function Signup() {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('/api/auth/register', formData);
+      await api.post('/api/auth/register', formData);
       setSuccess('Registration successful! Redirecting to login...');
       setTimeout(() => navigate('/login'), 2000);
     } catch (err) {

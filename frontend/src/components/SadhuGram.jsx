@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../api';
 import { Home, PlusCircle, X, Edit2, Trash2 } from 'lucide-react';
 
 const API = '/api/sadhu-gram';
@@ -22,7 +22,7 @@ export default function SadhuGram() {
   const fetchRecords = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(`${API}/`, { headers: headers() });
+      const res = await api.get(`${API}/`, { headers: headers() });
       setRecords(res.data);
     } catch (err) { console.error(err); }
     finally { setLoading(false); }
@@ -46,9 +46,9 @@ export default function SadhuGram() {
     e.preventDefault();
     try {
       if (editRecord) {
-        await axios.put(`${API}/${editRecord.id}`, formData, { headers: headers() });
+        await api.put(`${API}/${editRecord.id}`, formData, { headers: headers() });
       } else {
-        await axios.post(`${API}/`, formData, { headers: headers() });
+        await api.post(`${API}/`, formData, { headers: headers() });
       }
       setShowModal(false);
       fetchRecords();
@@ -58,7 +58,7 @@ export default function SadhuGram() {
   const handleDelete = async (id) => {
     if (!window.confirm('Delete this record?')) return;
     try {
-      await axios.delete(`${API}/${id}`, { headers: headers() });
+      await api.delete(`${API}/${id}`, { headers: headers() });
       fetchRecords();
     } catch (err) { console.error(err); }
   };

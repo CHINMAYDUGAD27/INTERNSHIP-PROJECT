@@ -1,6 +1,6 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import axios from 'axios';
+import api from '../api';
 
 export default function Login({ setAuth }) {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ export default function Login({ setAuth }) {
       formData.append('username', email);
       formData.append('password', password);
 
-      const res = await axios.post('/api/auth/login', formData, {
+      const res = await api.post('/api/auth/login', formData, {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
       });
 
