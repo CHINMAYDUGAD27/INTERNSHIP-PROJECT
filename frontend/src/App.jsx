@@ -1,5 +1,5 @@
-﻿import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React, { useState, useEffect } from 'react'
+import api from './api'
 import { BrowserRouter, Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom'
 import { LayoutDashboard, Users, Activity, Wallet, Bot, Navigation, LogOut, BookOpen, Home, Ticket, Droplets, MapPin, ShieldCheck } from 'lucide-react'
 import Dashboard from './components/Dashboard'
@@ -171,7 +171,7 @@ function App() {
       const token = localStorage.getItem('token');
       if (token) {
         try {
-          const res = await axios.get('/api/auth/profile', {
+          const res = await api.get('/api/auth/profile', {
             headers: { Authorization: `Bearer ${token}` }
           });
           setUser(res.data.user);
@@ -214,51 +214,51 @@ function App() {
 
         {/* General Dept Routes */}
         <Route path="/sadhu-gram" element={
-          <ProtectedRoute isAuthenticated={isAuthenticated} user={user} allowedDepts={['General']}>
+          <ProtectedRoute isAuthenticated={isAuthenticated} user={user}>
             <MainLayout setAuth={setIsAuthenticated} user={user}><SadhuGram /></MainLayout>
           </ProtectedRoute>
         } />
         <Route path="/accommodation" element={
-          <ProtectedRoute isAuthenticated={isAuthenticated} user={user} allowedDepts={['General']}>
+          <ProtectedRoute isAuthenticated={isAuthenticated} user={user}>
             <MainLayout setAuth={setIsAuthenticated} user={user}><Accommodation /></MainLayout>
           </ProtectedRoute>
         } />
         <Route path="/land-acquisition" element={
-          <ProtectedRoute isAuthenticated={isAuthenticated} user={user} allowedDepts={['General']}>
+          <ProtectedRoute isAuthenticated={isAuthenticated} user={user}>
             <MainLayout setAuth={setIsAuthenticated} user={user}><LandAcquisition /></MainLayout>
           </ProtectedRoute>
         } />
         <Route path="/budget" element={
-          <ProtectedRoute isAuthenticated={isAuthenticated} user={user} allowedDepts={['General']}>
+          <ProtectedRoute isAuthenticated={isAuthenticated} user={user}>
             <MainLayout setAuth={setIsAuthenticated} user={user}><Budget /></MainLayout>
           </ProtectedRoute>
         } />
 
         {/* Medical Dept Routes */}
         <Route path="/cleanliness" element={
-          <ProtectedRoute isAuthenticated={isAuthenticated} user={user} allowedDepts={['Medical']}>
+          <ProtectedRoute isAuthenticated={isAuthenticated} user={user}>
             <MainLayout setAuth={setIsAuthenticated} user={user}><Cleanliness /></MainLayout>
           </ProtectedRoute>
         } />
         <Route path="/medical" element={
-          <ProtectedRoute isAuthenticated={isAuthenticated} user={user} allowedDepts={['Medical']}>
+          <ProtectedRoute isAuthenticated={isAuthenticated} user={user}>
             <MainLayout setAuth={setIsAuthenticated} user={user}><Medical /></MainLayout>
           </ProtectedRoute>
         } />
 
         {/* Police Dept Routes */}
         <Route path="/safety" element={
-          <ProtectedRoute isAuthenticated={isAuthenticated} user={user} allowedDepts={['Police']}>
+          <ProtectedRoute isAuthenticated={isAuthenticated} user={user}>
             <MainLayout setAuth={setIsAuthenticated} user={user}><Safety /></MainLayout>
           </ProtectedRoute>
         } />
         <Route path="/crowd" element={
-          <ProtectedRoute isAuthenticated={isAuthenticated} user={user} allowedDepts={['Police']}>
+          <ProtectedRoute isAuthenticated={isAuthenticated} user={user}>
             <MainLayout setAuth={setIsAuthenticated} user={user}><Crowd /></MainLayout>
           </ProtectedRoute>
         } />
         <Route path="/traffic" element={
-          <ProtectedRoute isAuthenticated={isAuthenticated} user={user} allowedDepts={['Police']}>
+          <ProtectedRoute isAuthenticated={isAuthenticated} user={user}>
             <MainLayout setAuth={setIsAuthenticated} user={user}><Traffic /></MainLayout>
           </ProtectedRoute>
         } />
