@@ -1,0 +1,5 @@
+date,day,festival,location,previous_visitors,current_visitors,risk
+2027-01-10,Sunday,Shahi Snan,Ramkund,150000,220000,High
+2027-01-15,Friday,Normal,Ramkund,50000,60000,Low
+2027-01-20,Wednesday,Shahi Snan,Trimbakeshwar,300000,450000,High
+2027-01-25,Monday,Normal,Ramkund,70000,90000,Medium

@@ -1,0 +1,1001 @@
+date,day_of_week,month,location,event_type,weather,temperature,expected_visitors,actual_visitors,vehicle_count,average_speed,available_doctors,available_nurses,available_ambulances,police_personnel,volunteers,medical_cases,parking_occupancy,river_water_level,cleanliness_score,crowd_density,congestion_level,emergency_level
+2027-07-01,Thursday,July,Dwarka Circle,Normal Day,Cloudy,26,35805,38722,6858,41,10,24,3,129,215,146,10,Low,95,Low,Low,Low
+2027-07-02,Friday,July,Tapovan,Normal Day,Cloudy,26,39847,35889,6224,37,10,22,3,119,199,153,10,Normal,98,Low,Low,Low
+2027-07-03,Saturday,July,Trimbakeshwar Temple,Normal Day,Cloudy,32,121719,135738,21214,36,19,46,5,452,754,450,17,Low,85,Medium,Low,Medium
+2027-07-04,Sunday,July,Mhasrul,Weekend,Rainy,28,91224,88194,10908,43,12,32,3,293,489,290,10,High,96,Low,Low,Medium
+2027-07-05,Monday,July,Sadhugram,Shahi Snan,Rainy,28,856597,949615,182530,8,135,272,37,3165,5275,5153,100,High,40,High,High,Critical
+2027-07-06,Tuesday,July,Dwarka Circle,Normal Day,Cloudy,32,15230,13958,2406,32,10,20,3,80,120,38,10,Low,100,Low,Low,Low
+2027-07-07,Wednesday,July,Godavari Ghat,Normal Day,Rainy,27,90101,96483,11699,37,13,31,3,321,536,473,10,High,89,Low,Low,Medium
+2027-07-08,Thursday,July,Dwarka Circle,Normal Day,Rainy,29,65524,64663,10403,32,10,32,3,215,359,270,10,Normal,96,Low,Low,Low
+2027-07-09,Friday,July,Godavari Ghat,Normal Day,Sunny,33,59945,65400,10841,38,10,35,3,218,363,390,10,Normal,96,Low,Low,Medium
+2027-07-10,Saturday,July,Trimbakeshwar Temple,Festival,Rainy,26,371061,336340,60942,17,48,100,13,1121,1868,1039,50,High,69,High,Medium,High
+2027-07-11,Sunday,July,Trimbakeshwar Temple,Weekend,Sunny,31,207111,188221,36796,19,26,64,7,627,1045,1173,30,Low,85,Medium,Medium,High
+2027-07-12,Monday,July,Godavari Ghat,Normal Day,Rainy,24,50591,47066,9335,32,10,26,3,156,261,188,10,High,100,Low,Low,Low
+2027-07-13,Tuesday,July,Panchavati,Normal Day,Sunny,36,24185,24305,4656,45,10,30,3,81,135,141,10,Normal,99,Low,Low,Low
+2027-07-14,Wednesday,July,Sadhugram,Normal Day,Rainy,25,23912,23409,3438,42,10,27,3,80,130,184,10,High,100,Low,Low,Low
+2027-07-15,Thursday,July,Panchavati,Shahi Snan,Sunny,37,524854,583492,79668,18,83,176,23,1944,3241,3153,66,High,51,High,Medium,Critical
+2027-07-16,Friday,July,Nimani,Normal Day,Rainy,29,49489,55224,10652,43,10,33,3,184,306,186,10,Normal,95,Low,Low,Low
+2027-07-17,Saturday,July,Nimani,Normal Day,Rainy,29,65993,73791,9142,28,10,26,3,245,409,376,10,High,97,Low,Low,Medium
+2027-07-18,Sunday,July,Adgaon Naka,Weekend,Cloudy,29,113135,119821,18141,29,17,37,4,399,665,709,15,Low,87,Medium,Low,Medium
+2027-07-19,Monday,July,Trimbakeshwar Temple,Normal Day,Rainy,29,103903,111026,15183,36,15,30,4,370,616,377,12,High,94,Medium,Low,Medium
+2027-07-20,Tuesday,July,Panchavati,Festival,Sunny,33,223093,218859,41319,21,31,74,8,729,1215,684,34,Normal,84,Medium,Medium,Medium
+2027-07-21,Wednesday,July,Godavari Ghat,Normal Day,Sunny,33,23549,23194,3925,45,10,31,3,80,128,124,10,Low,99,Low,Low,Low
+2027-07-22,Thursday,July,Godavari Ghat,Normal Day,Rainy,26,21767,20913,3747,39,10,28,3,80,120,102,10,High,94,Low,Low,Low
+2027-07-23,Friday,July,Sadhugram,Normal Day,Sunny,36,92337,97459,18691,37,13,33,3,324,541,282,15,Normal,94,Low,Low,Medium
+2027-07-24,Saturday,July,Trimbakeshwar Temple,Normal Day,Cloudy,25,61263,67679,8281,41,10,20,3,225,375,282,10,Normal,96,Low,Low,Low
+2027-07-25,Sunday,July,Gangapur Road,Weekend,Cloudy,31,125181,134756,24855,43,19,47,5,449,748,438,20,Low,85,Medium,Low,Medium
+2027-07-26,Monday,July,Sadhugram,Normal Day,Cloudy,32,74232,68354,8360,36,10,35,3,227,379,389,10,Low,93,Low,Low,Medium
+2027-07-27,Tuesday,July,Mhasrul,Normal Day,Sunny,34,19547,21762,3897,37,10,33,3,80,120,140,10,Low,98,Low,Low,Low
+2027-07-28,Wednesday,July,Ramkund,Normal Day,Sunny,31,24160,22483,3059,39,10,26,3,80,124,89,10,Normal,98,Low,Low,Low
+2027-07-29,Thursday,July,Panchavati,Normal Day,Sunny,32,30833,29618,4387,30,10,31,3,98,164,167,10,Normal,93,Low,Low,Low
+2027-07-30,Friday,July,Gangapur Road,Festival,Rainy,27,108440,112127,15281,43,16,41,4,373,622,836,12,Normal,92,Medium,Low,Medium
+2027-07-31,Saturday,July,Shalimar,Normal Day,Rainy,22,34347,31633,5381,28,10,23,3,105,175,152,10,High,100,Low,Low,Low
+2027-08-01,Sunday,August,College Road,Weekend,Sunny,31,55304,57793,10810,38,10,23,3,192,321,230,10,Low,95,Low,Low,Low
+2027-08-02,Monday,August,Godavari Ghat,Normal Day,Cloudy,29,50770,55819,7338,30,10,20,3,186,310,283,10,Low,98,Low,Low,Low
+2027-08-03,Tuesday,August,Panchavati,Normal Day,Sunny,30,58379,53729,8504,31,10,23,3,179,298,307,10,Normal,91,Low,Low,Medium
+2027-08-04,Wednesday,August,College Road,Normal Day,Rainy,28,27865,29376,4689,36,10,29,3,97,163,320,10,High,93,Low,Low,Medium
+2027-08-05,Thursday,August,Sadhugram,Shahi Snan,Rainy,24,1047365,1155081,146298,9,165,341,46,3850,6417,6393,100,High,40,High,High,Critical
+2027-08-06,Friday,August,Shalimar,Normal Day,Sunny,34,37455,38927,7027,33,10,31,3,129,216,236,10,Low,97,Low,Low,Low
+2027-08-07,Saturday,August,Dwarka Circle,Normal Day,Sunny,38,57183,62197,10968,32,10,35,3,207,345,282,10,Normal,94,Low,Low,Low
+2027-08-08,Sunday,August,Mumbai Naka,Weekend,Sunny,32,143673,150628,25013,28,21,46,6,502,836,638,20,Normal,90,Medium,Low,Medium
+2027-08-09,Monday,August,College Road,Normal Day,Sunny,35,16764,17576,2297,34,10,21,3,80,120,99,10,Normal,99,Low,Low,Low
+2027-08-10,Tuesday,August,Gangapur Road,Festival,Cloudy,28,163944,159710,27629,22,22,50,6,532,887,900,23,Low,86,Medium,Low,Medium
+2027-08-11,Wednesday,August,Tapovan,Normal Day,Cloudy,26,44416,48122,8938,37,10,31,3,160,267,239,10,Normal,97,Low,Low,Low
+2027-08-12,Thursday,August,Adgaon Naka,Normal Day,Rainy,29,39636,41539,6760,44,10,23,3,138,230,309,10,Normal,93,Low,Low,Medium
+2027-08-13,Friday,August,CBS Nashik,Normal Day,Cloudy,32,62031,62043,9037,37,10,20,3,206,344,261,10,Normal,98,Low,Low,Low
+2027-08-14,Saturday,August,Ramkund,Normal Day,Sunny,34,100502,108385,21310,44,15,43,4,361,602,627,17,Low,88,Medium,Low,Medium
+2027-08-15,Sunday,August,College Road,Weekend,Rainy,26,91920,94966,18426,44,13,40,3,316,527,386,15,Normal,89,Low,Low,Medium
+2027-08-16,Monday,August,Dwarka Circle,Normal Day,Sunny,30,42050,42823,8226,28,10,20,3,142,237,119,10,Normal,100,Low,Low,Low
+2027-08-17,Tuesday,August,Godavari Ghat,Normal Day,Sunny,30,75065,75306,13404,44,10,26,3,251,418,459,11,Low,95,Low,Low,Medium
+2027-08-18,Wednesday,August,Sadhugram,Normal Day,Cloudy,26,85418,94648,14077,41,13,27,3,315,525,519,11,Low,94,Low,Low,Medium
+2027-08-19,Thursday,August,Trimbakeshwar Temple,Normal Day,Cloudy,29,48679,53851,7812,31,10,29,3,179,299,255,10,Low,96,Low,Low,Low
+2027-08-20,Friday,August,Dwarka Circle,Festival,Sunny,31,218413,234170,29768,28,33,78,9,780,1300,1018,24,Normal,84,Medium,Low,High
+2027-08-21,Saturday,August,Ramkund,Normal Day,Sunny,33,86702,93573,13849,41,13,39,3,311,519,285,11,Low,91,Low,Low,Medium
+2027-08-22,Sunday,August,Ramkund,Weekend,Rainy,25,133052,147784,19318,39,21,42,5,492,821,923,16,High,85,Medium,Low,High
+2027-08-23,Monday,August,Mumbai Naka,Normal Day,Sunny,32,26070,23946,2935,43,10,33,3,80,133,66,10,Low,99,Low,Low,Low
+2027-08-24,Tuesday,August,Trimbakeshwar Temple,Normal Day,Sunny,34,55278,60387,10150,37,10,20,3,201,335,227,10,Normal,91,Low,Low,Low
+2027-08-25,Wednesday,August,Sadhugram,Shahi Snan,Sunny,36,711027,658555,87874,11,94,189,26,2195,3658,3509,73,High,48,High,Medium,Critical
+2027-08-26,Thursday,August,Panchavati,Normal Day,Rainy,24,59904,63473,7757,42,10,33,3,211,352,369,10,Normal,94,Low,Low,Medium
+2027-08-27,Friday,August,Panchavati,Normal Day,Rainy,22,61234,62852,12130,45,10,20,3,209,349,445,10,High,92,Low,Low,Medium
+2027-08-28,Saturday,August,Trimbakeshwar Temple,Normal Day,Sunny,32,52048,48447,7994,39,10,34,3,161,269,176,10,Low,98,Low,Low,Low
+2027-08-29,Sunday,August,Godavari Ghat,Weekend,Sunny,34,111396,120046,20443,30,17,37,4,400,666,459,17,Normal,92,Medium,Low,Medium
+2027-08-30,Monday,August,CBS Nashik,Festival,Sunny,38,210177,228462,28630,26,32,76,9,761,1269,901,23,Normal,82,Medium,Low,High
+2027-08-31,Tuesday,August,Tapovan,Normal Day,Sunny,31,35736,36764,6080,42,10,24,3,122,204,234,10,Low,99,Low,Low,Low
+2027-09-01,Wednesday,September,Trimbakeshwar Temple,Normal Day,Sunny,31,102569,97673,16825,30,13,32,3,325,542,381,14,Normal,94,Low,Low,Medium
+2027-09-02,Thursday,September,Mumbai Naka,Normal Day,Rainy,25,60860,56062,6754,28,10,28,3,186,311,367,10,Normal,95,Low,Low,Medium
+2027-09-03,Friday,September,Ramkund,Normal Day,Sunny,33,67548,69642,9171,43,10,21,3,232,386,312,10,Low,94,Low,Low,Medium
+2027-09-04,Saturday,September,Panchavati,Normal Day,Sunny,30,64155,67216,12510,42,10,23,3,224,373,395,10,Low,96,Low,Low,Medium
+2027-09-05,Sunday,September,CBS Nashik,Weekend,Rainy,26,139044,127335,25135,28,18,39,5,424,707,719,20,Normal,88,Medium,Low,Medium
+2027-09-06,Monday,September,Sadhugram,Normal Day,Sunny,34,37598,36658,6253,38,10,24,3,122,203,198,10,Low,93,Low,Low,Low
+2027-09-07,Tuesday,September,Mhasrul,Normal Day,Sunny,34,20762,20951,3027,44,10,24,3,80,120,83,10,Normal,96,Low,Low,Low
+2027-09-08,Wednesday,September,Sadhugram,Normal Day,Rainy,29,34161,36785,5142,29,10,28,3,122,204,197,10,High,92,Low,Low,Low
+2027-09-09,Thursday,September,Ramkund,Normal Day,Sunny,35,108542,107633,19510,37,15,40,4,358,597,628,16,Low,94,Medium,Low,Medium
+2027-09-10,Friday,September,Gangapur Road,Festival,Cloudy,27,210361,231068,39713,20,33,72,9,770,1283,1108,33,Low,80,Medium,Medium,High
+2027-09-11,Saturday,September,Nimani,Normal Day,Cloudy,29,61025,64584,10563,39,10,24,3,215,358,349,10,Low,96,Low,Low,Medium
+2027-09-12,Sunday,September,Mumbai Naka,Weekend,Sunny,36,75898,72110,12172,40,10,27,3,240,400,361,10,Normal,91,Low,Low,Medium
+2027-09-13,Monday,September,Panchavati,Normal Day,Sunny,30,71847,72284,14225,42,10,29,3,240,401,455,11,Low,92,Low,Low,Medium
+2027-09-14,Tuesday,September,CBS Nashik,Normal Day,Cloudy,30,31418,34296,4975,44,10,29,3,114,190,116,10,Normal,100,Low,Low,Low
+2027-09-15,Wednesday,September,Shalimar,Shahi Snan,Sunny,37,367447,385335,47218,23,55,111,15,1284,2140,1802,39,High,65,High,Medium,Critical
+2027-09-16,Thursday,September,Dwarka Circle,Normal Day,Sunny,31,59964,60397,11040,38,10,21,3,201,335,330,10,Low,97,Low,Low,Medium
+2027-09-17,Friday,September,Panchavati,Normal Day,Cloudy,26,77537,82592,15080,41,11,36,3,275,458,469,12,Normal,97,Low,Low,Medium
+2027-09-18,Saturday,September,Panchavati,Normal Day,Sunny,30,73104,67123,12896,34,10,25,3,223,372,335,10,Normal,95,Low,Low,Medium
+2027-09-19,Sunday,September,Sadhugram,Weekend,Sunny,38,128232,129773,18390,44,18,38,5,432,720,773,15,Low,88,Medium,Low,Medium
+2027-09-20,Monday,September,CBS Nashik,Festival,Sunny,32,206345,190589,26983,28,27,56,7,635,1058,656,22,Normal,82,Medium,Low,Medium
+2027-09-21,Tuesday,September,Godavari Ghat,Normal Day,Sunny,35,56126,51269,6443,34,10,34,3,170,284,171,10,Low,95,Low,Low,Low
+2027-09-22,Wednesday,September,Tapovan,Normal Day,Cloudy,32,30906,30533,4374,42,10,34,3,101,169,155,10,Normal,100,Low,Low,Low
+2027-09-23,Thursday,September,Nimani,Normal Day,Cloudy,28,28224,29022,4641,40,10,22,3,96,161,87,10,Low,100,Low,Low,Low
+2027-09-24,Friday,September,Panchavati,Normal Day,Sunny,33,33005,36184,6827,34,10,31,3,120,201,102,10,Low,96,Low,Low,Low
+2027-09-25,Saturday,September,Adgaon Naka,Shahi Snan,Rainy,25,585454,618668,100906,9,88,187,24,2062,3437,2324,84,High,50,High,High,Critical
+2027-09-26,Sunday,September,Dwarka Circle,Weekend,Sunny,32,100646,111890,20176,40,15,37,4,372,621,382,16,Low,91,Medium,Low,Medium
+2027-09-27,Monday,September,Ramkund,Normal Day,Cloudy,28,86270,79003,13762,44,11,30,3,263,438,276,11,Normal,91,Low,Low,Low
+2027-09-28,Tuesday,September,Tapovan,Normal Day,Sunny,30,37241,35219,5367,34,10,32,3,117,195,184,10,Normal,97,Low,Low,Low
+2027-09-29,Wednesday,September,Godavari Ghat,Normal Day,Sunny,36,51461,47831,5993,44,10,22,3,159,265,296,10,Normal,98,Low,Low,Low
+2027-09-30,Thursday,September,Tapovan,Festival,Sunny,37,155165,172391,30362,25,24,52,6,574,957,1081,25,Low,82,Medium,Low,High
+2027-10-01,Friday,October,Trimbakeshwar Temple,Normal Day,Sunny,34,120067,125303,21644,41,17,34,5,417,696,773,18,Normal,90,Medium,Low,Medium
+2027-10-02,Saturday,October,CBS Nashik,Normal Day,Sunny,36,27095,28940,4056,43,10,29,3,96,160,150,10,Low,97,Low,Low,Low
+2027-10-03,Sunday,October,Panchavati,Weekend,Cloudy,27,121927,124658,23493,45,17,43,4,415,692,708,19,Low,88,Medium,Low,Medium
+2027-10-04,Monday,October,Gangapur Road,Normal Day,Cloudy,29,44485,41121,7891,38,10,30,3,137,228,133,10,Low,98,Low,Low,Low
+2027-10-05,Tuesday,October,Shalimar,Shahi Snan,Sunny,35,705989,648356,107617,10,92,190,25,2161,3601,1951,89,High,46,High,High,Critical
+2027-10-06,Wednesday,October,CBS Nashik,Normal Day,Rainy,23,48587,52576,10253,34,10,25,3,175,292,223,10,Normal,98,Low,Low,Low
+2027-10-07,Thursday,October,Mumbai Naka,Normal Day,Sunny,35,31823,32902,4948,35,10,29,3,109,182,204,10,Low,95,Low,Low,Low
+2027-10-08,Friday,October,Dwarka Circle,Normal Day,Cloudy,25,17256,19100,2521,28,10,22,3,80,120,91,10,Normal,95,Low,Low,Low
+2027-10-09,Saturday,October,Ramkund,Normal Day,Cloudy,26,58952,53268,8094,28,10,27,3,177,295,136,10,Normal,94,Low,Low,Low
+2027-10-10,Sunday,October,Tapovan,Weekend,Rainy,27,124058,121620,22751,31,17,46,4,405,675,512,18,Normal,85,Medium,Low,Medium
+2027-10-11,Monday,October,Tapovan,Normal Day,Cloudy,25,50878,53105,8259,29,10,35,3,177,295,251,10,Normal,91,Low,Low,Low
+2027-10-12,Tuesday,October,Adgaon Naka,Normal Day,Sunny,37,31206,34544,6264,42,10,28,3,115,191,168,10,Normal,100,Low,Low,Low
+2027-10-13,Wednesday,October,Mumbai Naka,Normal Day,Sunny,30,49146,54652,8089,30,10,29,3,182,303,286,10,Low,99,Low,Low,Low
+2027-10-14,Thursday,October,Trimbakeshwar Temple,Normal Day,Sunny,36,33206,31114,4305,33,10,31,3,103,172,117,10,Normal,94,Low,Low,Low
+2027-10-15,Friday,October,College Road,Shahi Snan,Sunny,33,552575,613459,115488,9,87,187,24,2044,3408,2338,96,High,52,High,High,Critical
+2027-10-16,Saturday,October,Trimbakeshwar Temple,Normal Day,Cloudy,29,93040,90336,15293,37,12,39,3,301,501,394,12,Low,96,Low,Low,Medium
+2027-10-17,Sunday,October,Sadhugram,Weekend,Rainy,26,111805,111891,20992,33,15,32,4,372,621,404,17,Normal,89,Medium,Low,Medium
+2027-10-18,Monday,October,College Road,Normal Day,Cloudy,26,52383,51779,9441,29,10,34,3,172,287,275,10,Normal,94,Low,Low,Low
+2027-10-19,Tuesday,October,Mumbai Naka,Normal Day,Sunny,33,49479,47310,8416,44,10,22,3,157,262,191,10,Low,96,Low,Low,Low
+2027-10-20,Wednesday,October,Mhasrul,Festival,Sunny,37,127252,141416,21393,29,20,49,5,471,785,679,17,Low,84,Medium,Low,Medium
+2027-10-21,Thursday,October,Gangapur Road,Normal Day,Sunny,32,58386,57848,7858,32,10,26,3,192,321,314,10,Low,95,Low,Low,Medium
+2027-10-22,Friday,October,Panchavati,Normal Day,Sunny,30,67983,63786,12633,38,10,31,3,212,354,358,10,Low,96,Low,Low,Medium
+2027-10-23,Saturday,October,Trimbakeshwar Temple,Normal Day,Sunny,38,33165,30334,5986,39,10,33,3,101,168,143,10,Low,96,Low,Low,Low
+2027-10-24,Sunday,October,Panchavati,Weekend,Sunny,35,145549,137404,17859,38,19,51,5,458,763,459,14,Normal,85,Medium,Low,Medium
+2027-10-25,Monday,October,Mumbai Naka,Shahi Snan,Sunny,38,625940,582238,80176,10,83,181,23,1940,3234,3739,66,High,54,High,High,Critical
+2027-10-26,Tuesday,October,Mhasrul,Normal Day,Cloudy,25,19548,20558,2955,42,10,24,3,80,120,56,10,Normal,96,Low,Low,Low
+2027-10-27,Wednesday,October,Ramkund,Normal Day,Cloudy,25,68918,74827,14338,42,10,21,3,249,415,243,11,Low,94,Low,Low,Low
+2027-10-28,Thursday,October,Trimbakeshwar Temple,Normal Day,Rainy,22,55031,51462,6941,32,10,34,3,171,285,328,10,Normal,95,Low,Low,Medium
+2027-07-01,Thursday,July,Nimani,Normal Day,Sunny,38,38421,41611,5314,39,10,28,3,138,231,251,10,Normal,97,Low,Low,Low
+2027-07-02,Friday,July,Mhasrul,Normal Day,Sunny,32,55613,51256,8002,43,10,33,3,170,284,220,10,Normal,96,Low,Low,Low
+2027-07-03,Saturday,July,Sadhugram,Normal Day,Sunny,31,42244,45087,6221,45,10,26,3,150,250,151,10,Normal,92,Low,Low,Low
+2027-07-04,Sunday,July,Adgaon Naka,Weekend,Sunny,32,110919,123052,21273,31,17,41,4,410,683,371,17,Normal,85,Medium,Low,Medium
+2027-07-05,Monday,July,College Road,Shahi Snan,Sunny,32,438968,438937,77297,17,62,125,17,1463,2438,1711,64,High,64,High,Medium,High
+2027-07-06,Tuesday,July,Mhasrul,Normal Day,Sunny,30,25119,22758,4481,40,10,34,3,80,126,84,10,Normal,100,Low,Low,Low
+2027-07-07,Wednesday,July,Adgaon Naka,Normal Day,Cloudy,30,14513,15268,2167,39,10,31,3,80,120,70,10,Normal,100,Low,Low,Low
+2027-07-08,Thursday,July,Nimani,Normal Day,Sunny,38,49634,45099,6564,39,10,20,3,150,250,156,10,Normal,94,Low,Low,Low
+2027-07-09,Friday,July,Tapovan,Normal Day,Cloudy,25,32997,30772,4506,42,10,28,3,102,170,100,10,Normal,100,Low,Low,Low
+2027-07-10,Saturday,July,Dwarka Circle,Festival,Sunny,34,145769,148903,25054,22,21,45,5,496,827,875,20,Normal,86,Medium,Low,Medium
+2027-07-11,Sunday,July,CBS Nashik,Weekend,Sunny,38,125313,122325,19756,30,17,46,4,407,679,507,16,Low,88,Medium,Low,Medium
+2027-07-12,Monday,July,Sadhugram,Normal Day,Cloudy,28,76773,76414,11324,34,10,22,3,254,424,420,10,Normal,92,Low,Low,Medium
+2027-07-13,Tuesday,July,Ramkund,Normal Day,Sunny,36,39352,40179,6711,45,10,20,3,133,223,172,10,Low,96,Low,Low,Low
+2027-07-14,Wednesday,July,CBS Nashik,Normal Day,Cloudy,27,74847,68451,11776,28,10,25,3,228,380,303,10,Low,96,Low,Low,Medium
+2027-07-15,Thursday,July,Gangapur Road,Shahi Snan,Sunny,31,542234,515645,86956,10,73,153,20,1718,2864,2738,72,High,58,High,High,Critical
+2027-07-16,Friday,July,Shalimar,Normal Day,Sunny,38,69397,72609,11271,40,10,28,3,242,403,204,10,Normal,93,Low,Low,Low
+2027-07-17,Saturday,July,Dwarka Circle,Normal Day,Sunny,31,38311,35379,6287,29,10,22,3,117,196,185,10,Low,93,Low,Low,Low
+2027-07-18,Sunday,July,Dwarka Circle,Weekend,Rainy,28,89213,85285,11513,30,12,33,3,284,473,382,10,High,94,Low,Low,Medium
+2027-07-19,Monday,July,Panchavati,Normal Day,Sunny,32,18018,16934,3204,31,10,22,3,80,120,55,10,Low,97,Low,Low,Low
+2027-07-20,Tuesday,July,Trimbakeshwar Temple,Festival,Sunny,38,370470,366477,62089,11,52,104,14,1221,2035,1617,51,Normal,65,High,Medium,High
+2027-07-21,Wednesday,July,Tapovan,Normal Day,Sunny,37,37905,41464,5828,40,10,30,3,138,230,180,10,Low,96,Low,Low,Low
+2027-07-22,Thursday,July,Mumbai Naka,Normal Day,Sunny,37,25041,23040,3964,37,10,35,3,80,128,120,10,Normal,94,Low,Low,Low
+2027-07-23,Friday,July,Ramkund,Normal Day,Rainy,25,83849,92102,16799,33,13,26,3,307,511,683,13,Normal,91,Low,Low,Medium
+2027-07-24,Saturday,July,Nimani,Normal Day,Rainy,22,30449,30774,4495,44,10,24,3,102,170,161,10,High,100,Low,Low,Low
+2027-07-25,Sunday,July,Godavari Ghat,Weekend,Sunny,38,178519,184391,32271,28,26,55,7,614,1024,953,26,Low,87,Medium,Low,High
+2027-07-26,Monday,July,Godavari Ghat,Normal Day,Sunny,35,100139,90476,16511,28,12,28,3,301,502,245,13,Low,95,Low,Low,Medium
+2027-07-27,Tuesday,July,Sadhugram,Normal Day,Sunny,30,66880,72073,13044,36,10,29,3,240,400,246,10,Normal,92,Low,Low,Low
+2027-07-28,Wednesday,July,Trimbakeshwar Temple,Normal Day,Sunny,33,57360,62478,7500,34,10,20,3,208,347,315,10,Low,96,Low,Low,Medium
+2027-07-29,Thursday,July,Gangapur Road,Normal Day,Sunny,30,41121,40585,6112,45,10,22,3,135,225,163,10,Normal,96,Low,Low,Low
+2027-07-30,Friday,July,Panchavati,Festival,Cloudy,32,168331,176731,32008,20,25,62,7,589,981,847,26,Normal,81,Medium,Medium,Medium
+2027-07-31,Saturday,July,Godavari Ghat,Normal Day,Cloudy,29,91650,89908,13228,32,12,24,3,299,499,515,11,Low,94,Low,Low,Medium
+2027-08-01,Sunday,August,Shalimar,Weekend,Rainy,29,146047,145026,19224,41,20,40,5,483,805,818,16,Normal,90,Medium,Low,Medium
+2027-08-02,Monday,August,Adgaon Naka,Normal Day,Rainy,27,51375,48836,8110,41,10,27,3,162,271,309,10,Normal,97,Low,Low,Medium
+2027-08-03,Tuesday,August,Adgaon Naka,Normal Day,Cloudy,30,48308,53582,9633,45,10,20,3,178,297,328,10,Normal,91,Low,Low,Medium
+2027-08-04,Wednesday,August,Adgaon Naka,Normal Day,Cloudy,26,57489,64048,10115,36,10,23,3,213,355,364,10,Low,90,Low,Low,Medium
+2027-08-05,Thursday,August,College Road,Shahi Snan,Sunny,36,568382,592475,117250,5,84,174,23,1974,3291,3539,97,High,46,High,High,Critical
+2027-08-06,Friday,August,College Road,Normal Day,Sunny,32,37713,35846,7095,37,10,28,3,119,199,171,10,Low,93,Low,Low,Low
+2027-08-07,Saturday,August,Gangapur Road,Normal Day,Sunny,31,27421,28363,3822,29,10,30,3,94,157,78,10,Normal,93,Low,Low,Low
+2027-08-08,Sunday,August,Mumbai Naka,Weekend,Sunny,37,90539,97124,14967,43,13,35,3,323,539,430,12,Low,87,Low,Low,Medium
+2027-08-09,Monday,August,Sadhugram,Normal Day,Sunny,34,81166,83637,13043,32,11,33,3,278,464,512,10,Normal,91,Low,Low,Medium
+2027-08-10,Tuesday,August,Mhasrul,Festival,Cloudy,29,190876,187454,28246,24,26,60,7,624,1041,770,23,Low,88,Medium,Low,Medium
+2027-08-11,Wednesday,August,Godavari Ghat,Normal Day,Sunny,36,34911,37095,5569,29,10,30,3,123,206,222,10,Normal,92,Low,Low,Low
+2027-08-12,Thursday,August,Sadhugram,Normal Day,Sunny,32,37763,39192,6171,36,10,29,3,130,217,121,10,Normal,93,Low,Low,Low
+2027-08-13,Friday,August,Dwarka Circle,Normal Day,Rainy,22,29795,27658,5476,41,10,32,3,92,153,143,10,High,96,Low,Low,Low
+2027-08-14,Saturday,August,Gangapur Road,Normal Day,Sunny,37,52765,50032,7208,43,10,22,3,166,277,215,10,Low,95,Low,Low,Low
+2027-08-15,Sunday,August,Mumbai Naka,Weekend,Cloudy,27,129776,129595,25708,26,18,39,5,431,719,415,21,Normal,85,Medium,Low,Medium
+2027-08-16,Monday,August,Gangapur Road,Normal Day,Rainy,25,28272,30067,4481,36,10,25,3,100,167,220,10,High,93,Low,Low,Low
+2027-08-17,Tuesday,August,Gangapur Road,Normal Day,Sunny,33,51625,51752,6734,35,10,33,3,172,287,259,10,Normal,99,Low,Low,Low
+2027-08-18,Wednesday,August,Shalimar,Normal Day,Sunny,35,37392,39402,5184,45,10,22,3,131,218,129,10,Normal,96,Low,Low,Low
+2027-08-19,Thursday,August,Gangapur Road,Normal Day,Sunny,30,39498,35613,6070,34,10,22,3,118,197,158,10,Normal,98,Low,Low,Low
+2027-08-20,Friday,August,Sadhugram,Festival,Cloudy,27,174035,191478,24901,40,27,66,7,638,1063,868,20,Normal,87,Medium,Low,Medium
+2027-08-21,Saturday,August,Godavari Ghat,Normal Day,Sunny,31,51962,50785,9687,45,10,25,3,169,282,186,10,Low,95,Low,Low,Low
+2027-08-22,Sunday,August,Trimbakeshwar Temple,Weekend,Sunny,38,183940,188089,24852,33,26,60,7,626,1044,1100,20,Normal,86,Medium,Low,High
+2027-08-23,Monday,August,College Road,Normal Day,Sunny,31,48132,48931,9165,34,10,32,3,163,271,144,10,Normal,91,Low,Low,Low
+2027-08-24,Tuesday,August,College Road,Normal Day,Sunny,33,26511,27973,4901,43,10,20,3,93,155,159,10,Normal,94,Low,Low,Low
+2027-08-25,Wednesday,August,Godavari Ghat,Shahi Snan,Cloudy,26,754816,731708,125110,8,104,216,29,2439,4065,3526,100,High,40,High,High,Critical
+2027-08-26,Thursday,August,College Road,Normal Day,Sunny,31,31705,29456,4103,43,10,33,3,98,163,149,10,Low,100,Low,Low,Low
+2027-08-27,Friday,August,Sadhugram,Normal Day,Sunny,38,69473,64713,9416,32,10,23,3,215,359,311,10,Low,98,Low,Low,Medium
+2027-08-28,Saturday,August,College Road,Normal Day,Sunny,37,31344,31739,5545,33,10,21,3,105,176,176,10,Normal,98,Low,Low,Low
+2027-08-29,Sunday,August,Trimbakeshwar Temple,Weekend,Sunny,30,237403,247408,33708,27,35,76,9,824,1374,1274,28,Low,82,Medium,Low,High
+2027-08-30,Monday,August,Godavari Ghat,Festival,Sunny,36,212139,203739,30023,25,29,58,8,679,1131,1180,25,Normal,85,Medium,Low,High
+2027-08-31,Tuesday,August,Dwarka Circle,Normal Day,Sunny,37,43470,47281,7137,28,10,34,3,157,262,167,10,Normal,99,Low,Low,Low
+2027-09-01,Wednesday,September,Gangapur Road,Normal Day,Rainy,29,48852,50543,9161,32,10,27,3,168,280,196,10,High,95,Low,Low,Low
+2027-09-02,Thursday,September,Mhasrul,Normal Day,Sunny,35,43911,44732,7941,33,10,24,3,149,248,273,10,Low,92,Low,Low,Low
+2027-09-03,Friday,September,Mumbai Naka,Normal Day,Cloudy,27,48691,47151,8313,34,10,26,3,157,261,229,10,Low,99,Low,Low,Low
+2027-09-04,Saturday,September,Tapovan,Normal Day,Sunny,32,47438,43272,6225,35,10,31,3,144,240,194,10,Normal,94,Low,Low,Low
+2027-09-05,Sunday,September,Mhasrul,Weekend,Sunny,32,94029,94427,15398,42,13,27,3,314,524,612,12,Normal,91,Low,Low,Medium
+2027-09-06,Monday,September,Panchavati,Normal Day,Cloudy,29,59629,62363,10379,41,10,30,3,207,346,300,10,Normal,94,Low,Low,Low
+2027-09-07,Tuesday,September,Dwarka Circle,Normal Day,Sunny,31,40914,43062,8065,33,10,28,3,143,239,197,10,Low,94,Low,Low,Low
+2027-09-08,Wednesday,September,College Road,Normal Day,Sunny,36,34203,36427,6152,37,10,23,3,121,202,226,10,Normal,93,Low,Low,Low
+2027-09-09,Thursday,September,Mhasrul,Normal Day,Cloudy,30,22768,23935,3708,29,10,28,3,80,132,63,10,Low,100,Low,Low,Low
+2027-09-10,Friday,September,Gangapur Road,Festival,Sunny,35,141140,146289,21592,42,20,40,5,487,812,762,17,Low,87,Medium,Low,Medium
+2027-09-11,Saturday,September,Panchavati,Normal Day,Cloudy,26,33657,37472,7151,42,10,22,3,124,208,145,10,Normal,98,Low,Low,Low
+2027-09-12,Sunday,September,Trimbakeshwar Temple,Weekend,Sunny,34,243324,268624,50580,15,38,86,10,895,1492,1448,42,Low,73,Medium,Medium,High
+2027-09-13,Monday,September,Shalimar,Normal Day,Sunny,34,69105,70617,11683,31,10,24,3,235,392,288,10,Low,97,Low,Low,Low
+2027-09-14,Tuesday,September,Ramkund,Normal Day,Sunny,33,49369,50186,9272,30,10,23,3,167,278,204,10,Normal,95,Low,Low,Low
+2027-09-15,Wednesday,September,Shalimar,Shahi Snan,Sunny,33,452369,470864,69361,14,67,149,18,1569,2615,1992,57,High,59,High,Medium,Critical
+2027-09-16,Thursday,September,Godavari Ghat,Normal Day,Sunny,33,97023,91941,12596,44,13,40,3,306,510,311,10,Low,95,Low,Low,Medium
+2027-09-17,Friday,September,CBS Nashik,Normal Day,Sunny,32,40736,37034,4665,42,10,27,3,123,205,219,10,Normal,100,Low,Low,Low
+2027-09-18,Saturday,September,CBS Nashik,Normal Day,Rainy,22,16996,18466,2928,44,10,28,3,80,120,179,10,High,98,Low,Low,Low
+2027-09-19,Sunday,September,Nimani,Weekend,Sunny,34,123549,131405,25414,24,18,50,5,438,730,356,21,Low,92,Medium,Low,Medium
+2027-09-20,Monday,September,Adgaon Naka,Festival,Sunny,32,123950,134226,20039,28,19,39,5,447,745,657,16,Normal,84,Medium,Low,Medium
+2027-09-21,Tuesday,September,Ramkund,Normal Day,Rainy,24,78851,82968,12593,35,11,24,3,276,460,499,10,Normal,90,Low,Low,Medium
+2027-09-22,Wednesday,September,Mhasrul,Normal Day,Cloudy,31,38961,36847,5708,33,10,34,3,122,204,213,10,Low,98,Low,Low,Low
+2027-09-23,Thursday,September,Sadhugram,Normal Day,Sunny,38,30412,33591,6698,31,10,26,3,111,186,125,10,Low,94,Low,Low,Low
+2027-09-24,Friday,September,Shalimar,Normal Day,Sunny,37,29073,28948,3700,35,10,33,3,96,160,179,10,Low,97,Low,Low,Low
+2027-09-25,Saturday,September,Mumbai Naka,Shahi Snan,Sunny,33,717719,701258,129313,9,100,211,28,2337,3895,3235,100,High,42,High,High,Critical
+2027-09-26,Sunday,September,College Road,Weekend,Rainy,27,53109,48504,9599,35,10,20,3,161,269,362,10,Normal,96,Low,Low,Medium
+2027-09-27,Monday,September,Panchavati,Normal Day,Sunny,31,46570,43636,6531,36,10,23,3,145,242,170,10,Normal,97,Low,Low,Low
+2027-09-28,Tuesday,September,CBS Nashik,Normal Day,Sunny,37,48114,48807,8157,40,10,31,3,162,271,263,10,Low,95,Low,Low,Low
+2027-09-29,Wednesday,September,Gangapur Road,Normal Day,Sunny,33,40052,43878,8244,41,10,30,3,146,243,259,10,Normal,100,Low,Low,Low
+2027-09-30,Thursday,September,Trimbakeshwar Temple,Festival,Cloudy,28,295007,274220,54360,18,39,81,10,914,1523,1338,45,Normal,80,Medium,Medium,High
+2027-10-01,Friday,October,Godavari Ghat,Normal Day,Cloudy,26,50823,46935,6910,28,10,29,3,156,260,145,10,Low,100,Low,Low,Low
+2027-10-02,Saturday,October,Trimbakeshwar Temple,Normal Day,Sunny,37,110863,110822,13541,37,15,34,4,369,615,504,11,Low,94,Medium,Low,Medium
+2027-10-03,Sunday,October,Nimani,Weekend,Cloudy,25,103501,111797,17879,28,15,44,4,372,621,454,14,Normal,88,Medium,Low,Medium
+2027-10-04,Monday,October,Ramkund,Normal Day,Sunny,31,93990,104064,15810,36,14,33,4,346,578,538,13,Normal,95,Medium,Low,Medium
+2027-10-05,Tuesday,October,Tapovan,Shahi Snan,Sunny,36,472476,495367,95169,18,70,148,19,1651,2752,2187,79,High,55,High,High,Critical
+2027-10-06,Wednesday,October,Trimbakeshwar Temple,Normal Day,Sunny,37,84726,81879,16233,29,11,30,3,272,454,298,13,Low,95,Low,Low,Medium
+2027-10-07,Thursday,October,Dwarka Circle,Normal Day,Sunny,34,68543,65827,11418,38,10,29,3,219,365,250,10,Low,93,Low,Low,Low
+2027-10-08,Friday,October,Mhasrul,Normal Day,Sunny,33,19891,19704,3581,41,10,24,3,80,120,52,10,Normal,96,Low,Low,Low
+2027-10-09,Saturday,October,College Road,Normal Day,Rainy,22,34124,33116,6186,36,10,30,3,110,183,323,10,Normal,99,Low,Low,Medium
+2027-10-10,Sunday,October,Mumbai Naka,Weekend,Rainy,27,74259,78043,11455,31,11,29,3,260,433,450,10,Normal,97,Low,Low,Medium
+2027-10-11,Monday,October,Adgaon Naka,Normal Day,Cloudy,25,52719,54517,7970,28,10,21,3,181,302,235,10,Normal,94,Low,Low,Low
+2027-10-12,Tuesday,October,Nimani,Normal Day,Sunny,36,42092,38113,4823,39,10,20,3,127,211,219,10,Low,99,Low,Low,Low
+2027-10-13,Wednesday,October,Shalimar,Normal Day,Sunny,38,65992,70294,8711,43,10,25,3,234,390,267,10,Normal,97,Low,Low,Low
+2027-10-14,Thursday,October,Sadhugram,Normal Day,Sunny,31,32849,30932,5418,39,10,30,3,103,171,146,10,Low,100,Low,Low,Low
+2027-10-15,Friday,October,Gangapur Road,Shahi Snan,Sunny,32,434738,420653,59706,12,60,129,16,1402,2336,1069,49,High,68,High,Medium,High
+2027-10-16,Saturday,October,Nimani,Normal Day,Sunny,36,31670,32865,5277,42,10,23,3,109,182,162,10,Low,99,Low,Low,Low
+2027-10-17,Sunday,October,Nimani,Weekend,Cloudy,26,107732,101793,17838,43,14,32,4,339,565,452,14,Normal,93,Medium,Low,Medium
+2027-10-18,Monday,October,CBS Nashik,Normal Day,Sunny,33,56414,55836,7784,38,10,23,3,186,310,295,10,Low,99,Low,Low,Low
+2027-10-19,Tuesday,October,Tapovan,Normal Day,Sunny,36,67075,68634,9254,29,10,23,3,228,381,191,10,Low,92,Low,Low,Low
+2027-10-20,Wednesday,October,Dwarka Circle,Festival,Sunny,34,169040,161039,20991,44,23,54,6,536,894,479,17,Low,85,Medium,Low,Medium
+2027-10-21,Thursday,October,CBS Nashik,Normal Day,Sunny,34,38486,38362,5074,43,10,35,3,127,213,114,10,Low,95,Low,Low,Low
+2027-10-22,Friday,October,Ramkund,Normal Day,Sunny,37,28142,26023,5080,39,10,35,3,86,144,89,10,Low,99,Low,Low,Low
+2027-10-23,Saturday,October,Godavari Ghat,Normal Day,Cloudy,32,60873,60344,7804,31,10,26,3,201,335,174,10,Normal,93,Low,Low,Low
+2027-10-24,Sunday,October,CBS Nashik,Weekend,Sunny,36,105975,118118,14538,38,16,42,4,393,656,653,12,Low,88,Medium,Low,Medium
+2027-10-25,Monday,October,Godavari Ghat,Shahi Snan,Cloudy,25,704365,644449,100041,5,92,187,25,2148,3580,3309,83,High,44,High,High,Critical
+2027-10-26,Tuesday,October,Nimani,Normal Day,Sunny,32,49275,48552,8890,31,10,34,3,161,269,165,10,Low,96,Low,Low,Low
+2027-10-27,Wednesday,October,Mhasrul,Normal Day,Rainy,23,26301,25762,3146,45,10,21,3,85,143,222,10,Normal,96,Low,Low,Low
+2027-10-28,Thursday,October,CBS Nashik,Normal Day,Cloudy,26,45746,43063,6236,34,10,35,3,143,239,217,10,Low,92,Low,Low,Low
+2027-07-01,Thursday,July,Godavari Ghat,Normal Day,Sunny,38,55176,53385,7587,34,10,35,3,177,296,221,10,Low,92,Low,Low,Low
+2027-07-02,Friday,July,Panchavati,Normal Day,Sunny,38,75885,84084,15330,35,12,29,3,280,467,328,12,Low,90,Low,Low,Medium
+2027-07-03,Saturday,July,Ramkund,Normal Day,Sunny,38,107969,108135,18567,36,15,42,4,360,600,401,15,Normal,90,Medium,Low,Medium
+2027-07-04,Sunday,July,Nimani,Weekend,Sunny,36,117368,126211,21492,42,18,40,5,420,701,421,17,Low,93,Medium,Low,Medium
+2027-07-05,Monday,July,Shalimar,Shahi Snan,Sunny,38,551582,602376,101039,10,86,181,24,2007,3346,2480,84,High,46,High,High,Critical
+2027-07-06,Tuesday,July,Ramkund,Normal Day,Sunny,38,87051,95765,11846,42,13,29,3,319,532,606,10,Low,88,Low,Low,Medium
+2027-07-07,Wednesday,July,Mumbai Naka,Normal Day,Cloudy,27,25701,24515,3992,43,10,34,3,81,136,79,10,Normal,95,Low,Low,Low
+2027-07-08,Thursday,July,Ramkund,Normal Day,Cloudy,25,103177,94481,17261,36,13,35,3,314,524,533,14,Low,90,Low,Low,Medium
+2027-07-09,Friday,July,Shalimar,Normal Day,Sunny,38,55761,59660,7213,36,10,23,3,198,331,202,10,Low,99,Low,Low,Low
+2027-07-10,Saturday,July,Panchavati,Festival,Cloudy,31,194734,196201,26555,18,28,65,7,654,1090,1007,22,Normal,84,Medium,Medium,High
+2027-07-11,Sunday,July,Tapovan,Weekend,Cloudy,25,109851,115882,14477,35,16,39,4,386,643,334,12,Normal,87,Medium,Low,Medium
+2027-07-12,Monday,July,Panchavati,Normal Day,Sunny,37,39745,37444,5746,44,10,26,3,124,208,184,10,Low,100,Low,Low,Low
+2027-07-13,Tuesday,July,College Road,Normal Day,Sunny,30,38922,35327,6655,28,10,25,3,117,196,199,10,Normal,95,Low,Low,Low
+2027-07-14,Wednesday,July,Adgaon Naka,Normal Day,Sunny,35,39479,40682,5985,37,10,35,3,135,226,250,10,Low,97,Low,Low,Low
+2027-07-15,Thursday,July,Ramkund,Shahi Snan,Cloudy,31,516516,483146,83072,15,69,143,19,1610,2684,3051,69,High,63,High,Medium,Critical
+2027-07-16,Friday,July,CBS Nashik,Normal Day,Sunny,35,75555,82703,16349,34,11,22,3,275,459,494,13,Low,95,Low,Low,Medium
+2027-07-17,Saturday,July,Sadhugram,Normal Day,Sunny,30,69589,77397,13256,31,11,25,3,257,429,402,11,Normal,94,Low,Low,Medium
+2027-07-18,Sunday,July,Dwarka Circle,Weekend,Sunny,32,88962,80541,9818,38,11,31,3,268,447,457,10,Normal,89,Low,Low,Medium
+2027-07-19,Monday,July,Nimani,Normal Day,Sunny,30,62216,56264,7260,36,10,29,3,187,312,229,10,Low,91,Low,Low,Low
+2027-07-20,Tuesday,July,Sadhugram,Festival,Sunny,38,206348,186086,33722,27,26,59,7,620,1033,1007,28,Normal,86,Medium,Low,High
+2027-07-21,Wednesday,July,Mumbai Naka,Normal Day,Sunny,38,38782,36089,6340,37,10,24,3,120,200,222,10,Low,92,Low,Low,Low
+2027-07-22,Thursday,July,Panchavati,Normal Day,Sunny,36,34243,31423,4632,40,10,27,3,104,174,199,10,Low,99,Low,Low,Low
+2027-07-23,Friday,July,Adgaon Naka,Normal Day,Cloudy,26,58737,58556,8684,43,10,33,3,195,325,317,10,Low,98,Low,Low,Medium
+2027-07-24,Saturday,July,Trimbakeshwar Temple,Normal Day,Cloudy,29,122949,115211,17852,31,16,37,4,384,640,465,14,Normal,87,Medium,Low,Medium
+2027-07-25,Sunday,July,Panchavati,Weekend,Sunny,38,87446,92316,16377,32,13,39,3,307,512,457,13,Normal,95,Low,Low,Medium
+2027-07-26,Monday,July,CBS Nashik,Normal Day,Rainy,27,21837,21825,3272,32,10,23,3,80,121,194,10,Normal,94,Low,Low,Low
+2027-07-27,Tuesday,July,Dwarka Circle,Normal Day,Cloudy,25,39871,39341,6064,35,10,33,3,131,218,157,10,Low,97,Low,Low,Low
+2027-07-28,Wednesday,July,Nimani,Normal Day,Sunny,32,63309,61052,8064,30,10,21,3,203,339,224,10,Normal,92,Low,Low,Low
+2027-07-29,Thursday,July,CBS Nashik,Normal Day,Cloudy,29,35973,37724,6673,34,10,27,3,125,209,211,10,Normal,99,Low,Low,Low
+2027-07-30,Friday,July,Mumbai Naka,Festival,Cloudy,32,192050,204696,28643,20,29,65,8,682,1137,689,23,Normal,83,Medium,Medium,Medium
+2027-07-31,Saturday,July,Trimbakeshwar Temple,Normal Day,Cloudy,28,100864,92877,14808,38,13,32,3,309,515,420,12,Normal,91,Low,Low,Medium
+2027-08-01,Sunday,August,Tapovan,Weekend,Cloudy,29,131057,137954,24392,36,19,45,5,459,766,653,20,Low,86,Medium,Low,Medium
+2027-08-02,Monday,August,Trimbakeshwar Temple,Normal Day,Sunny,34,90282,91760,14139,36,13,39,3,305,509,387,11,Low,93,Low,Low,Medium
+2027-08-03,Tuesday,August,Gangapur Road,Normal Day,Cloudy,28,32373,32653,4065,30,10,24,3,108,181,185,10,Low,97,Low,Low,Low
+2027-08-04,Wednesday,August,Mumbai Naka,Normal Day,Cloudy,31,33860,31006,4301,30,10,27,3,103,172,97,10,Low,98,Low,Low,Low
+2027-08-05,Thursday,August,Adgaon Naka,Shahi Snan,Sunny,37,445642,447399,55092,12,63,140,17,1491,2485,1340,45,High,62,High,Medium,High
+2027-08-06,Friday,August,Tapovan,Normal Day,Sunny,33,73503,80110,9891,36,11,35,3,267,445,380,10,Normal,97,Low,Low,Medium
+2027-08-07,Saturday,August,CBS Nashik,Normal Day,Cloudy,30,50681,49885,6537,30,10,32,3,166,277,211,10,Low,95,Low,Low,Low
+2027-08-08,Sunday,August,Ramkund,Weekend,Sunny,34,216622,203578,28948,25,29,70,8,678,1130,1065,24,Normal,86,Medium,Low,High
+2027-08-09,Monday,August,Mhasrul,Normal Day,Rainy,28,20462,18600,2458,33,10,29,3,80,120,144,10,High,96,Low,Low,Low
+2027-08-10,Tuesday,August,Godavari Ghat,Festival,Sunny,33,340808,374013,48444,25,53,109,14,1246,2077,1780,40,Low,69,High,Medium,High
+2027-08-11,Wednesday,August,Ramkund,Normal Day,Sunny,34,56865,63664,11470,43,10,26,3,212,353,306,10,Normal,93,Low,Low,Medium
+2027-08-12,Thursday,August,Mhasrul,Normal Day,Sunny,33,27108,26357,4253,42,10,30,3,87,146,129,10,Normal,100,Low,Low,Low
+2027-08-13,Friday,August,Sadhugram,Normal Day,Sunny,38,34024,37353,6030,30,10,25,3,124,207,99,10,Low,92,Low,Low,Low
+2027-08-14,Saturday,August,Sadhugram,Normal Day,Cloudy,30,57929,56356,7341,36,10,34,3,187,313,213,10,Low,98,Low,Low,Low
+2027-08-15,Sunday,August,Mumbai Naka,Weekend,Cloudy,29,83734,80240,12714,39,11,25,3,267,445,350,10,Low,96,Low,Low,Medium
+2027-08-16,Monday,August,CBS Nashik,Normal Day,Sunny,36,65159,72220,13062,42,10,27,3,240,401,333,10,Normal,90,Low,Low,Medium
+2027-08-17,Tuesday,August,Panchavati,Normal Day,Sunny,38,18939,20079,2980,28,10,32,3,80,120,115,10,Low,100,Low,Low,Low
+2027-08-18,Wednesday,August,College Road,Normal Day,Sunny,36,22766,23880,3765,34,10,28,3,80,132,98,10,Low,96,Low,Low,Low
+2027-08-19,Thursday,August,CBS Nashik,Normal Day,Sunny,38,41009,39601,6627,30,10,22,3,132,220,234,10,Low,96,Low,Low,Low
+2027-08-20,Friday,August,College Road,Festival,Cloudy,29,92906,100075,15211,31,14,28,4,333,555,646,12,Low,87,Medium,Low,Medium
+2027-08-21,Saturday,August,Shalimar,Normal Day,Sunny,37,21086,23328,3865,38,10,20,3,80,129,114,10,Normal,99,Low,Low,Low
+2027-08-22,Sunday,August,College Road,Weekend,Cloudy,29,70860,67874,11979,34,10,33,3,226,377,324,10,Normal,97,Low,Low,Medium
+2027-08-23,Monday,August,Trimbakeshwar Temple,Normal Day,Cloudy,28,100229,106603,14999,34,15,30,4,355,592,562,12,Normal,95,Medium,Low,Medium
+2027-08-24,Tuesday,August,CBS Nashik,Normal Day,Rainy,25,76836,73667,9044,37,10,20,3,245,409,458,10,Normal,94,Low,Low,Medium
+2027-08-25,Wednesday,August,Sadhugram,Shahi Snan,Rainy,23,626040,654405,118617,10,93,188,26,2181,3635,3984,98,High,49,High,High,Critical
+2027-08-26,Thursday,August,Sadhugram,Normal Day,Cloudy,32,82155,80919,9728,29,11,36,3,269,449,473,10,Low,90,Low,Low,Medium
+2027-08-27,Friday,August,CBS Nashik,Normal Day,Sunny,37,23278,22959,3461,36,10,23,3,80,127,94,10,Low,100,Low,Low,Low
+2027-08-28,Saturday,August,Trimbakeshwar Temple,Normal Day,Rainy,25,91765,98648,15479,31,14,41,3,328,548,298,12,High,89,Low,Low,Medium
+2027-08-29,Sunday,August,Godavari Ghat,Weekend,Cloudy,28,142801,131600,17224,45,18,41,5,438,731,694,14,Low,93,Medium,Low,Medium
+2027-08-30,Monday,August,Godavari Ghat,Festival,Cloudy,26,312183,294841,47210,28,42,92,11,982,1638,1649,39,Low,72,Medium,Medium,High
+2027-08-31,Tuesday,August,Sadhugram,Normal Day,Cloudy,29,36533,40326,7434,34,10,29,3,134,224,110,10,Low,92,Low,Low,Low
+2027-09-01,Wednesday,September,Nimani,Normal Day,Sunny,33,26500,28959,4807,34,10,29,3,96,160,162,10,Normal,98,Low,Low,Low
+2027-09-02,Thursday,September,Dwarka Circle,Normal Day,Rainy,29,15977,16747,2450,39,10,32,3,80,120,194,10,Normal,99,Low,Low,Low
+2027-09-03,Friday,September,Sadhugram,Normal Day,Sunny,31,89667,99027,12745,28,14,36,3,330,550,490,10,Low,88,Low,Low,Medium
+2027-09-04,Saturday,September,Gangapur Road,Normal Day,Rainy,23,15498,17126,2168,44,10,24,3,80,120,133,10,High,98,Low,Low,Low
+2027-09-05,Sunday,September,Godavari Ghat,Weekend,Cloudy,27,115685,109864,19718,41,15,45,4,366,610,503,16,Low,88,Medium,Low,Medium
+2027-09-06,Monday,September,Tapovan,Normal Day,Sunny,35,63975,64568,9712,42,10,26,3,215,358,323,10,Normal,98,Low,Low,Medium
+2027-09-07,Tuesday,September,Tapovan,Normal Day,Sunny,30,61277,55845,10425,38,10,29,3,186,310,300,10,Normal,98,Low,Low,Low
+2027-09-08,Wednesday,September,Mhasrul,Normal Day,Sunny,37,32155,35408,4552,37,10,34,3,118,196,121,10,Normal,99,Low,Low,Low
+2027-09-09,Thursday,September,Dwarka Circle,Normal Day,Cloudy,25,25299,24464,4408,42,10,23,3,81,135,158,10,Normal,96,Low,Low,Low
+2027-09-10,Friday,September,Gangapur Road,Festival,Sunny,36,110354,118963,22091,38,16,44,4,396,660,325,18,Normal,94,Medium,Low,Medium
+2027-09-11,Saturday,September,Dwarka Circle,Normal Day,Rainy,24,68521,76210,14268,33,10,32,3,254,423,508,11,High,92,Low,Low,Medium
+2027-09-12,Sunday,September,Sadhugram,Weekend,Cloudy,32,159402,167093,26762,21,23,59,6,556,928,569,22,Low,88,Medium,Low,Medium
+2027-09-13,Monday,September,Adgaon Naka,Normal Day,Cloudy,28,48866,48311,8193,40,10,26,3,161,268,142,10,Normal,91,Low,Low,Low
+2027-09-14,Tuesday,September,Nimani,Normal Day,Sunny,31,25465,23839,4250,32,10,34,3,80,132,105,10,Normal,95,Low,Low,Low
+2027-09-15,Wednesday,September,Gangapur Road,Shahi Snan,Cloudy,30,559790,555211,104157,5,79,163,22,1850,3084,2964,86,High,50,High,High,Critical
+2027-09-16,Thursday,September,Shalimar,Normal Day,Sunny,34,37525,40394,4885,43,10,31,3,134,224,220,10,Normal,97,Low,Low,Low
+2027-09-17,Friday,September,Mhasrul,Normal Day,Sunny,33,19085,20897,3137,43,10,25,3,80,120,81,10,Normal,94,Low,Low,Low
+2027-09-18,Saturday,September,Ramkund,Normal Day,Sunny,30,38603,37828,7121,32,10,23,3,126,210,204,10,Normal,95,Low,Low,Low
+2027-09-19,Sunday,September,Ramkund,Weekend,Sunny,33,218832,243479,37269,28,34,77,9,811,1352,653,31,Normal,82,Medium,Medium,Medium
+2027-09-20,Monday,September,Sadhugram,Festival,Sunny,37,209220,225204,40972,19,32,74,9,750,1251,1124,34,Normal,77,Medium,Medium,High
+2027-09-21,Tuesday,September,Mhasrul,Normal Day,Sunny,37,27062,26289,3366,34,10,30,3,87,146,129,10,Low,97,Low,Low,Low
+2027-09-22,Wednesday,September,Tapovan,Normal Day,Cloudy,31,33761,36791,4927,40,10,32,3,122,204,178,10,Low,92,Low,Low,Low
+2027-09-23,Thursday,September,Mhasrul,Normal Day,Cloudy,30,23315,21321,2969,35,10,24,3,80,120,115,10,Low,94,Low,Low,Low
+2027-09-24,Friday,September,Sadhugram,Normal Day,Sunny,34,49137,49176,9260,38,10,20,3,163,273,260,10,Normal,98,Low,Low,Low
+2027-09-25,Saturday,September,Ramkund,Shahi Snan,Cloudy,31,1132425,1190885,171849,5,170,350,47,3969,6616,6664,100,High,40,High,High,Critical
+2027-09-26,Sunday,September,Gangapur Road,Weekend,Cloudy,31,102788,110244,18646,36,15,35,4,367,612,674,15,Low,94,Medium,Low,Medium
+2027-09-27,Monday,September,Adgaon Naka,Normal Day,Rainy,26,24167,21787,3709,29,10,34,3,80,121,214,10,High,100,Low,Low,Low
+2027-09-28,Tuesday,September,Panchavati,Normal Day,Sunny,34,47718,50060,6632,32,10,32,3,166,278,243,10,Normal,99,Low,Low,Low
+2027-09-29,Wednesday,September,Panchavati,Normal Day,Cloudy,29,57854,56945,7577,45,10,26,3,189,316,327,10,Normal,92,Low,Low,Medium
+2027-09-30,Thursday,September,Sadhugram,Festival,Cloudy,27,280538,306151,53837,11,43,92,12,1020,1700,1285,44,Low,72,High,Medium,High
+2027-10-01,Friday,October,Godavari Ghat,Normal Day,Cloudy,31,38894,40156,4897,29,10,20,3,133,223,190,10,Low,97,Low,Low,Low
+2027-10-02,Saturday,October,CBS Nashik,Normal Day,Sunny,31,18071,18687,3726,35,10,20,3,80,120,97,10,Low,99,Low,Low,Low
+2027-10-03,Sunday,October,Panchavati,Weekend,Sunny,31,83843,75786,11386,40,10,20,3,252,421,475,10,Normal,92,Low,Low,Medium
+2027-10-04,Monday,October,Mumbai Naka,Normal Day,Sunny,34,67614,75713,13552,43,10,29,3,252,420,285,11,Low,90,Low,Low,Low
+2027-10-05,Tuesday,October,Panchavati,Shahi Snan,Cloudy,27,429677,477947,58689,17,68,137,19,1593,2655,1324,48,High,62,High,Medium,High
+2027-10-06,Wednesday,October,Shalimar,Normal Day,Rainy,25,42078,37896,5482,41,10,34,3,126,210,316,10,Normal,98,Low,Low,Medium
+2027-10-07,Thursday,October,Panchavati,Normal Day,Sunny,35,26502,24364,3216,37,10,24,3,81,135,102,10,Low,99,Low,Low,Low
+2027-10-08,Friday,October,Adgaon Naka,Normal Day,Cloudy,30,26413,28264,4454,29,10,32,3,94,157,163,10,Normal,100,Low,Low,Low
+2027-10-09,Saturday,October,CBS Nashik,Normal Day,Sunny,36,68972,73273,10270,34,10,31,3,244,407,361,10,Low,92,Low,Low,Medium
+2027-10-10,Sunday,October,Panchavati,Weekend,Sunny,37,159210,153430,26261,22,21,47,6,511,852,504,21,Low,84,Medium,Low,Medium
+2027-10-11,Monday,October,Mhasrul,Normal Day,Cloudy,28,32811,35271,6798,43,10,23,3,117,195,101,10,Normal,97,Low,Low,Low
+2027-10-12,Tuesday,October,Panchavati,Normal Day,Sunny,32,22035,24569,4412,30,10,30,3,81,136,104,10,Normal,98,Low,Low,Low
+2027-10-13,Wednesday,October,CBS Nashik,Normal Day,Cloudy,30,73442,75628,12423,41,10,27,3,252,420,219,10,Normal,90,Low,Low,Low
+2027-10-14,Thursday,October,Ramkund,Normal Day,Sunny,31,81000,84699,13217,32,12,27,3,282,470,252,11,Low,92,Low,Low,Medium
+2027-10-15,Friday,October,CBS Nashik,Shahi Snan,Rainy,27,821659,880338,106750,9,125,258,35,2934,4890,3350,88,High,40,High,High,Critical
+2027-10-16,Saturday,October,Mhasrul,Normal Day,Sunny,31,17060,18442,2632,35,10,25,3,80,120,93,10,Normal,98,Low,Low,Low
+2027-10-17,Sunday,October,College Road,Weekend,Sunny,31,101934,94139,17093,28,13,35,3,313,522,504,14,Normal,88,Low,Low,Medium
+2027-10-18,Monday,October,Panchavati,Normal Day,Sunny,36,23489,21511,3853,28,10,31,3,80,120,100,10,Normal,97,Low,Low,Low
+2027-10-19,Tuesday,October,Godavari Ghat,Normal Day,Rainy,26,32730,29459,5827,40,10,24,3,98,163,268,10,Normal,97,Low,Low,Low
+2027-10-20,Wednesday,October,Godavari Ghat,Festival,Sunny,36,206174,213651,25965,22,30,62,8,712,1186,1179,21,Low,78,Medium,Low,High
+2027-10-21,Thursday,October,Dwarka Circle,Normal Day,Sunny,33,36571,38688,5259,29,10,22,3,128,214,142,10,Low,93,Low,Low,Low
+2027-10-22,Friday,October,Tapovan,Normal Day,Sunny,35,36656,35794,5662,42,10,21,3,119,198,149,10,Normal,97,Low,Low,Low
+2027-10-23,Saturday,October,Trimbakeshwar Temple,Normal Day,Sunny,30,51845,49326,8891,37,10,32,3,164,274,127,10,Normal,97,Low,Low,Low
+2027-10-24,Sunday,October,Godavari Ghat,Weekend,Cloudy,31,168572,164714,21816,41,23,51,6,549,915,958,18,Normal,88,Medium,Low,High
+2027-10-25,Monday,October,Shalimar,Shahi Snan,Cloudy,27,745288,809940,106898,9,115,242,32,2699,4499,2527,89,High,40,High,High,Critical
+2027-10-26,Tuesday,October,Ramkund,Normal Day,Cloudy,30,39235,37371,5093,38,10,33,3,124,207,98,10,Normal,100,Low,Low,Low
+2027-10-27,Wednesday,October,Gangapur Road,Normal Day,Cloudy,26,43905,43159,6061,45,10,25,3,143,239,262,10,Normal,94,Low,Low,Low
+2027-10-28,Thursday,October,Adgaon Naka,Normal Day,Rainy,22,36121,38954,6374,37,10,32,3,129,216,187,10,High,98,Low,Low,Low
+2027-07-01,Thursday,July,Panchavati,Normal Day,Cloudy,31,72768,71653,13098,37,10,23,3,238,398,209,10,Low,92,Low,Low,Low
+2027-07-02,Friday,July,Dwarka Circle,Normal Day,Sunny,38,35181,32933,6275,45,10,35,3,109,182,109,10,Low,95,Low,Low,Low
+2027-07-03,Saturday,July,Mumbai Naka,Normal Day,Rainy,27,58276,59445,11174,28,10,30,3,198,330,319,10,High,91,Low,Low,Medium
+2027-07-04,Sunday,July,Nimani,Weekend,Rainy,27,90664,93078,14398,45,13,37,3,310,517,704,11,High,92,Low,Low,Medium
+2027-07-05,Monday,July,Shalimar,Shahi Snan,Sunny,37,759049,846041,104205,7,120,246,33,2820,4700,4140,86,High,40,High,High,Critical
+2027-07-06,Tuesday,July,Tapovan,Normal Day,Cloudy,29,29650,32973,6091,44,10,26,3,109,183,199,10,Low,97,Low,Low,Low
+2027-07-07,Wednesday,July,Godavari Ghat,Normal Day,Cloudy,28,83931,84662,11169,45,12,26,3,282,470,507,10,Low,92,Low,Low,Medium
+2027-07-08,Thursday,July,Ramkund,Normal Day,Sunny,33,61416,61025,8055,38,10,33,3,203,339,278,10,Normal,95,Low,Low,Low
+2027-07-09,Friday,July,Dwarka Circle,Normal Day,Sunny,36,19041,19063,2754,41,10,26,3,80,120,61,10,Normal,94,Low,Low,Low
+2027-07-10,Saturday,July,Gangapur Road,Festival,Sunny,33,208657,191082,34325,27,27,57,7,636,1061,1035,28,Normal,81,Medium,Low,High
+2027-07-11,Sunday,July,Nimani,Weekend,Cloudy,26,88087,81376,13717,44,11,34,3,271,452,383,11,Low,93,Low,Low,Medium
+2027-07-12,Monday,July,CBS Nashik,Normal Day,Cloudy,25,26695,26854,4955,32,10,27,3,89,149,68,10,Normal,96,Low,Low,Low
+2027-07-13,Tuesday,July,College Road,Normal Day,Rainy,29,29305,29703,3938,34,10,35,3,99,165,227,10,High,97,Low,Low,Low
+2027-07-14,Wednesday,July,Nimani,Normal Day,Sunny,31,21596,21014,3618,39,10,28,3,80,120,87,10,Normal,95,Low,Low,Low
+2027-07-15,Thursday,July,Mhasrul,Shahi Snan,Sunny,31,471415,488327,73780,14,69,152,19,1627,2712,1538,61,High,62,High,Medium,High
+2027-07-16,Friday,July,Ramkund,Normal Day,Sunny,31,109492,111116,13621,28,15,39,4,370,617,366,11,Low,93,Medium,Low,Medium
+2027-07-17,Saturday,July,Trimbakeshwar Temple,Normal Day,Sunny,30,80757,87509,17254,39,12,25,3,291,486,559,14,Normal,94,Low,Low,Medium
+2027-07-18,Sunday,July,Adgaon Naka,Weekend,Sunny,36,104560,114013,19255,43,16,39,4,380,633,690,16,Normal,86,Medium,Low,Medium
+2027-07-19,Monday,July,Nimani,Normal Day,Sunny,35,27922,29647,5042,44,10,35,3,98,164,134,10,Low,95,Low,Low,Low
+2027-07-20,Tuesday,July,Godavari Ghat,Festival,Sunny,33,345011,367884,64475,10,52,114,14,1226,2043,1093,53,Low,69,High,High,Critical
+2027-07-21,Wednesday,July,Adgaon Naka,Normal Day,Rainy,28,15615,16954,2458,38,10,21,3,80,120,149,10,Normal,98,Low,Low,Low
+2027-07-22,Thursday,July,Adgaon Naka,Normal Day,Cloudy,27,55998,57679,7858,37,10,21,3,192,320,332,10,Low,96,Low,Low,Medium
+2027-07-23,Friday,July,Sadhugram,Normal Day,Cloudy,25,41989,42326,6102,36,10,21,3,141,235,237,10,Low,99,Low,Low,Low
+2027-07-24,Saturday,July,Sadhugram,Normal Day,Sunny,37,92172,88716,13345,30,12,38,3,295,492,437,11,Normal,92,Low,Low,Medium
+2027-07-25,Sunday,July,Dwarka Circle,Weekend,Rainy,23,103442,104354,13234,33,14,38,4,347,579,439,11,High,92,Medium,Low,Medium
+2027-07-26,Monday,July,Mumbai Naka,Normal Day,Sunny,36,73329,78240,13794,28,11,29,3,260,434,247,11,Low,94,Low,Low,Low
+2027-07-27,Tuesday,July,Mumbai Naka,Normal Day,Sunny,30,43728,43046,6595,39,10,27,3,143,239,142,10,Low,93,Low,Low,Low
+2027-07-28,Wednesday,July,Tapovan,Normal Day,Sunny,38,83410,85948,15347,44,12,25,3,286,477,556,12,Normal,96,Low,Low,Medium
+2027-07-29,Thursday,July,Shalimar,Normal Day,Sunny,32,16050,16789,3300,37,10,33,3,80,120,85,10,Low,100,Low,Low,Low
+2027-07-30,Friday,July,Panchavati,Festival,Rainy,27,222465,235383,36755,21,33,66,9,784,1307,1033,30,High,81,Medium,Medium,High
+2027-07-31,Saturday,July,Godavari Ghat,Normal Day,Rainy,28,49418,54126,6854,41,10,24,3,180,300,402,10,High,97,Low,Low,Medium
+2027-08-01,Sunday,August,Trimbakeshwar Temple,Weekend,Sunny,36,126201,139694,17589,37,19,49,5,465,776,580,14,Normal,89,Medium,Low,Medium
+2027-08-02,Monday,August,Shalimar,Normal Day,Sunny,33,22408,20471,3382,34,10,24,3,80,120,75,10,Low,94,Low,Low,Low
+2027-08-03,Tuesday,August,Dwarka Circle,Normal Day,Sunny,32,47169,50638,7409,40,10,25,3,168,281,182,10,Normal,99,Low,Low,Low
+2027-08-04,Wednesday,August,CBS Nashik,Normal Day,Cloudy,28,69461,64748,9280,44,10,26,3,215,359,165,10,Normal,96,Low,Low,Low
+2027-08-05,Thursday,August,Ramkund,Shahi Snan,Rainy,23,699724,668271,115877,6,95,198,26,2227,3712,2671,96,High,41,High,High,Critical
+2027-08-06,Friday,August,Tapovan,Normal Day,Sunny,34,28448,28375,4078,45,10,21,3,94,157,74,10,Normal,96,Low,Low,Low
+2027-08-07,Saturday,August,Trimbakeshwar Temple,Normal Day,Rainy,28,32250,29154,4206,38,10,26,3,97,161,218,10,Normal,97,Low,Low,Low
+2027-08-08,Sunday,August,Ramkund,Weekend,Sunny,33,126524,133660,21113,34,19,47,5,445,742,468,17,Low,86,Medium,Low,Medium
+2027-08-09,Monday,August,Gangapur Road,Normal Day,Cloudy,26,41131,40938,6287,29,10,32,3,136,227,223,10,Normal,92,Low,Low,Low
+2027-08-10,Tuesday,August,Sadhugram,Festival,Sunny,38,337374,336523,54519,12,48,100,13,1121,1869,1985,45,Low,68,High,Medium,Critical
+2027-08-11,Wednesday,August,Sadhugram,Normal Day,Sunny,31,40730,37193,5250,28,10,34,3,123,206,97,10,Low,99,Low,Low,Low
+2027-08-12,Thursday,August,Sadhugram,Normal Day,Cloudy,30,42130,45063,5920,45,10,24,3,150,250,248,10,Normal,92,Low,Low,Low
+2027-08-13,Friday,August,Mhasrul,Normal Day,Sunny,37,41271,45844,5537,28,10,25,3,152,254,234,10,Low,96,Low,Low,Low
+2027-08-14,Saturday,August,Sadhugram,Normal Day,Cloudy,30,43092,40039,6750,33,10,20,3,133,222,167,10,Low,99,Low,Low,Low
+2027-08-15,Sunday,August,Shalimar,Weekend,Sunny,34,102736,113492,19658,29,16,47,4,378,630,484,16,Low,94,Medium,Low,Medium
+2027-08-16,Monday,August,Tapovan,Normal Day,Sunny,30,69488,69650,10059,40,10,32,3,232,386,250,10,Normal,92,Low,Low,Low
+2027-08-17,Tuesday,August,Gangapur Road,Normal Day,Sunny,34,18992,18976,3576,45,10,25,3,80,120,82,10,Low,100,Low,Low,Low
+2027-08-18,Wednesday,August,CBS Nashik,Normal Day,Rainy,23,32736,36411,6129,45,10,23,3,121,202,353,10,Normal,100,Low,Low,Medium
+2027-08-19,Thursday,August,Mumbai Naka,Normal Day,Sunny,35,53004,55901,8101,29,10,30,3,186,310,158,10,Normal,98,Low,Low,Low
+2027-08-20,Friday,August,Gangapur Road,Festival,Sunny,33,156411,143978,18853,36,20,44,5,479,799,442,15,Normal,86,Medium,Low,Medium
+2027-08-21,Saturday,August,Sadhugram,Normal Day,Sunny,35,67709,70195,10788,42,10,22,3,233,389,236,10,Normal,92,Low,Low,Low
+2027-08-22,Sunday,August,Adgaon Naka,Weekend,Sunny,37,103849,105473,13144,34,15,44,4,351,585,522,10,Normal,91,Medium,Low,Medium
+2027-08-23,Monday,August,College Road,Normal Day,Sunny,31,35949,38133,5960,45,10,35,3,127,211,114,10,Low,99,Low,Low,Low
+2027-08-24,Tuesday,August,CBS Nashik,Normal Day,Cloudy,28,27946,25556,4152,45,10,33,3,85,141,118,10,Normal,96,Low,Low,Low
+2027-08-25,Wednesday,August,Sadhugram,Shahi Snan,Cloudy,27,644276,721359,117070,5,103,217,28,2404,4007,4136,97,High,40,High,High,Critical
+2027-08-26,Thursday,August,Nimani,Normal Day,Sunny,30,65467,66867,12785,33,10,20,3,222,371,299,10,Normal,97,Low,Low,Low
+2027-08-27,Friday,August,Godavari Ghat,Normal Day,Sunny,36,64203,66999,8449,45,10,26,3,223,372,269,10,Normal,92,Low,Low,Low
+2027-08-28,Saturday,August,Gangapur Road,Normal Day,Cloudy,32,33414,34575,5599,32,10,26,3,115,192,167,10,Normal,93,Low,Low,Low
+2027-08-29,Sunday,August,Shalimar,Weekend,Sunny,33,143318,136544,18223,43,19,42,5,455,758,695,15,Normal,92,Medium,Low,Medium
+2027-08-30,Monday,August,Adgaon Naka,Festival,Cloudy,31,164178,153177,29000,24,21,51,6,510,850,490,24,Normal,87,Medium,Low,Medium
+2027-08-31,Tuesday,August,Ramkund,Normal Day,Cloudy,26,36790,40608,8035,38,10,24,3,135,225,198,10,Low,99,Low,Low,Low
+2027-09-01,Wednesday,September,Mumbai Naka,Normal Day,Rainy,27,41488,38423,5969,38,10,35,3,128,213,281,10,High,93,Low,Low,Low
+2027-09-02,Thursday,September,Dwarka Circle,Normal Day,Sunny,34,53842,51292,10159,42,10,22,3,170,284,179,10,Low,97,Low,Low,Low
+2027-09-03,Friday,September,Ramkund,Normal Day,Sunny,30,25648,25786,4348,36,10,26,3,85,143,142,10,Normal,97,Low,Low,Low
+2027-09-04,Saturday,September,Gangapur Road,Normal Day,Sunny,32,41018,37249,5055,37,10,30,3,124,206,96,10,Low,100,Low,Low,Low
+2027-09-05,Sunday,September,College Road,Weekend,Sunny,30,76694,85802,16712,39,12,29,3,286,476,305,13,Low,94,Low,Low,Medium
+2027-09-06,Monday,September,Panchavati,Normal Day,Rainy,27,39801,35826,5333,35,10,30,3,119,199,241,10,Normal,96,Low,Low,Low
+2027-09-07,Tuesday,September,Shalimar,Normal Day,Rainy,24,43079,46720,8992,37,10,35,3,155,259,246,10,Normal,97,Low,Low,Low
+2027-09-08,Wednesday,September,Ramkund,Normal Day,Sunny,33,100736,103562,14387,40,14,35,4,345,575,379,11,Normal,94,Medium,Low,Medium
+2027-09-09,Thursday,September,Godavari Ghat,Normal Day,Sunny,37,97545,95300,15188,37,13,30,3,317,529,407,12,Low,95,Low,Low,Medium
+2027-09-10,Friday,September,Shalimar,Festival,Cloudy,27,178655,169149,22869,42,24,55,6,563,939,884,19,Normal,83,Medium,Low,Medium
+2027-09-11,Saturday,September,Tapovan,Normal Day,Sunny,35,33981,30864,3788,33,10,35,3,102,171,165,10,Normal,95,Low,Low,Low
+2027-09-12,Sunday,September,Gangapur Road,Weekend,Sunny,34,120273,128092,19178,40,18,46,5,426,711,422,15,Normal,93,Medium,Low,Medium
+2027-09-13,Monday,September,Ramkund,Normal Day,Sunny,34,41060,41499,5030,31,10,33,3,138,230,206,10,Low,96,Low,Low,Low
+2027-09-14,Tuesday,September,Shalimar,Normal Day,Sunny,33,25362,26745,4903,31,10,30,3,89,148,123,10,Normal,98,Low,Low,Low
+2027-09-15,Wednesday,September,Gangapur Road,Shahi Snan,Cloudy,31,442993,401295,68954,16,57,128,16,1337,2229,1885,57,High,63,High,Medium,Critical
+2027-09-16,Thursday,September,Trimbakeshwar Temple,Normal Day,Sunny,33,32484,32479,4629,39,10,27,3,108,180,82,10,Normal,98,Low,Low,Low
+2027-09-17,Friday,September,CBS Nashik,Normal Day,Sunny,30,63302,63774,9276,30,10,23,3,212,354,361,10,Low,96,Low,Low,Medium
+2027-09-18,Saturday,September,Shalimar,Normal Day,Sunny,36,33569,33268,5229,41,10,33,3,110,184,122,10,Normal,99,Low,Low,Low
+2027-09-19,Sunday,September,Tapovan,Weekend,Sunny,32,101525,97282,18107,33,13,37,3,324,540,580,15,Low,91,Low,Low,Medium
+2027-09-20,Monday,September,Gangapur Road,Festival,Sunny,38,222016,207952,29993,19,29,71,8,693,1155,1163,24,Normal,80,Medium,Medium,High
+2027-09-21,Tuesday,September,Mumbai Naka,Normal Day,Cloudy,30,43641,48145,7011,43,10,31,3,160,267,295,10,Low,94,Low,Low,Low
+2027-09-22,Wednesday,September,Tapovan,Normal Day,Sunny,32,32955,30116,5856,44,10,27,3,100,167,178,10,Normal,96,Low,Low,Low
+2027-09-23,Thursday,September,Nimani,Normal Day,Sunny,32,35318,34669,5721,28,10,34,3,115,192,127,10,Low,97,Low,Low,Low
+2027-09-24,Friday,September,College Road,Normal Day,Rainy,25,29360,31318,5495,34,10,33,3,104,173,284,10,High,100,Low,Low,Low
+2027-09-25,Saturday,September,CBS Nashik,Shahi Snan,Sunny,30,343563,326844,43250,23,46,92,13,1089,1815,1395,36,High,68,High,Medium,High
+2027-09-26,Sunday,September,Panchavati,Weekend,Rainy,23,143260,135391,26147,25,19,49,5,451,752,605,21,Normal,92,Medium,Low,Medium
+2027-09-27,Monday,September,Tapovan,Normal Day,Sunny,38,26820,28837,4611,44,10,32,3,96,160,72,10,Normal,93,Low,Low,Low
+2027-09-28,Tuesday,September,College Road,Normal Day,Sunny,30,24820,23671,3211,33,10,29,3,80,131,140,10,Low,100,Low,Low,Low
+2027-09-29,Wednesday,September,Nimani,Normal Day,Sunny,35,30422,29852,4977,29,10,27,3,99,165,180,10,Low,93,Low,Low,Low
+2027-09-30,Thursday,September,Adgaon Naka,Festival,Sunny,30,137935,135168,22576,38,19,41,5,450,750,568,18,Normal,85,Medium,Low,Medium
+2027-10-01,Friday,October,College Road,Normal Day,Sunny,31,46547,44934,7589,44,10,28,3,149,249,114,10,Low,95,Low,Low,Low
+2027-10-02,Saturday,October,CBS Nashik,Normal Day,Rainy,23,43302,44143,6507,31,10,31,3,147,245,334,10,High,95,Low,Low,Medium
+2027-10-03,Sunday,October,Godavari Ghat,Weekend,Sunny,33,138295,153337,21507,41,21,48,6,511,851,501,17,Low,91,Medium,Low,Medium
+2027-10-04,Monday,October,Panchavati,Normal Day,Cloudy,27,71232,79571,10470,42,11,31,3,265,442,429,10,Normal,89,Low,Low,Medium
+2027-10-05,Tuesday,October,Mhasrul,Shahi Snan,Sunny,34,619272,650245,89106,18,92,199,26,2167,3612,3448,74,High,48,High,Medium,Critical
+2027-10-06,Wednesday,October,Sadhugram,Normal Day,Sunny,35,22812,22104,3850,31,10,24,3,80,122,116,10,Normal,95,Low,Low,Low
+2027-10-07,Thursday,October,Panchavati,Normal Day,Sunny,35,47037,51865,9810,36,10,35,3,172,288,266,10,Low,99,Low,Low,Low
+2027-10-08,Friday,October,Adgaon Naka,Normal Day,Sunny,34,29930,28765,5006,29,10,34,3,95,159,103,10,Low,95,Low,Low,Low
+2027-10-09,Saturday,October,Mumbai Naka,Normal Day,Rainy,24,22361,21249,3513,38,10,29,3,80,120,204,10,Normal,100,Low,Low,Low
+2027-10-10,Sunday,October,Shalimar,Weekend,Cloudy,25,137363,136376,18454,34,19,47,5,454,757,707,15,Low,90,Medium,Low,Medium
+2027-10-11,Monday,October,Shalimar,Normal Day,Sunny,30,47184,51909,8900,44,10,33,3,173,288,232,10,Normal,92,Low,Low,Low
+2027-10-12,Tuesday,October,Shalimar,Normal Day,Sunny,36,55794,58062,11099,37,10,22,3,193,322,233,10,Low,99,Low,Low,Low
+2027-10-13,Wednesday,October,Gangapur Road,Normal Day,Cloudy,32,54270,59117,11348,29,10,22,3,197,328,342,10,Normal,96,Low,Low,Medium
+2027-10-14,Thursday,October,Dwarka Circle,Normal Day,Sunny,34,51101,48717,9152,34,10,24,3,162,270,192,10,Normal,97,Low,Low,Low
+2027-10-15,Friday,October,Shalimar,Shahi Snan,Sunny,34,651664,698520,129531,10,99,213,27,2328,3880,3402,100,High,42,High,High,Critical
+2027-10-16,Saturday,October,Trimbakeshwar Temple,Normal Day,Sunny,37,120220,121430,22386,40,17,34,4,404,674,633,18,Normal,93,Medium,Low,Medium
+2027-10-17,Sunday,October,CBS Nashik,Weekend,Rainy,23,132630,125914,18688,36,17,34,5,419,699,420,15,Normal,87,Medium,Low,Medium
+2027-10-18,Monday,October,Ramkund,Normal Day,Cloudy,31,100662,91219,14649,31,13,35,3,304,506,389,12,Low,89,Low,Low,Medium
+2027-10-19,Tuesday,October,Trimbakeshwar Temple,Normal Day,Rainy,29,29446,31983,5556,30,10,29,3,106,177,300,10,Normal,97,Low,Low,Low
+2027-10-20,Wednesday,October,CBS Nashik,Festival,Sunny,34,240708,248889,37692,24,35,76,9,829,1382,1205,31,Low,80,Medium,Medium,High
+2027-10-21,Thursday,October,Mhasrul,Normal Day,Sunny,30,23862,21583,3168,35,10,29,3,80,120,86,10,Low,100,Low,Low,Low
+2027-10-22,Friday,October,Mhasrul,Normal Day,Sunny,32,26828,28474,5095,29,10,23,3,94,158,123,10,Low,100,Low,Low,Low
+2027-10-23,Saturday,October,Tapovan,Normal Day,Sunny,37,51713,47129,7704,29,10,21,3,157,261,305,10,Low,99,Low,Low,Medium
+2027-10-24,Sunday,October,Nimani,Weekend,Sunny,37,124279,117989,18520,28,16,41,4,393,655,750,15,Low,92,Medium,Low,Medium
+2027-10-25,Monday,October,Mhasrul,Shahi Snan,Sunny,37,488586,479841,83857,10,68,146,19,1599,2665,2749,69,High,64,High,High,Critical
+2027-10-26,Tuesday,October,Adgaon Naka,Normal Day,Cloudy,26,56217,54486,9187,41,10,34,3,181,302,237,10,Low,98,Low,Low,Low
+2027-10-27,Wednesday,October,CBS Nashik,Normal Day,Sunny,31,23883,23565,4510,41,10,31,3,80,130,83,10,Low,99,Low,Low,Low
+2027-10-28,Thursday,October,CBS Nashik,Normal Day,Rainy,25,33658,36533,5617,31,10,23,3,121,202,234,10,Normal,93,Low,Low,Low
+2027-07-01,Thursday,July,Sadhugram,Normal Day,Cloudy,29,84979,86165,13703,43,12,39,3,287,478,537,11,Low,93,Low,Low,Medium
+2027-07-02,Friday,July,Mhasrul,Normal Day,Sunny,31,23631,22924,2928,38,10,22,3,80,127,136,10,Normal,100,Low,Low,Low
+2027-07-03,Saturday,July,Shalimar,Normal Day,Rainy,29,28198,26202,3865,33,10,35,3,87,145,259,10,High,97,Low,Low,Low
+2027-07-04,Sunday,July,Panchavati,Weekend,Rainy,26,122602,135723,22656,42,19,45,5,452,754,422,18,High,88,Medium,Low,Medium
+2027-07-05,Monday,July,Dwarka Circle,Shahi Snan,Cloudy,30,356920,333233,65944,11,47,104,13,1110,1851,1389,54,High,75,High,Medium,High
+2027-07-06,Tuesday,July,Mhasrul,Normal Day,Rainy,23,26541,29701,4117,30,10,28,3,99,165,138,10,Normal,95,Low,Low,Low
+2027-07-07,Wednesday,July,Godavari Ghat,Normal Day,Sunny,33,36380,36808,6134,31,10,22,3,122,204,170,10,Low,94,Low,Low,Low
+2027-07-08,Thursday,July,Gangapur Road,Normal Day,Sunny,35,28436,30281,4245,34,10,29,3,100,168,130,10,Normal,93,Low,Low,Low
+2027-07-09,Friday,July,Ramkund,Normal Day,Cloudy,25,30136,27673,3605,36,10,20,3,92,153,115,10,Low,96,Low,Low,Low
+2027-07-10,Saturday,July,Panchavati,Festival,Cloudy,32,179196,179586,30948,21,25,58,7,598,997,459,25,Normal,86,Medium,Low,Medium
+2027-07-11,Sunday,July,Tapovan,Weekend,Sunny,32,111932,118725,23369,40,16,41,4,395,659,581,19,Normal,89,Medium,Low,Medium
+2027-07-12,Monday,July,Tapovan,Normal Day,Sunny,31,27597,27587,4438,43,10,32,3,91,153,83,10,Low,96,Low,Low,Low
+2027-07-13,Tuesday,July,Shalimar,Normal Day,Sunny,30,49473,45207,7121,35,10,25,3,150,251,164,10,Low,96,Low,Low,Low
+2027-07-14,Wednesday,July,Nimani,Normal Day,Rainy,24,48726,45324,8877,45,10,30,3,151,251,392,10,High,95,Low,Low,Medium
+2027-07-15,Thursday,July,Nimani,Shahi Snan,Sunny,35,347359,325362,58418,11,46,103,13,1084,1807,1657,48,High,71,High,Medium,High
+2027-07-16,Friday,July,College Road,Normal Day,Sunny,35,46768,49504,6701,30,10,32,3,165,275,228,10,Low,96,Low,Low,Low
+2027-07-17,Saturday,July,Panchavati,Normal Day,Sunny,31,32409,31067,4782,36,10,20,3,103,172,80,10,Low,95,Low,Low,Low
+2027-07-18,Sunday,July,Mumbai Naka,Weekend,Sunny,32,102780,110322,20717,43,15,44,4,367,612,611,17,Low,86,Medium,Low,Medium
+2027-07-19,Monday,July,Trimbakeshwar Temple,Normal Day,Sunny,32,115216,115890,22168,45,16,40,4,386,643,590,18,Low,86,Medium,Low,Medium
+2027-07-20,Tuesday,July,Dwarka Circle,Festival,Sunny,38,238983,242900,40338,22,34,76,9,809,1349,648,33,Low,76,Medium,Medium,Medium
+2027-07-21,Wednesday,July,Shalimar,Normal Day,Sunny,32,38068,36151,4733,38,10,30,3,120,200,186,10,Normal,98,Low,Low,Low
+2027-07-22,Thursday,July,CBS Nashik,Normal Day,Rainy,23,71988,67094,11255,33,10,22,3,223,372,365,10,Normal,97,Low,Low,Medium
+2027-07-23,Friday,July,Tapovan,Normal Day,Sunny,35,23261,22874,3711,31,10,23,3,80,127,124,10,Normal,98,Low,Low,Low
+2027-07-24,Saturday,July,Panchavati,Normal Day,Cloudy,30,38864,36335,5446,39,10,21,3,121,201,221,10,Normal,95,Low,Low,Low
+2027-07-25,Sunday,July,Tapovan,Weekend,Rainy,29,142360,154303,22428,41,22,57,6,514,857,740,18,High,88,Medium,Low,Medium
+2027-07-26,Monday,July,Mumbai Naka,Normal Day,Rainy,28,72956,68142,10435,29,10,30,3,227,378,377,10,Normal,94,Low,Low,Medium
+2027-07-27,Tuesday,July,Ramkund,Normal Day,Sunny,34,62798,65127,12903,44,10,33,3,217,361,409,10,Low,94,Low,Low,Medium
+2027-07-28,Wednesday,July,Trimbakeshwar Temple,Normal Day,Sunny,32,87274,91421,13036,29,13,37,3,304,507,587,10,Low,90,Low,Low,Medium
+2027-07-29,Thursday,July,Dwarka Circle,Normal Day,Sunny,32,35738,35150,4419,29,10,27,3,117,195,136,10,Low,100,Low,Low,Low
+2027-07-30,Friday,July,Godavari Ghat,Festival,Sunny,31,286277,264344,41205,21,37,88,10,881,1468,1203,34,Low,74,Medium,Medium,High
+2027-07-31,Saturday,July,Nimani,Normal Day,Cloudy,26,65876,69015,9345,45,10,33,3,230,383,240,10,Normal,93,Low,Low,Low
+2027-08-01,Sunday,August,Trimbakeshwar Temple,Weekend,Rainy,23,241725,249679,43990,20,35,84,9,832,1387,1474,36,Normal,79,Medium,Medium,High
+2027-08-02,Monday,August,Sadhugram,Normal Day,Sunny,30,84106,84984,12897,44,12,39,3,283,472,223,10,Low,90,Low,Low,Medium
+2027-08-03,Tuesday,August,Dwarka Circle,Normal Day,Rainy,29,63385,63698,10580,33,10,35,3,212,353,372,10,Normal,97,Low,Low,Medium
+2027-08-04,Wednesday,August,Mumbai Naka,Normal Day,Sunny,35,44990,43840,6078,36,10,33,3,146,243,244,10,Normal,96,Low,Low,Low
+2027-08-05,Thursday,August,Tapovan,Shahi Snan,Rainy,23,800615,857936,115029,5,122,256,34,2859,4766,4436,95,High,40,High,High,Critical
+2027-08-06,Friday,August,Adgaon Naka,Normal Day,Cloudy,30,55833,53089,9491,43,10,26,3,176,294,159,10,Low,91,Low,Low,Low
+2027-08-07,Saturday,August,Gangapur Road,Normal Day,Cloudy,29,33287,30816,6132,28,10,26,3,102,171,77,10,Low,98,Low,Low,Low
+2027-08-08,Sunday,August,Nimani,Weekend,Rainy,24,75088,82794,15568,43,11,23,3,275,459,348,12,High,93,Low,Low,Medium
+2027-08-09,Monday,August,CBS Nashik,Normal Day,Sunny,31,59211,58316,8102,35,10,21,3,194,323,294,10,Normal,98,Low,Low,Low
+2027-08-10,Tuesday,August,Panchavati,Festival,Rainy,25,214772,198981,29316,22,28,64,7,663,1105,1209,24,High,87,Medium,Low,High
+2027-08-11,Wednesday,August,Tapovan,Normal Day,Cloudy,30,69308,66464,11265,35,10,33,3,221,369,300,10,Low,97,Low,Low,Low
+2027-08-12,Thursday,August,Godavari Ghat,Normal Day,Sunny,38,96632,90499,15421,45,12,31,3,301,502,548,12,Low,93,Low,Low,Medium
+2027-08-13,Friday,August,Sadhugram,Normal Day,Cloudy,25,69215,69269,13427,40,10,22,3,230,384,407,11,Low,91,Low,Low,Medium
+2027-08-14,Saturday,August,Sadhugram,Normal Day,Rainy,29,88974,97191,12135,37,13,32,3,323,539,674,10,High,90,Low,Low,Medium
+2027-08-15,Sunday,August,Shalimar,Weekend,Cloudy,30,144372,144751,25445,27,20,44,5,482,804,627,21,Low,88,Medium,Low,Medium
+2027-08-16,Monday,August,Panchavati,Normal Day,Cloudy,31,34238,32923,5994,43,10,33,3,109,182,135,10,Low,100,Low,Low,Low
+2027-08-17,Tuesday,August,Adgaon Naka,Normal Day,Cloudy,27,42955,42806,7630,39,10,34,3,142,237,163,10,Low,100,Low,Low,Low
+2027-08-18,Wednesday,August,Adgaon Naka,Normal Day,Cloudy,28,22041,23608,3471,35,10,31,3,80,131,108,10,Normal,96,Low,Low,Low
+2027-08-19,Thursday,August,Sadhugram,Normal Day,Sunny,33,88809,84414,15935,37,12,34,3,281,468,517,13,Normal,89,Low,Low,Medium
+2027-08-20,Friday,August,Trimbakeshwar Temple,Festival,Sunny,37,245791,240239,37554,20,34,76,9,800,1334,823,31,Low,83,Medium,Medium,Medium
+2027-08-21,Saturday,August,Nimani,Normal Day,Cloudy,30,25841,26212,3943,34,10,35,3,87,145,69,10,Low,100,Low,Low,Low
+2027-08-22,Sunday,August,Shalimar,Weekend,Sunny,36,134793,148389,27966,23,21,56,5,494,824,898,23,Normal,87,Medium,Low,Medium
+2027-08-23,Monday,August,Ramkund,Normal Day,Sunny,36,26616,27858,5065,34,10,29,3,92,154,79,10,Normal,98,Low,Low,Low
+2027-08-24,Tuesday,August,Panchavati,Normal Day,Sunny,30,74045,78957,14903,44,11,36,3,263,438,500,12,Normal,90,Low,Low,Medium
+2027-08-25,Wednesday,August,Trimbakeshwar Temple,Shahi Snan,Rainy,22,1135605,1126553,158505,9,160,328,45,3755,6258,5153,100,High,40,High,High,Critical
+2027-08-26,Thursday,August,Gangapur Road,Normal Day,Rainy,29,60095,64248,11638,37,10,23,3,214,356,341,10,Normal,92,Low,Low,Medium
+2027-08-27,Friday,August,Trimbakeshwar Temple,Normal Day,Sunny,36,110021,105441,19196,44,15,38,4,351,585,573,15,Normal,95,Medium,Low,Medium
+2027-08-28,Saturday,August,Panchavati,Normal Day,Sunny,32,47327,50462,9273,33,10,23,3,168,280,188,10,Low,91,Low,Low,Low
+2027-08-29,Sunday,August,CBS Nashik,Weekend,Sunny,34,148189,145517,28884,28,20,40,5,485,808,768,24,Normal,90,Medium,Low,Medium
+2027-08-30,Monday,August,CBS Nashik,Festival,Sunny,30,260470,287023,43831,20,41,82,11,956,1594,855,36,Low,74,Medium,Medium,High
+2027-08-31,Tuesday,August,Nimani,Normal Day,Sunny,36,65488,69506,11477,40,10,34,3,231,386,298,10,Normal,97,Low,Low,Low
+2027-09-01,Wednesday,September,Dwarka Circle,Normal Day,Sunny,37,57434,62842,12090,35,10,33,3,209,349,208,10,Normal,98,Low,Low,Low
+2027-09-02,Thursday,September,College Road,Normal Day,Rainy,22,43734,44156,8655,28,10,31,3,147,245,317,10,High,99,Low,Low,Medium
+2027-09-03,Friday,September,Panchavati,Normal Day,Sunny,37,49785,45137,7012,28,10,29,3,150,250,253,10,Normal,95,Low,Low,Low
+2027-09-04,Saturday,September,Ramkund,Normal Day,Cloudy,26,66659,66498,13192,39,10,26,3,221,369,262,10,Low,94,Low,Low,Low
+2027-09-05,Sunday,September,Tapovan,Weekend,Sunny,38,104028,102480,13674,37,14,41,4,341,569,496,11,Normal,90,Medium,Low,Medium
+2027-09-06,Monday,September,Ramkund,Normal Day,Sunny,34,49721,50386,7963,33,10,29,3,167,279,202,10,Low,99,Low,Low,Low
+2027-09-07,Tuesday,September,Shalimar,Normal Day,Cloudy,30,69119,72759,13113,43,10,25,3,242,404,237,10,Low,89,Low,Low,Low
+2027-09-08,Wednesday,September,Mumbai Naka,Normal Day,Rainy,27,18393,16867,2167,42,10,21,3,80,120,207,10,High,98,Low,Low,Low
+2027-09-09,Thursday,September,Nimani,Normal Day,Cloudy,25,24328,27061,4936,31,10,22,3,90,150,79,10,Low,93,Low,Low,Low
+2027-09-10,Friday,September,Gangapur Road,Festival,Cloudy,32,145080,151644,30173,18,21,55,6,505,842,725,25,Low,86,Medium,Medium,Medium
+2027-09-11,Saturday,September,Sadhugram,Normal Day,Sunny,31,21346,22004,3715,38,10,35,3,80,122,141,10,Normal,100,Low,Low,Low
+2027-09-12,Sunday,September,Adgaon Naka,Weekend,Rainy,24,61436,68464,9390,30,10,30,3,228,380,315,10,Normal,95,Low,Low,Medium
+2027-09-13,Monday,September,College Road,Normal Day,Sunny,36,24861,22990,3658,39,10,35,3,80,127,58,10,Normal,99,Low,Low,Low
+2027-09-14,Tuesday,September,Sadhugram,Normal Day,Cloudy,26,68285,72869,9053,33,10,32,3,242,404,304,10,Normal,92,Low,Low,Medium
+2027-09-15,Wednesday,September,Nimani,Shahi Snan,Sunny,36,651266,587372,73682,16,83,166,23,1957,3263,1474,61,High,55,High,Medium,Critical
+2027-09-16,Thursday,September,Godavari Ghat,Normal Day,Sunny,31,58345,55203,7989,45,10,35,3,184,306,228,10,Normal,98,Low,Low,Low
+2027-09-17,Friday,September,Tapovan,Normal Day,Sunny,35,26531,27088,4420,38,10,23,3,90,150,140,10,Low,98,Low,Low,Low
+2027-09-18,Saturday,September,Dwarka Circle,Normal Day,Rainy,28,17786,16175,2425,41,10,23,3,80,120,115,10,High,100,Low,Low,Low
+2027-09-19,Sunday,September,Sadhugram,Weekend,Sunny,36,156405,141736,26241,21,20,54,5,472,787,420,21,Normal,92,Medium,Low,Medium
+2027-09-20,Monday,September,Ramkund,Festival,Sunny,34,274668,304537,43988,26,43,94,12,1015,1691,1870,36,Normal,70,High,Medium,Critical
+2027-09-21,Tuesday,September,Gangapur Road,Normal Day,Rainy,29,36633,33054,5007,39,10,23,3,110,183,148,10,Normal,93,Low,Low,Low
+2027-09-22,Wednesday,September,CBS Nashik,Normal Day,Cloudy,28,69127,73519,10331,38,10,34,3,245,408,309,10,Low,94,Low,Low,Medium
+2027-09-23,Thursday,September,Sadhugram,Normal Day,Sunny,32,60756,61975,10729,43,10,23,3,206,344,224,10,Low,90,Low,Low,Low
+2027-09-24,Friday,September,Sadhugram,Normal Day,Cloudy,31,62313,60110,8084,42,10,32,3,200,333,295,10,Normal,96,Low,Low,Low
+2027-09-25,Saturday,September,Gangapur Road,Shahi Snan,Sunny,30,618738,579230,84495,14,82,174,23,1930,3217,1552,70,High,51,High,Medium,Critical
+2027-09-26,Sunday,September,Ramkund,Weekend,Sunny,32,128438,132759,26269,21,18,47,5,442,737,443,21,Normal,84,Medium,Low,Medium
+2027-09-27,Monday,September,Trimbakeshwar Temple,Normal Day,Sunny,33,118049,119135,17952,45,17,37,4,397,661,767,14,Low,88,Medium,Low,Medium
+2027-09-28,Tuesday,September,Mumbai Naka,Normal Day,Sunny,34,19213,17376,2573,33,10,29,3,80,120,65,10,Normal,94,Low,Low,Low
+2027-09-29,Wednesday,September,Mumbai Naka,Normal Day,Cloudy,31,30495,33866,6579,35,10,27,3,112,188,165,10,Low,100,Low,Low,Low
+2027-09-30,Thursday,September,Sadhugram,Festival,Rainy,27,325593,333436,63707,13,47,102,13,1111,1852,1802,53,High,71,High,Medium,Critical
+2027-10-01,Friday,October,Nimani,Normal Day,Cloudy,29,25666,27777,3469,36,10,34,3,92,154,170,10,Normal,96,Low,Low,Low
+2027-10-02,Saturday,October,Nimani,Normal Day,Sunny,32,35743,38743,5332,42,10,20,3,129,215,237,10,Normal,96,Low,Low,Low
+2027-10-03,Sunday,October,College Road,Weekend,Sunny,35,95005,93418,11745,44,13,39,3,311,518,543,10,Low,96,Low,Low,Medium
+2027-10-04,Monday,October,Ramkund,Normal Day,Sunny,35,26849,28481,4140,44,10,30,3,94,158,119,10,Low,93,Low,Low,Low
+2027-10-05,Tuesday,October,Mumbai Naka,Shahi Snan,Cloudy,30,562287,531103,94812,10,75,157,21,1770,2950,2475,79,High,53,High,High,Critical
+2027-10-06,Wednesday,October,CBS Nashik,Normal Day,Rainy,29,37887,39259,5216,41,10,28,3,130,218,403,10,Normal,92,Low,Low,Medium
+2027-10-07,Thursday,October,Adgaon Naka,Normal Day,Sunny,31,29166,32558,6350,41,10,33,3,108,180,142,10,Normal,95,Low,Low,Low
+2027-10-08,Friday,October,Panchavati,Normal Day,Cloudy,25,68208,63411,11117,32,10,23,3,211,352,277,10,Low,92,Low,Low,Low
+2027-10-09,Saturday,October,Mhasrul,Normal Day,Sunny,36,18960,18467,2453,28,10,31,3,80,120,83,10,Normal,95,Low,Low,Low
+2027-10-10,Sunday,October,Sadhugram,Weekend,Rainy,29,95137,88098,11452,44,12,30,3,293,489,343,10,High,94,Low,Low,Medium
+2027-10-11,Monday,October,Tapovan,Normal Day,Cloudy,26,23422,21295,3843,33,10,30,3,80,120,126,10,Normal,95,Low,Low,Low
+2027-10-12,Tuesday,October,Adgaon Naka,Normal Day,Sunny,34,34036,33607,4118,38,10,34,3,112,186,109,10,Low,95,Low,Low,Low
+2027-10-13,Wednesday,October,Godavari Ghat,Normal Day,Sunny,38,86280,87435,16746,33,12,33,3,291,485,281,13,Low,91,Low,Low,Medium
+2027-10-14,Thursday,October,Sadhugram,Normal Day,Sunny,33,52528,52592,10089,30,10,26,3,175,292,227,10,Normal,98,Low,Low,Low
+2027-10-15,Friday,October,College Road,Shahi Snan,Rainy,23,433611,437625,81882,14,62,129,17,1458,2431,2187,68,High,61,High,Medium,Critical
+2027-10-16,Saturday,October,Dwarka Circle,Normal Day,Sunny,36,50212,54126,7033,40,10,27,3,180,300,333,10,Low,93,Low,Low,Medium
+2027-10-17,Sunday,October,Tapovan,Weekend,Sunny,35,164775,171028,27207,23,24,63,6,570,950,554,22,Low,81,Medium,Low,Medium
+2027-10-18,Monday,October,Godavari Ghat,Normal Day,Cloudy,29,53316,51235,6241,38,10,28,3,170,284,142,10,Normal,94,Low,Low,Low
+2027-10-19,Tuesday,October,Godavari Ghat,Normal Day,Rainy,24,35265,37100,7031,33,10,31,3,123,206,192,10,High,94,Low,Low,Low
+2027-10-20,Wednesday,October,Sadhugram,Festival,Sunny,33,269298,256328,32384,19,36,72,10,854,1424,1652,26,Normal,79,Medium,Medium,High
+2027-10-21,Thursday,October,Adgaon Naka,Normal Day,Sunny,36,47169,51585,9601,37,10,27,3,171,286,233,10,Normal,92,Low,Low,Low
+2027-10-22,Friday,October,Mhasrul,Normal Day,Sunny,33,39489,35663,6384,36,10,22,3,118,198,149,10,Low,94,Low,Low,Low
+2027-10-23,Saturday,October,Tapovan,Normal Day,Cloudy,31,52653,52292,9033,32,10,33,3,174,290,339,10,Normal,96,Low,Low,Medium
+2027-10-24,Sunday,October,Nimani,Weekend,Sunny,38,99832,104197,17501,35,14,43,4,347,578,367,14,Normal,89,Medium,Low,Medium
+2027-10-25,Monday,October,Adgaon Naka,Shahi Snan,Sunny,38,300954,282487,46095,27,40,89,11,941,1569,1529,38,High,73,Medium,Medium,High
+2027-10-26,Tuesday,October,Mhasrul,Normal Day,Sunny,35,36229,40489,7720,38,10,22,3,134,224,153,10,Normal,98,Low,Low,Low
+2027-10-27,Wednesday,October,Panchavati,Normal Day,Cloudy,30,40046,40580,7933,41,10,22,3,135,225,107,10,Low,96,Low,Low,Low
+2027-10-28,Thursday,October,Adgaon Naka,Normal Day,Cloudy,27,30631,33058,5212,45,10,30,3,110,183,122,10,Normal,99,Low,Low,Low
+2027-07-01,Thursday,July,CBS Nashik,Normal Day,Cloudy,30,61056,57102,10886,34,10,28,3,190,317,340,10,Low,96,Low,Low,Medium
+2027-07-02,Friday,July,Dwarka Circle,Normal Day,Cloudy,28,58259,54751,7154,40,10,31,3,182,304,232,10,Normal,95,Low,Low,Low
+2027-07-03,Saturday,July,Ramkund,Normal Day,Rainy,26,96577,105882,20247,43,15,38,4,352,588,614,16,High,89,Medium,Low,Medium
+2027-07-04,Sunday,July,Mumbai Naka,Weekend,Sunny,32,87862,85210,16048,31,12,39,3,284,473,223,13,Low,96,Low,Low,Medium
+2027-07-05,Monday,July,Trimbakeshwar Temple,Shahi Snan,Rainy,25,624223,564460,90313,10,80,164,22,1881,3135,2761,75,High,49,High,High,Critical
+2027-07-06,Tuesday,July,Dwarka Circle,Normal Day,Sunny,30,19741,22104,3500,28,10,35,3,80,122,136,10,Normal,98,Low,Low,Low
+2027-07-07,Wednesday,July,Sadhugram,Normal Day,Sunny,35,31820,30316,5617,37,10,35,3,101,168,129,10,Normal,97,Low,Low,Low
+2027-07-08,Thursday,July,College Road,Normal Day,Sunny,37,37604,41583,6133,40,10,33,3,138,231,244,10,Low,93,Low,Low,Low
+2027-07-09,Friday,July,Gangapur Road,Normal Day,Sunny,30,48935,52167,7875,38,10,22,3,173,289,313,10,Normal,95,Low,Low,Medium
+2027-07-10,Saturday,July,Godavari Ghat,Festival,Cloudy,27,194098,174939,22064,40,24,50,6,583,971,442,18,Low,88,Medium,Low,Medium
+2027-07-11,Sunday,July,Mhasrul,Weekend,Rainy,29,105780,113490,18306,34,16,39,4,378,630,403,15,High,87,Medium,Low,Medium
+2027-07-12,Monday,July,Nimani,Normal Day,Cloudy,27,57085,62651,8456,28,10,35,3,208,348,187,10,Low,96,Low,Low,Low
+2027-07-13,Tuesday,July,Trimbakeshwar Temple,Normal Day,Sunny,30,108757,116553,15524,43,16,45,4,388,647,682,12,Normal,90,Medium,Low,Medium
+2027-07-14,Wednesday,July,Godavari Ghat,Normal Day,Sunny,38,50974,56994,11166,29,10,31,3,189,316,220,10,Low,97,Low,Low,Low
+2027-07-15,Thursday,July,Gangapur Road,Shahi Snan,Sunny,38,503032,549932,100305,7,78,162,21,1833,3055,2383,83,High,57,High,High,Critical
+2027-07-16,Friday,July,Panchavati,Normal Day,Cloudy,28,35210,34995,5224,42,10,33,3,116,194,146,10,Normal,94,Low,Low,Low
+2027-07-17,Saturday,July,Nimani,Normal Day,Sunny,32,57619,60302,9420,39,10,33,3,201,335,164,10,Low,95,Low,Low,Low
+2027-07-18,Sunday,July,Gangapur Road,Weekend,Sunny,36,119378,121861,24174,36,17,34,4,406,677,649,20,Normal,86,Medium,Low,Medium
+2027-07-19,Monday,July,Trimbakeshwar Temple,Normal Day,Sunny,31,119449,124180,17462,36,17,34,4,413,689,619,14,Normal,91,Medium,Low,Medium
+2027-07-20,Tuesday,July,Mhasrul,Festival,Sunny,35,160385,148296,20164,32,21,52,5,494,823,838,16,Low,88,Medium,Low,Medium
+2027-07-21,Wednesday,July,Panchavati,Normal Day,Sunny,32,68013,75775,10605,33,10,25,3,252,420,450,10,Low,90,Low,Low,Medium
+2027-07-22,Thursday,July,College Road,Normal Day,Sunny,38,14748,14323,2418,29,10,28,3,80,120,66,10,Normal,99,Low,Low,Low
+2027-07-23,Friday,July,College Road,Normal Day,Sunny,36,23142,25406,3769,32,10,26,3,84,141,135,10,Normal,95,Low,Low,Low
+2027-07-24,Saturday,July,Shalimar,Normal Day,Sunny,32,25376,25008,3610,36,10,22,3,83,138,62,10,Normal,94,Low,Low,Low
+2027-07-25,Sunday,July,Mumbai Naka,Weekend,Rainy,24,87247,88895,16315,34,12,35,3,296,493,600,13,High,96,Low,Low,Medium
+2027-07-26,Monday,July,Trimbakeshwar Temple,Normal Day,Rainy,26,45433,43691,8312,31,10,26,3,145,242,351,10,Normal,92,Low,Low,Medium
+2027-07-27,Tuesday,July,CBS Nashik,Normal Day,Sunny,33,31653,28987,4808,34,10,33,3,96,161,94,10,Low,97,Low,Low,Low
+2027-07-28,Wednesday,July,Gangapur Road,Normal Day,Sunny,36,23579,22856,4165,34,10,30,3,80,126,110,10,Normal,95,Low,Low,Low
+2027-07-29,Thursday,July,Nimani,Normal Day,Sunny,38,21991,21732,4223,39,10,33,3,80,120,65,10,Low,100,Low,Low,Low
+2027-07-30,Friday,July,Gangapur Road,Festival,Rainy,28,161221,156933,25741,23,22,48,6,523,871,548,21,High,86,Medium,Low,Medium
+2027-07-31,Saturday,July,Sadhugram,Normal Day,Cloudy,29,21975,24082,3685,38,10,23,3,80,133,112,10,Normal,97,Low,Low,Low
+2027-08-01,Sunday,August,Panchavati,Weekend,Cloudy,27,135213,129514,25286,23,18,45,5,431,719,526,21,Low,91,Medium,Low,Medium
+2027-08-02,Monday,August,Mhasrul,Normal Day,Sunny,38,24955,24229,3736,42,10,25,3,80,134,156,10,Normal,96,Low,Low,Low
+2027-08-03,Tuesday,August,Mhasrul,Normal Day,Sunny,36,41548,44365,7429,36,10,22,3,147,246,189,10,Normal,97,Low,Low,Low
+2027-08-04,Wednesday,August,Mhasrul,Normal Day,Cloudy,28,15680,16018,2299,42,10,31,3,80,120,64,10,Normal,97,Low,Low,Low
+2027-08-05,Thursday,August,College Road,Shahi Snan,Cloudy,32,522458,491658,61955,12,70,141,19,1638,2731,2227,51,High,61,High,Medium,Critical
+2027-08-06,Friday,August,Tapovan,Normal Day,Cloudy,29,23528,21352,4222,32,10,23,3,80,120,60,10,Low,98,Low,Low,Low
+2027-08-07,Saturday,August,Shalimar,Normal Day,Sunny,37,33271,36779,6556,43,10,31,3,122,204,155,10,Low,98,Low,Low,Low
+2027-08-08,Sunday,August,Gangapur Road,Weekend,Sunny,31,122114,119665,20115,35,17,42,4,398,664,598,16,Normal,91,Medium,Low,Medium
+2027-08-09,Monday,August,Sadhugram,Normal Day,Sunny,31,62302,67114,12912,41,10,35,3,223,372,233,10,Low,94,Low,Low,Low
+2027-08-10,Tuesday,August,College Road,Festival,Sunny,30,110233,108612,15062,35,15,43,4,362,603,676,12,Normal,91,Medium,Low,Medium
+2027-08-11,Wednesday,August,Trimbakeshwar Temple,Normal Day,Rainy,22,79597,77266,14855,30,11,26,3,257,429,283,12,High,95,Low,Low,Low
+2027-08-12,Thursday,August,Gangapur Road,Normal Day,Sunny,37,31479,30823,4931,45,10,24,3,102,171,153,10,Low,98,Low,Low,Low
+2027-08-13,Friday,August,Sadhugram,Normal Day,Sunny,36,87529,79993,12015,30,11,30,3,266,444,242,10,Low,94,Low,Low,Low
+2027-08-14,Saturday,August,Ramkund,Normal Day,Cloudy,31,55972,55001,10015,37,10,32,3,183,305,279,10,Normal,95,Low,Low,Low
+2027-08-15,Sunday,August,Nimani,Weekend,Sunny,32,83831,80492,9737,44,11,23,3,268,447,271,10,Normal,93,Low,Low,Medium
+2027-08-16,Monday,August,College Road,Normal Day,Sunny,30,51185,53099,6665,44,10,27,3,176,294,242,10,Low,91,Low,Low,Low
+2027-08-17,Tuesday,August,Mumbai Naka,Normal Day,Sunny,36,48428,48230,9328,39,10,31,3,160,267,272,10,Normal,92,Low,Low,Low
+2027-08-18,Wednesday,August,Godavari Ghat,Normal Day,Cloudy,27,52155,50409,9426,35,10,32,3,168,280,217,10,Low,96,Low,Low,Low
+2027-08-19,Thursday,August,Adgaon Naka,Normal Day,Cloudy,28,56173,52681,8446,40,10,24,3,175,292,213,10,Low,95,Low,Low,Low
+2027-08-20,Friday,August,Sadhugram,Festival,Rainy,27,218997,244051,43284,25,34,77,9,813,1355,1085,36,High,82,Medium,Medium,High
+2027-08-21,Saturday,August,Panchavati,Normal Day,Sunny,33,76972,75769,13632,43,10,27,3,252,420,213,11,Low,93,Low,Low,Low
+2027-08-22,Sunday,August,Adgaon Naka,Weekend,Sunny,35,105851,117968,23013,28,16,47,4,393,655,454,19,Low,87,Medium,Low,Medium
+2027-08-23,Monday,August,Tapovan,Normal Day,Sunny,31,63433,63707,10512,37,10,35,3,212,353,189,10,Normal,93,Low,Low,Low
+2027-08-24,Tuesday,August,Shalimar,Normal Day,Cloudy,30,65879,59543,10238,40,10,27,3,198,330,153,10,Low,93,Low,Low,Low
+2027-08-25,Wednesday,August,Nimani,Shahi Snan,Cloudy,29,302080,329846,43563,28,47,103,13,1099,1832,1450,36,High,69,High,Medium,High
+2027-08-26,Thursday,August,Godavari Ghat,Normal Day,Sunny,37,75231,76457,9456,35,10,33,3,254,424,273,10,Low,92,Low,Low,Low
+2027-08-27,Friday,August,Sadhugram,Normal Day,Sunny,33,59958,64902,11852,29,10,20,3,216,360,255,10,Low,97,Low,Low,Low
+2027-08-28,Saturday,August,Dwarka Circle,Normal Day,Sunny,37,67290,68512,10298,37,10,30,3,228,380,188,10,Normal,98,Low,Low,Low
+2027-08-29,Sunday,August,Mhasrul,Weekend,Sunny,30,60484,60949,11250,28,10,32,3,203,338,288,10,Normal,95,Low,Low,Low
+2027-08-30,Monday,August,Dwarka Circle,Festival,Sunny,30,206275,209246,39111,25,29,63,8,697,1162,1303,32,Low,81,Medium,Medium,High
+2027-08-31,Tuesday,August,Gangapur Road,Normal Day,Sunny,36,13768,13992,2151,32,10,23,3,80,120,77,10,Normal,99,Low,Low,Low
+2027-09-01,Wednesday,September,Ramkund,Normal Day,Sunny,34,91521,101100,12707,39,14,38,4,337,561,627,10,Normal,95,Medium,Low,Medium
+2027-09-02,Thursday,September,Sadhugram,Normal Day,Rainy,23,76597,76825,15273,43,10,23,3,256,426,541,12,High,94,Low,Low,Medium
+2027-09-03,Friday,September,Adgaon Naka,Normal Day,Cloudy,29,20458,18432,2248,44,10,32,3,80,120,67,10,Normal,100,Low,Low,Low
+2027-09-04,Saturday,September,Mhasrul,Normal Day,Sunny,33,51122,56296,10487,44,10,31,3,187,312,348,10,Low,94,Low,Low,Medium
+2027-09-05,Sunday,September,Shalimar,Weekend,Rainy,22,129163,141258,23441,35,20,46,5,470,784,612,19,High,88,Medium,Low,Medium
+2027-09-06,Monday,September,Gangapur Road,Normal Day,Sunny,35,39244,36177,4934,28,10,22,3,120,200,146,10,Normal,95,Low,Low,Low
+2027-09-07,Tuesday,September,Gangapur Road,Normal Day,Sunny,34,45591,42058,7949,31,10,35,3,140,233,125,10,Low,100,Low,Low,Low
+2027-09-08,Wednesday,September,Panchavati,Normal Day,Cloudy,31,47389,51343,9854,29,10,20,3,171,285,172,10,Low,99,Low,Low,Low
+2027-09-09,Thursday,September,Panchavati,Normal Day,Sunny,35,47138,52312,10172,30,10,20,3,174,290,331,10,Low,97,Low,Low,Medium
+2027-09-10,Friday,September,Mumbai Naka,Festival,Sunny,36,220953,212085,35124,22,30,62,8,706,1178,1270,29,Normal,86,Medium,Medium,High
+2027-09-11,Saturday,September,CBS Nashik,Normal Day,Sunny,32,30317,33260,4120,39,10,24,3,110,184,195,10,Low,97,Low,Low,Low
+2027-09-12,Sunday,September,Sadhugram,Weekend,Sunny,30,107369,103107,17619,39,14,34,4,343,572,492,14,Low,93,Medium,Low,Medium
+2027-09-13,Monday,September,Godavari Ghat,Normal Day,Sunny,34,59000,57062,9372,31,10,33,3,190,317,205,10,Low,96,Low,Low,Low
+2027-09-14,Tuesday,September,Dwarka Circle,Normal Day,Sunny,31,55498,54350,8267,43,10,25,3,181,301,209,10,Normal,99,Low,Low,Low
+2027-09-15,Wednesday,September,Adgaon Naka,Shahi Snan,Sunny,34,677952,690191,95724,15,98,200,27,2300,3834,1784,79,High,44,High,High,Critical
+2027-09-16,Thursday,September,Shalimar,Normal Day,Rainy,22,23158,20986,3117,43,10,21,3,80,120,258,10,High,100,Low,Low,Low
+2027-09-17,Friday,September,Shalimar,Normal Day,Sunny,32,56294,61459,8325,44,10,27,3,204,341,365,10,Normal,93,Low,Low,Medium
+2027-09-18,Saturday,September,Ramkund,Normal Day,Sunny,34,73753,71456,13193,32,10,31,3,238,396,189,10,Low,93,Low,Low,Low
+2027-09-19,Sunday,September,Shalimar,Weekend,Cloudy,28,138101,151795,25943,22,21,46,6,505,843,525,21,Normal,91,Medium,Low,Medium
+2027-09-20,Monday,September,Mumbai Naka,Festival,Sunny,36,232541,230443,38389,24,32,71,9,768,1280,637,31,Normal,84,Medium,Medium,Medium
+2027-09-21,Tuesday,September,Sadhugram,Normal Day,Sunny,36,69144,65265,9100,45,10,24,3,217,362,416,10,Normal,96,Low,Low,Medium
+2027-09-22,Wednesday,September,Gangapur Road,Normal Day,Sunny,30,16130,16387,2447,28,10,31,3,80,120,106,10,Normal,99,Low,Low,Low
+2027-09-23,Thursday,September,Mhasrul,Normal Day,Cloudy,30,25777,27838,4056,42,10,26,3,92,154,142,10,Normal,93,Low,Low,Low
+2027-09-24,Friday,September,Adgaon Naka,Normal Day,Sunny,35,29253,31262,4746,35,10,29,3,104,173,121,10,Low,93,Low,Low,Low
+2027-09-25,Saturday,September,College Road,Shahi Snan,Sunny,33,357813,350757,69059,16,50,115,14,1169,1948,1760,57,High,69,High,Medium,High
+2027-09-26,Sunday,September,College Road,Weekend,Cloudy,30,72080,76207,11590,38,10,20,3,254,423,476,10,Low,92,Low,Low,Medium
+2027-09-27,Monday,September,Gangapur Road,Normal Day,Sunny,31,23679,21907,3125,34,10,25,3,80,121,59,10,Normal,95,Low,Low,Low
+2027-09-28,Tuesday,September,Shalimar,Normal Day,Sunny,34,56816,58552,10590,29,10,31,3,195,325,318,10,Normal,96,Low,Low,Medium
+2027-09-29,Wednesday,September,Godavari Ghat,Normal Day,Sunny,38,97557,101637,16241,35,14,28,4,338,564,362,13,Low,95,Medium,Low,Medium
+2027-09-30,Thursday,September,Mhasrul,Festival,Cloudy,25,173999,181816,30968,28,25,62,7,606,1010,819,25,Normal,88,Medium,Low,Medium
+2027-10-01,Friday,October,College Road,Normal Day,Cloudy,27,32293,35904,6187,30,10,30,3,119,199,128,10,Normal,100,Low,Low,Low
+2027-10-02,Saturday,October,Sadhugram,Normal Day,Sunny,38,63447,57454,8626,28,10,32,3,191,319,324,10,Normal,96,Low,Low,Medium
+2027-10-03,Sunday,October,Gangapur Road,Weekend,Rainy,24,75137,71241,12415,37,10,35,3,237,395,466,10,High,95,Low,Low,Medium
+2027-10-04,Monday,October,Nimani,Normal Day,Sunny,33,49621,48913,7430,41,10,26,3,163,271,190,10,Low,93,Low,Low,Low
+2027-10-05,Tuesday,October,Tapovan,Shahi Snan,Sunny,38,501241,558759,76203,12,79,161,22,1862,3104,2336,63,High,56,High,Medium,Critical
+2027-10-06,Wednesday,October,Ramkund,Normal Day,Rainy,24,81884,89262,15170,29,12,29,3,297,495,365,12,High,92,Low,Low,Medium
+2027-10-07,Thursday,October,Panchavati,Normal Day,Rainy,24,60830,63628,11272,45,10,33,3,212,353,512,10,Normal,92,Low,Low,Medium
+2027-10-08,Friday,October,Gangapur Road,Normal Day,Sunny,37,13633,14669,2405,33,10,24,3,80,120,88,10,Normal,100,Low,Low,Low
+2027-10-09,Saturday,October,Gangapur Road,Normal Day,Rainy,29,17721,19046,3367,41,10,31,3,80,120,185,10,High,99,Low,Low,Low
+2027-10-10,Sunday,October,Nimani,Weekend,Sunny,31,102223,113982,21893,36,16,36,4,379,633,598,18,Low,90,Medium,Low,Medium
+2027-10-11,Monday,October,Sadhugram,Normal Day,Sunny,32,55082,61622,10959,44,10,28,3,205,342,365,10,Low,92,Low,Low,Medium
+2027-10-12,Tuesday,October,Dwarka Circle,Normal Day,Cloudy,32,42998,41187,6493,40,10,29,3,137,228,203,10,Normal,94,Low,Low,Low
+2027-10-13,Wednesday,October,Panchavati,Normal Day,Rainy,22,74692,72949,13110,31,10,25,3,243,405,354,10,High,94,Low,Low,Medium
+2027-10-14,Thursday,October,Tapovan,Normal Day,Sunny,33,56128,62716,11838,43,10,33,3,209,348,237,10,Normal,96,Low,Low,Low
+2027-10-15,Friday,October,Panchavati,Shahi Snan,Cloudy,29,348819,364685,57598,17,52,111,14,1215,2026,1953,47,High,71,High,Medium,Critical
+2027-10-16,Saturday,October,Trimbakeshwar Temple,Normal Day,Sunny,31,88419,88454,12906,44,12,35,3,294,491,374,10,Low,95,Low,Low,Medium
+2027-10-17,Sunday,October,Ramkund,Weekend,Sunny,30,136558,140404,17703,33,20,51,5,468,780,511,14,Low,88,Medium,Low,Medium
+2027-10-18,Monday,October,College Road,Normal Day,Rainy,29,47196,44727,6844,44,10,32,3,149,248,227,10,High,93,Low,Low,Low
+2027-10-19,Tuesday,October,Gangapur Road,Normal Day,Sunny,38,52065,56562,10430,39,10,35,3,188,314,322,10,Normal,92,Low,Low,Medium
+2027-10-20,Wednesday,October,Adgaon Naka,Festival,Cloudy,26,124719,114344,13944,28,16,42,4,381,635,589,11,Normal,90,Medium,Low,Medium
+2027-10-21,Thursday,October,Godavari Ghat,Normal Day,Rainy,23,75984,85045,15564,30,12,26,3,283,472,362,12,High,90,Low,Low,Medium
+2027-10-22,Friday,October,Godavari Ghat,Normal Day,Cloudy,31,64878,63561,9565,30,10,32,3,211,353,230,10,Normal,90,Low,Low,Low
+2027-10-23,Saturday,October,Adgaon Naka,Normal Day,Rainy,25,36389,38921,4835,30,10,28,3,129,216,366,10,High,99,Low,Low,Medium
+2027-10-24,Sunday,October,Adgaon Naka,Weekend,Sunny,31,80875,74638,9999,32,10,28,3,248,414,416,10,Low,89,Low,Low,Medium
+2027-10-25,Monday,October,Trimbakeshwar Temple,Shahi Snan,Sunny,34,1217986,1310624,197986,7,187,383,52,4368,7281,6783,100,High,40,High,High,Critical
+2027-10-26,Tuesday,October,Godavari Ghat,Normal Day,Sunny,33,45760,42415,6533,39,10,27,3,141,235,144,10,Normal,92,Low,Low,Low
+2027-10-27,Wednesday,October,Sadhugram,Normal Day,Sunny,37,72538,66795,10509,30,10,35,3,222,371,199,10,Low,91,Low,Low,Low
+2027-10-28,Thursday,October,Panchavati,Normal Day,Cloudy,28,54209,55548,9815,28,10,27,3,185,308,329,10,Normal,97,Low,Low,Medium
+2027-07-01,Thursday,July,Shalimar,Normal Day,Sunny,38,29807,29483,3713,45,10,22,3,98,163,156,10,Normal,95,Low,Low,Low
+2027-07-02,Friday,July,Godavari Ghat,Normal Day,Sunny,37,58374,64524,8210,36,10,25,3,215,358,315,10,Low,92,Low,Low,Medium
+2027-07-03,Saturday,July,Nimani,Normal Day,Sunny,33,41349,38456,6662,28,10,26,3,128,213,128,10,Low,99,Low,Low,Low
+2027-07-04,Sunday,July,Nimani,Weekend,Sunny,34,87325,88382,11125,33,12,39,3,294,491,392,10,Low,91,Low,Low,Medium
+2027-07-05,Monday,July,Panchavati,Shahi Snan,Sunny,36,857710,881220,163920,6,125,258,35,2937,4895,5300,100,High,40,High,High,Critical
+2027-07-06,Tuesday,July,Trimbakeshwar Temple,Normal Day,Sunny,34,93729,99499,18372,41,14,32,3,331,552,444,15,Normal,87,Low,Low,Medium
+2027-07-07,Wednesday,July,CBS Nashik,Normal Day,Rainy,23,41531,43789,6592,33,10,30,3,145,243,173,10,Normal,92,Low,Low,Low
+2027-07-08,Thursday,July,Adgaon Naka,Normal Day,Sunny,35,41946,39130,5388,38,10,21,3,130,217,235,10,Normal,95,Low,Low,Low
+2027-07-09,Friday,July,Nimani,Normal Day,Cloudy,25,54675,50726,7999,40,10,22,3,169,281,313,10,Normal,94,Low,Low,Medium
+2027-07-10,Saturday,July,Mhasrul,Festival,Sunny,38,127695,135537,19879,41,19,39,5,451,752,774,16,Low,86,Medium,Low,Medium
+2027-07-11,Sunday,July,Sadhugram,Weekend,Sunny,31,175270,171242,28898,23,24,52,6,570,951,688,24,Normal,85,Medium,Low,Medium
+2027-07-12,Monday,July,Trimbakeshwar Temple,Normal Day,Sunny,38,120205,108994,18800,44,15,33,4,363,605,375,15,Normal,93,Medium,Low,Medium
+2027-07-13,Tuesday,July,Dwarka Circle,Normal Day,Sunny,37,28995,27116,3577,34,10,29,3,90,150,75,10,Low,98,Low,Low,Low
+2027-07-14,Wednesday,July,Ramkund,Normal Day,Sunny,31,95792,93953,11537,37,13,30,3,313,521,507,10,Normal,95,Low,Low,Medium
+2027-07-15,Thursday,July,Mhasrul,Shahi Snan,Cloudy,27,617706,581761,108277,9,83,170,23,1939,3232,1532,90,High,54,High,High,Critical
+2027-07-16,Friday,July,Tapovan,Normal Day,Sunny,37,24572,22157,3945,43,10,35,3,80,123,61,10,Low,94,Low,Low,Low
+2027-07-17,Saturday,July,Mhasrul,Normal Day,Sunny,33,38161,34990,6420,34,10,32,3,116,194,132,10,Normal,100,Low,Low,Low
+2027-07-18,Sunday,July,Panchavati,Weekend,Sunny,33,130355,137303,19490,40,19,41,5,457,762,726,16,Low,91,Medium,Low,Medium
+2027-07-19,Monday,July,CBS Nashik,Normal Day,Rainy,22,37108,34550,5421,31,10,22,3,115,191,295,10,High,94,Low,Low,Low
+2027-07-20,Tuesday,July,Godavari Ghat,Festival,Sunny,38,261217,280619,49306,21,40,83,11,935,1558,1632,41,Normal,78,Medium,Medium,High
+2027-07-21,Wednesday,July,Gangapur Road,Normal Day,Sunny,33,40850,43013,6612,35,10,28,3,143,238,212,10,Low,92,Low,Low,Low
+2027-07-22,Thursday,July,CBS Nashik,Normal Day,Sunny,36,65030,70219,11469,34,10,24,3,234,390,413,10,Low,96,Low,Low,Medium
+2027-07-23,Friday,July,Mumbai Naka,Normal Day,Cloudy,30,41794,40182,7050,33,10,21,3,133,223,117,10,Low,95,Low,Low,Low
+2027-07-24,Saturday,July,Trimbakeshwar Temple,Normal Day,Cloudy,28,70758,77150,10466,29,11,22,3,257,428,336,10,Normal,92,Low,Low,Medium
+2027-07-25,Sunday,July,Mhasrul,Weekend,Cloudy,27,76678,80481,12427,35,11,23,3,268,447,452,10,Normal,89,Low,Low,Medium
+2027-07-26,Monday,July,Gangapur Road,Normal Day,Cloudy,27,40535,41865,8142,29,10,20,3,139,232,205,10,Normal,98,Low,Low,Low
+2027-07-27,Tuesday,July,Gangapur Road,Normal Day,Sunny,36,59382,54902,10775,41,10,32,3,183,305,167,10,Normal,96,Low,Low,Low
+2027-07-28,Wednesday,July,Mumbai Naka,Normal Day,Rainy,24,23471,26226,3476,33,10,23,3,87,145,182,10,Normal,94,Low,Low,Low
+2027-07-29,Thursday,July,Gangapur Road,Normal Day,Sunny,35,46414,44193,5783,32,10,22,3,147,245,244,10,Normal,100,Low,Low,Low
+2027-07-30,Friday,July,Mumbai Naka,Festival,Cloudy,30,228435,217386,28687,26,31,70,8,724,1207,1128,23,Normal,80,Medium,Low,High
+2027-07-31,Saturday,July,Sadhugram,Normal Day,Sunny,36,68359,72743,13474,32,10,25,3,242,404,450,11,Normal,89,Low,Low,Medium
+2027-08-01,Sunday,August,Mumbai Naka,Weekend,Sunny,32,115092,119433,21391,36,17,35,4,398,663,685,17,Normal,91,Medium,Low,Medium
+2027-08-02,Monday,August,Mhasrul,Normal Day,Sunny,37,12163,11236,1738,39,10,29,3,80,120,32,10,Low,100,Low,Low,Low
+2027-08-03,Tuesday,August,Panchavati,Normal Day,Sunny,31,47114,48584,9295,42,10,26,3,161,269,315,10,Normal,93,Low,Low,Medium
+2027-08-04,Wednesday,August,Godavari Ghat,Normal Day,Rainy,22,77396,79306,15690,30,11,33,3,264,440,278,13,High,90,Low,Low,Low
+2027-08-05,Thursday,August,Godavari Ghat,Shahi Snan,Sunny,37,996402,1080881,163017,10,154,314,43,3602,6004,6047,100,High,40,High,High,Critical
+2027-08-06,Friday,August,Sadhugram,Normal Day,Sunny,37,70001,78192,12109,31,11,37,3,260,434,392,10,Low,93,Low,Low,Medium
+2027-08-07,Saturday,August,Nimani,Normal Day,Cloudy,28,44308,41468,6582,36,10,23,3,138,230,109,10,Low,93,Low,Low,Low
+2027-08-08,Sunday,August,Ramkund,Weekend,Rainy,26,202097,193217,29011,20,27,54,7,644,1073,1160,24,Normal,79,Medium,Medium,High
+2027-08-09,Monday,August,Panchavati,Normal Day,Cloudy,29,64260,70330,10033,40,10,22,3,234,390,447,10,Normal,95,Low,Low,Medium
+2027-08-10,Tuesday,August,CBS Nashik,Festival,Sunny,38,250641,236858,39734,21,33,70,9,789,1315,1118,33,Normal,78,Medium,Medium,High
+2027-08-11,Wednesday,August,Trimbakeshwar Temple,Normal Day,Rainy,25,95203,103317,12708,31,14,34,4,344,573,696,10,High,92,Medium,Low,Medium
+2027-08-12,Thursday,August,Mhasrul,Normal Day,Cloudy,31,34164,32812,5885,32,10,30,3,109,182,176,10,Normal,94,Low,Low,Low
+2027-08-13,Friday,August,Shalimar,Normal Day,Cloudy,25,69899,75304,11128,35,10,33,3,251,418,207,10,Normal,89,Low,Low,Low
+2027-08-14,Saturday,August,Mumbai Naka,Normal Day,Cloudy,26,37684,39676,5674,37,10,35,3,132,220,160,10,Normal,94,Low,Low,Low
+2027-08-15,Sunday,August,Panchavati,Weekend,Rainy,28,140416,144897,23809,30,20,41,5,482,804,531,19,Normal,90,Medium,Low,Medium
+2027-08-16,Monday,August,College Road,Normal Day,Sunny,33,31917,31118,5614,41,10,35,3,103,172,140,10,Low,96,Low,Low,Low
+2027-08-17,Tuesday,August,Adgaon Naka,Normal Day,Sunny,30,31780,30360,3805,37,10,29,3,101,168,153,10,Low,97,Low,Low,Low
+2027-08-18,Wednesday,August,Shalimar,Normal Day,Cloudy,25,60913,57437,8988,33,10,32,3,191,319,344,10,Normal,96,Low,Low,Medium
+2027-08-19,Thursday,August,Gangapur Road,Normal Day,Cloudy,25,55941,57105,9569,40,10,21,3,190,317,157,10,Low,91,Low,Low,Low
+2027-08-20,Friday,August,Tapovan,Festival,Rainy,27,173546,166797,33055,22,23,52,6,555,926,719,27,High,88,Medium,Low,Medium
+2027-08-21,Saturday,August,Adgaon Naka,Normal Day,Sunny,33,45716,46085,7951,32,10,28,3,153,256,152,10,Normal,99,Low,Low,Low
+2027-08-22,Sunday,August,Gangapur Road,Weekend,Cloudy,27,121019,133126,25124,24,19,49,5,443,739,706,20,Low,85,Medium,Low,Medium
+2027-08-23,Monday,August,Sadhugram,Normal Day,Sunny,31,33986,36353,6883,44,10,24,3,121,201,147,10,Low,92,Low,Low,Low
+2027-08-24,Tuesday,August,Gangapur Road,Normal Day,Sunny,35,54423,49764,7280,33,10,28,3,165,276,322,10,Normal,95,Low,Low,Medium
+2027-08-25,Wednesday,August,Sadhugram,Shahi Snan,Sunny,33,762134,755840,121393,5,107,218,30,2519,4199,3040,100,High,40,High,High,Critical
+2027-08-26,Thursday,August,Trimbakeshwar Temple,Normal Day,Sunny,37,87147,96526,18526,30,13,37,3,321,536,341,15,Normal,92,Low,Low,Medium
+2027-08-27,Friday,August,Mumbai Naka,Normal Day,Sunny,32,69416,69631,10840,33,10,20,3,232,386,216,10,Normal,95,Low,Low,Low
+2027-08-28,Saturday,August,Gangapur Road,Normal Day,Cloudy,30,59252,61434,9273,44,10,26,3,204,341,198,10,Low,91,Low,Low,Low
+2027-08-29,Sunday,August,Nimani,Weekend,Sunny,32,109848,99303,18873,42,14,41,3,331,551,256,15,Low,94,Low,Low,Medium
+2027-08-30,Monday,August,Mumbai Naka,Festival,Cloudy,32,127836,141824,20331,40,20,52,5,472,787,378,16,Normal,86,Medium,Low,Medium
+2027-08-31,Tuesday,August,Godavari Ghat,Normal Day,Sunny,36,50171,53543,7089,38,10,29,3,178,297,158,10,Normal,98,Low,Low,Low
+2027-09-01,Wednesday,September,Adgaon Naka,Normal Day,Sunny,38,35524,38199,5050,38,10,21,3,127,212,200,10,Low,96,Low,Low,Low
+2027-09-02,Thursday,September,Gangapur Road,Normal Day,Cloudy,25,58041,61955,10390,41,10,21,3,206,344,327,10,Normal,92,Low,Low,Medium
+2027-09-03,Friday,September,Sadhugram,Normal Day,Sunny,37,70714,76663,12523,43,10,26,3,255,425,408,10,Low,92,Low,Low,Medium
+2027-09-04,Saturday,September,Panchavati,Normal Day,Cloudy,30,80445,74034,10005,45,10,27,3,246,411,186,10,Normal,95,Low,Low,Low
+2027-09-05,Sunday,September,Shalimar,Weekend,Cloudy,32,115329,120695,18034,40,17,36,4,402,670,609,15,Low,86,Medium,Low,Medium
+2027-09-06,Monday,September,Ramkund,Normal Day,Rainy,25,96900,92999,17349,39,13,30,3,309,516,483,14,Normal,96,Low,Low,Medium
+2027-09-07,Tuesday,September,Ramkund,Normal Day,Sunny,36,70484,78020,12431,29,11,37,3,260,433,289,10,Normal,90,Low,Low,Low
+2027-09-08,Wednesday,September,Panchavati,Normal Day,Sunny,33,64623,70140,13395,45,10,28,3,233,389,344,11,Normal,92,Low,Low,Medium
+2027-09-09,Thursday,September,Trimbakeshwar Temple,Normal Day,Sunny,30,41043,41929,7739,29,10,34,3,139,232,159,10,Normal,93,Low,Low,Low
+2027-09-10,Friday,September,Mhasrul,Festival,Rainy,24,132411,120186,20620,35,17,35,4,400,667,772,17,High,87,Medium,Low,Medium
+2027-09-11,Saturday,September,Shalimar,Normal Day,Sunny,34,64415,63616,9941,44,10,20,3,212,353,261,10,Normal,94,Low,Low,Low
+2027-09-12,Sunday,September,Godavari Ghat,Weekend,Sunny,37,138621,153930,22343,32,21,50,6,513,855,473,18,Low,87,Medium,Low,Medium
+2027-09-13,Monday,September,Sadhugram,Normal Day,Sunny,34,31136,31432,5536,29,10,20,3,104,174,129,10,Normal,93,Low,Low,Low
+2027-09-14,Tuesday,September,Dwarka Circle,Normal Day,Sunny,32,28399,30401,3732,37,10,24,3,101,168,123,10,Low,97,Low,Low,Low
+2027-09-15,Wednesday,September,Nimani,Shahi Snan,Sunny,32,489277,523885,76562,10,74,156,20,1746,2910,2834,63,High,55,High,High,Critical
+2027-09-16,Thursday,September,Sadhugram,Normal Day,Sunny,37,88897,97635,17865,34,13,39,3,325,542,419,14,Low,90,Low,Low,Medium
+2027-09-17,Friday,September,Dwarka Circle,Normal Day,Sunny,36,34164,37983,5450,29,10,32,3,126,211,136,10,Low,96,Low,Low,Low
+2027-09-18,Saturday,September,Adgaon Naka,Normal Day,Sunny,34,24210,25787,3285,45,10,20,3,85,143,83,10,Normal,93,Low,Low,Low
+2027-09-19,Sunday,September,Nimani,Weekend,Sunny,35,108051,102756,20118,31,14,37,4,342,570,268,16,Low,88,Medium,Low,Medium
+2027-09-20,Monday,September,Trimbakeshwar Temple,Festival,Sunny,36,449258,493534,88369,16,70,141,19,1645,2741,1709,73,Low,62,High,Medium,High
+2027-09-21,Tuesday,September,Trimbakeshwar Temple,Normal Day,Sunny,37,95749,94864,12315,36,13,40,3,316,527,291,10,Low,89,Low,Low,Medium
+2027-09-22,Wednesday,September,Godavari Ghat,Normal Day,Sunny,31,99810,95553,18510,38,13,35,3,318,530,499,15,Low,96,Low,Low,Medium
+2027-09-23,Thursday,September,Trimbakeshwar Temple,Normal Day,Rainy,24,122671,120057,18973,35,17,44,4,400,666,789,15,Normal,87,Medium,Low,Medium
+2027-09-24,Friday,September,Shalimar,Normal Day,Sunny,30,25450,28138,3535,35,10,28,3,93,156,113,10,Low,96,Low,Low,Low
+2027-09-25,Saturday,September,Panchavati,Shahi Snan,Rainy,25,424562,408272,63715,14,58,127,16,1360,2268,1925,53,High,67,High,Medium,Critical
+2027-09-26,Sunday,September,Sadhugram,Weekend,Sunny,32,170580,183079,27782,23,26,52,7,610,1017,620,23,Normal,82,Medium,Low,Medium
+2027-09-27,Monday,September,Sadhugram,Normal Day,Sunny,36,34280,35087,5147,35,10,34,3,116,194,222,10,Normal,98,Low,Low,Low
+2027-09-28,Tuesday,September,Panchavati,Normal Day,Sunny,30,48342,49790,8080,44,10,31,3,165,276,188,10,Low,98,Low,Low,Low
+2027-09-29,Wednesday,September,Sadhugram,Normal Day,Sunny,34,59051,62648,8727,44,10,26,3,208,348,260,10,Normal,95,Low,Low,Low
+2027-09-30,Thursday,September,College Road,Festival,Sunny,38,115559,111793,20695,44,15,39,4,372,621,587,17,Low,92,Medium,Low,Medium
+2027-10-01,Friday,October,Nimani,Normal Day,Sunny,33,58823,59473,10938,44,10,28,3,198,330,153,10,Normal,97,Low,Low,Low
+2027-10-02,Saturday,October,Tapovan,Normal Day,Cloudy,30,44448,48156,9594,45,10,34,3,160,267,166,10,Low,93,Low,Low,Low
+2027-10-03,Sunday,October,Tapovan,Weekend,Cloudy,31,144593,139846,27958,22,19,49,5,466,776,696,23,Normal,90,Medium,Low,Medium
+2027-10-04,Monday,October,Nimani,Normal Day,Sunny,31,29488,30729,3900,45,10,30,3,102,170,120,10,Normal,100,Low,Low,Low
+2027-10-05,Tuesday,October,Sadhugram,Shahi Snan,Sunny,35,676771,620027,77626,10,88,179,24,2066,3444,3176,64,High,50,High,High,Critical
+2027-10-06,Wednesday,October,CBS Nashik,Normal Day,Sunny,33,28282,25783,3350,40,10,33,3,85,143,80,10,Low,100,Low,Low,Low
+2027-10-07,Thursday,October,Panchavati,Normal Day,Sunny,35,45035,46106,8040,31,10,30,3,153,256,130,10,Low,92,Low,Low,Low
+2027-10-08,Friday,October,Adgaon Naka,Normal Day,Sunny,38,33327,30213,5888,29,10,32,3,100,167,195,10,Low,98,Low,Low,Low
+2027-10-09,Saturday,October,Mumbai Naka,Normal Day,Sunny,37,31821,30897,4534,39,10,28,3,102,171,168,10,Low,95,Low,Low,Low
+2027-10-10,Sunday,October,Adgaon Naka,Weekend,Cloudy,31,62091,56626,8834,36,10,26,3,188,314,212,10,Normal,99,Low,Low,Low
+2027-10-11,Monday,October,Panchavati,Normal Day,Sunny,35,25741,27654,4997,32,10,31,3,92,153,176,10,Normal,98,Low,Low,Low
+2027-10-12,Tuesday,October,CBS Nashik,Normal Day,Sunny,33,34168,31082,6054,38,10,29,3,103,172,123,10,Normal,97,Low,Low,Low
+2027-10-13,Wednesday,October,Dwarka Circle,Normal Day,Sunny,36,63485,58288,11292,34,10,33,3,194,323,247,10,Low,94,Low,Low,Low
+2027-10-14,Thursday,October,CBS Nashik,Normal Day,Rainy,29,63059,57039,10476,43,10,23,3,190,316,397,10,High,93,Low,Low,Medium
+2027-10-15,Friday,October,Tapovan,Shahi Snan,Sunny,33,485406,489007,81739,14,69,143,19,1630,2716,2369,68,High,56,High,Medium,Critical
+2027-10-16,Saturday,October,Godavari Ghat,Normal Day,Cloudy,32,45086,50332,8024,28,10,22,3,167,279,206,10,Normal,95,Low,Low,Low
+2027-10-17,Sunday,October,Sadhugram,Weekend,Cloudy,28,126193,120434,21031,33,17,44,4,401,669,711,17,Low,89,Medium,Low,Medium
+2027-10-18,Monday,October,Adgaon Naka,Normal Day,Cloudy,31,16824,15730,2830,38,10,23,3,80,120,96,10,Low,99,Low,Low,Low
+2027-10-19,Tuesday,October,College Road,Normal Day,Cloudy,25,22352,20954,2815,35,10,24,3,80,120,72,10,Normal,95,Low,Low,Low
+2027-10-20,Wednesday,October,Shalimar,Festival,Cloudy,30,130261,135801,18690,33,19,49,5,452,754,579,15,Normal,85,Medium,Low,Medium
+2027-10-21,Thursday,October,Tapovan,Normal Day,Cloudy,32,77148,75367,9227,34,10,21,3,251,418,278,10,Normal,89,Low,Low,Low
+2027-10-22,Friday,October,Nimani,Normal Day,Sunny,34,44808,46791,6448,42,10,29,3,155,259,268,10,Low,96,Low,Low,Low
+2027-10-23,Saturday,October,College Road,Normal Day,Sunny,30,37889,35841,4514,38,10,20,3,119,199,214,10,Low,95,Low,Low,Low
+2027-10-24,Sunday,October,Godavari Ghat,Weekend,Sunny,35,187960,188897,25686,18,26,63,7,629,1049,1074,21,Low,82,Medium,Medium,High
+2027-10-25,Monday,October,Adgaon Naka,Shahi Snan,Rainy,25,326593,359847,65947,10,51,103,14,1199,1999,1047,54,High,68,High,High,Critical
+2027-10-26,Tuesday,October,Shalimar,Normal Day,Sunny,33,16663,17379,2523,33,10,35,3,80,120,108,10,Low,96,Low,Low,Low
+2027-10-27,Wednesday,October,Mumbai Naka,Normal Day,Cloudy,28,52185,51827,9262,43,10,30,3,172,287,216,10,Normal,91,Low,Low,Low
+2027-10-28,Thursday,October,Dwarka Circle,Normal Day,Sunny,32,36616,38995,7043,37,10,35,3,129,216,201,10,Low,94,Low,Low,Low
+2027-07-01,Thursday,July,College Road,Normal Day,Cloudy,26,35352,38026,7517,32,10,34,3,126,211,215,10,Normal,96,Low,Low,Low
+2027-07-02,Friday,July,Mhasrul,Normal Day,Sunny,35,25214,25161,3988,32,10,34,3,83,139,126,10,Low,100,Low,Low,Low
+2027-07-03,Saturday,July,Gangapur Road,Normal Day,Sunny,30,57480,61678,10260,35,10,23,3,205,342,302,10,Normal,98,Low,Low,Medium
+2027-07-04,Sunday,July,Shalimar,Weekend,Sunny,38,128867,124116,16122,32,17,41,4,413,689,631,13,Low,91,Medium,Low,Medium
+2027-07-05,Monday,July,Trimbakeshwar Temple,Shahi Snan,Cloudy,32,541362,505857,89085,17,72,151,20,1686,2810,3203,74,High,56,High,Medium,Critical
+2027-07-06,Tuesday,July,Mumbai Naka,Normal Day,Sunny,35,36338,39205,6983,38,10,34,3,130,217,176,10,Normal,95,Low,Low,Low
+2027-07-07,Wednesday,July,Godavari Ghat,Normal Day,Cloudy,32,27661,29905,4231,40,10,26,3,99,166,177,10,Low,96,Low,Low,Low
+2027-07-08,Thursday,July,Trimbakeshwar Temple,Normal Day,Sunny,37,77090,69600,10092,42,10,24,3,232,386,310,10,Low,95,Low,Low,Medium
+2027-07-09,Friday,July,Mumbai Naka,Normal Day,Cloudy,26,16487,17437,3017,35,10,20,3,80,120,70,10,Low,100,Low,Low,Low
+2027-07-10,Saturday,July,Mhasrul,Festival,Sunny,37,173791,156868,28168,23,22,48,6,522,871,690,23,Low,87,Medium,Low,Medium
+2027-07-11,Sunday,July,Panchavati,Weekend,Cloudy,28,145063,162148,27191,20,23,58,6,540,900,480,22,Normal,84,Medium,Medium,Medium
+2027-07-12,Monday,July,Trimbakeshwar Temple,Normal Day,Cloudy,32,97198,102019,12388,29,14,37,4,340,566,449,10,Low,91,Medium,Low,Medium
+2027-07-13,Tuesday,July,CBS Nashik,Normal Day,Sunny,33,42169,39136,7279,29,10,32,3,130,217,108,10,Normal,92,Low,Low,Low
+2027-07-14,Wednesday,July,Sadhugram,Normal Day,Sunny,38,89055,86725,10473,30,12,28,3,289,481,519,10,Normal,93,Low,Low,Medium
+2027-07-15,Thursday,July,Tapovan,Shahi Snan,Sunny,38,943626,1029372,123929,5,147,307,41,3431,5718,3398,100,High,40,High,High,Critical
+2027-07-16,Friday,July,Dwarka Circle,Normal Day,Sunny,36,16539,17650,2940,43,10,32,3,80,120,80,10,Low,97,Low,Low,Low
+2027-07-17,Saturday,July,Trimbakeshwar Temple,Normal Day,Sunny,34,49276,48788,7643,43,10,29,3,162,271,240,10,Normal,94,Low,Low,Low
+2027-07-18,Sunday,July,Panchavati,Weekend,Rainy,24,102881,93697,15656,33,13,31,3,312,520,355,13,High,90,Low,Low,Medium
+2027-07-19,Monday,July,CBS Nashik,Normal Day,Rainy,29,28662,31841,4465,45,10,33,3,106,176,196,10,High,96,Low,Low,Low
+2027-07-20,Tuesday,July,Panchavati,Festival,Rainy,22,189902,211395,32490,26,30,61,8,704,1174,1298,27,Normal,82,Medium,Low,High
+2027-07-21,Wednesday,July,Dwarka Circle,Normal Day,Sunny,37,52645,51651,7734,30,10,22,3,172,286,260,10,Normal,97,Low,Low,Low
+2027-07-22,Thursday,July,Godavari Ghat,Normal Day,Cloudy,31,60627,64010,10869,38,10,28,3,213,355,234,10,Normal,95,Low,Low,Low
+2027-07-23,Friday,July,Trimbakeshwar Temple,Normal Day,Cloudy,28,50031,51749,8649,28,10,34,3,172,287,268,10,Low,91,Low,Low,Low
+2027-07-24,Saturday,July,Panchavati,Normal Day,Sunny,36,53425,56529,9006,32,10,22,3,188,314,149,10,Normal,98,Low,Low,Low
+2027-07-25,Sunday,July,Trimbakeshwar Temple,Weekend,Sunny,38,246979,241461,34366,22,34,68,9,804,1341,1171,28,Normal,77,Medium,Low,High
+2027-07-26,Monday,July,Trimbakeshwar Temple,Normal Day,Sunny,32,53116,52077,9659,34,10,20,3,173,289,143,10,Normal,99,Low,Low,Low
+2027-07-27,Tuesday,July,Shalimar,Normal Day,Sunny,33,66038,70032,8717,33,10,31,3,233,389,377,10,Normal,95,Low,Low,Medium
+2027-07-28,Wednesday,July,Tapovan,Normal Day,Rainy,27,69171,74707,13648,44,10,21,3,249,415,332,11,Normal,97,Low,Low,Medium
+2027-07-29,Thursday,July,Ramkund,Normal Day,Rainy,29,35907,33903,4294,34,10,20,3,113,188,141,10,High,94,Low,Low,Low
+2027-07-30,Friday,July,Godavari Ghat,Festival,Sunny,34,220884,211682,39965,28,30,63,8,705,1176,941,33,Low,81,Medium,Medium,High
+2027-07-31,Saturday,July,Mhasrul,Normal Day,Rainy,28,13453,12371,1712,43,10,26,3,80,120,119,10,Normal,96,Low,Low,Low
+2027-08-01,Sunday,August,Dwarka Circle,Weekend,Sunny,32,122393,113914,18428,31,16,45,4,379,632,325,15,Low,90,Medium,Low,Medium
+2027-08-02,Monday,August,Panchavati,Normal Day,Rainy,28,69077,63309,9218,35,10,22,3,211,351,512,10,Normal,98,Low,Low,Medium
+2027-08-03,Tuesday,August,Tapovan,Normal Day,Rainy,26,30801,31906,5320,36,10,34,3,106,177,258,10,Normal,100,Low,Low,Low
+2027-08-04,Wednesday,August,College Road,Normal Day,Sunny,30,31470,35019,6433,36,10,31,3,116,194,107,10,Normal,96,Low,Low,Low
+2027-08-05,Thursday,August,Gangapur Road,Shahi Snan,Cloudy,32,634875,682676,125132,9,97,202,27,2275,3792,3580,100,High,42,High,High,Critical
+2027-08-06,Friday,August,Sadhugram,Normal Day,Sunny,30,20640,18832,3698,33,10,32,3,80,120,89,10,Normal,95,Low,Low,Low
+2027-08-07,Saturday,August,Dwarka Circle,Normal Day,Sunny,36,47348,46906,6274,32,10,34,3,156,260,193,10,Normal,98,Low,Low,Low
+2027-08-08,Sunday,August,Ramkund,Weekend,Rainy,27,219555,221069,43837,28,31,67,8,736,1228,929,36,High,78,Medium,Medium,High
+2027-08-09,Monday,August,Sadhugram,Normal Day,Sunny,34,55464,55831,8449,31,10,33,3,186,310,235,10,Low,92,Low,Low,Low
+2027-08-10,Tuesday,August,Mumbai Naka,Festival,Sunny,34,253584,228842,44284,26,32,65,9,762,1271,852,36,Normal,80,Medium,Medium,Medium
+2027-08-11,Wednesday,August,Mumbai Naka,Normal Day,Sunny,33,37294,35114,4352,45,10,21,3,117,195,214,10,Low,95,Low,Low,Low
+2027-08-12,Thursday,August,CBS Nashik,Normal Day,Rainy,25,42111,38470,7333,39,10,23,3,128,213,314,10,High,95,Low,Low,Medium
+2027-08-13,Friday,August,Tapovan,Normal Day,Sunny,35,22692,22705,3067,30,10,22,3,80,126,109,10,Normal,100,Low,Low,Low
+2027-08-14,Saturday,August,Dwarka Circle,Normal Day,Sunny,33,43156,43705,7884,29,10,31,3,145,242,141,10,Normal,98,Low,Low,Low
+2027-08-15,Sunday,August,Dwarka Circle,Weekend,Cloudy,28,111662,121570,23071,33,17,48,4,405,675,522,19,Normal,92,Medium,Low,Medium
+2027-08-16,Monday,August,Trimbakeshwar Temple,Normal Day,Cloudy,29,72939,69341,10845,44,10,29,3,231,385,394,10,Low,92,Low,Low,Medium
+2027-08-17,Tuesday,August,Panchavati,Normal Day,Cloudy,32,72608,72173,13470,43,10,32,3,240,400,419,11,Low,90,Low,Low,Medium
+2027-08-18,Wednesday,August,Nimani,Normal Day,Sunny,32,27437,28447,4400,40,10,22,3,94,158,82,10,Normal,93,Low,Low,Low
+2027-08-19,Thursday,August,Trimbakeshwar Temple,Normal Day,Sunny,32,109818,121582,23887,35,17,44,4,405,675,437,19,Low,88,Medium,Low,Medium
+2027-08-20,Friday,August,Shalimar,Festival,Sunny,36,154841,154378,29779,20,22,54,6,514,857,803,24,Low,88,Medium,Medium,Medium
+2027-08-21,Saturday,August,Mhasrul,Normal Day,Sunny,34,17284,17263,2391,38,10,25,3,80,120,90,10,Low,100,Low,Low,Low
+2027-08-22,Sunday,August,Nimani,Weekend,Cloudy,30,106331,111835,17355,45,15,38,4,372,621,350,14,Low,90,Medium,Low,Medium
+2027-08-23,Monday,August,Dwarka Circle,Normal Day,Cloudy,26,55802,52920,6658,37,10,22,3,176,294,311,10,Low,95,Low,Low,Medium
+2027-08-24,Tuesday,August,Godavari Ghat,Normal Day,Sunny,34,100872,101586,14161,40,14,38,4,338,564,389,11,Low,94,Medium,Low,Medium
+2027-08-25,Wednesday,August,Ramkund,Shahi Snan,Sunny,35,1244350,1316566,169655,9,188,391,52,4388,7314,6593,100,High,40,High,High,Critical
+2027-08-26,Thursday,August,CBS Nashik,Normal Day,Sunny,34,58058,53684,6961,29,10,22,3,178,298,338,10,Normal,96,Low,Low,Medium
+2027-08-27,Friday,August,Ramkund,Normal Day,Cloudy,28,61873,61332,7951,41,10,27,3,204,340,345,10,Low,92,Low,Low,Medium
+2027-08-28,Saturday,August,Mumbai Naka,Normal Day,Cloudy,30,24089,21706,2825,44,10,29,3,80,120,82,10,Low,95,Low,Low,Low
+2027-08-29,Sunday,August,Panchavati,Weekend,Sunny,38,148638,155623,30142,19,22,51,6,518,864,833,25,Normal,87,Medium,Medium,Medium
+2027-08-30,Monday,August,Gangapur Road,Festival,Cloudy,28,149670,150695,29940,23,21,43,6,502,837,789,24,Low,86,Medium,Low,Medium
+2027-08-31,Tuesday,August,Dwarka Circle,Normal Day,Cloudy,32,58516,58950,7831,44,10,32,3,196,327,175,10,Low,96,Low,Low,Low
+2027-09-01,Wednesday,September,Sadhugram,Normal Day,Sunny,33,32363,33274,4697,43,10,27,3,110,184,139,10,Low,97,Low,Low,Low
+2027-09-02,Thursday,September,Ramkund,Normal Day,Rainy,22,86433,84227,12774,28,12,32,3,280,467,409,10,High,93,Low,Low,Medium
+2027-09-03,Friday,September,Godavari Ghat,Normal Day,Rainy,29,81157,83653,11535,35,11,25,3,278,464,576,10,High,96,Low,Low,Medium
+2027-09-04,Saturday,September,Sadhugram,Normal Day,Rainy,25,88214,97523,16738,35,13,29,3,325,541,363,13,High,93,Low,Low,Medium
+2027-09-05,Sunday,September,Mhasrul,Weekend,Sunny,37,74784,77148,13701,35,11,26,3,257,428,339,11,Normal,93,Low,Low,Medium
+2027-09-06,Monday,September,College Road,Normal Day,Cloudy,26,42444,41015,6614,45,10,24,3,136,227,155,10,Low,92,Low,Low,Low
+2027-09-07,Tuesday,September,College Road,Normal Day,Cloudy,32,27475,28113,3421,39,10,29,3,93,156,152,10,Low,94,Low,Low,Low
+2027-09-08,Wednesday,September,Ramkund,Normal Day,Rainy,26,35099,35495,4959,31,10,30,3,118,197,217,10,Normal,93,Low,Low,Low
+2027-09-09,Thursday,September,Gangapur Road,Normal Day,Cloudy,28,59091,60885,11531,38,10,31,3,202,338,270,10,Low,98,Low,Low,Low
+2027-09-10,Friday,September,Mhasrul,Festival,Rainy,22,181205,179733,31790,23,25,61,7,599,998,610,26,High,87,Medium,Low,Medium
+2027-09-11,Saturday,September,Mhasrul,Normal Day,Cloudy,31,19508,20559,3740,37,10,20,3,80,120,83,10,Normal,98,Low,Low,Low
+2027-09-12,Sunday,September,Gangapur Road,Weekend,Sunny,31,84505,84720,15550,34,12,38,3,282,470,539,12,Low,92,Low,Low,Medium
+2027-09-13,Monday,September,Mhasrul,Normal Day,Sunny,37,47175,44374,8739,45,10,23,3,147,246,193,10,Low,99,Low,Low,Low
+2027-09-14,Tuesday,September,Tapovan,Normal Day,Sunny,34,36732,33676,5904,30,10,30,3,112,187,180,10,Low,94,Low,Low,Low
+2027-09-15,Wednesday,September,Mhasrul,Shahi Snan,Sunny,33,563176,542303,67313,17,77,166,21,1807,3012,2984,56,High,52,High,Medium,Critical
+2027-09-16,Thursday,September,Adgaon Naka,Normal Day,Sunny,35,15396,15293,2434,37,10,20,3,80,120,39,10,Low,94,Low,Low,Low
+2027-09-17,Friday,September,Ramkund,Normal Day,Sunny,35,70059,71577,13192,34,10,31,3,238,397,199,10,Low,97,Low,Low,Low
+2027-09-18,Saturday,September,Shalimar,Normal Day,Sunny,31,53934,57636,9279,44,10,32,3,192,320,364,10,Normal,91,Low,Low,Medium
+2027-09-19,Sunday,September,Panchavati,Weekend,Sunny,37,143678,142066,25004,25,20,40,5,473,789,582,20,Low,84,Medium,Low,Medium
+2027-09-20,Monday,September,Mumbai Naka,Festival,Cloudy,25,187917,205168,25810,20,29,60,8,683,1139,979,21,Low,79,Medium,Medium,High
+2027-09-21,Tuesday,September,Mumbai Naka,Normal Day,Sunny,32,59035,56780,8697,40,10,32,3,189,315,183,10,Low,95,Low,Low,Low
+2027-09-22,Wednesday,September,Trimbakeshwar Temple,Normal Day,Cloudy,25,42265,45557,6450,34,10,23,3,151,253,197,10,Low,97,Low,Low,Low
+2027-09-23,Thursday,September,Tapovan,Normal Day,Sunny,31,85995,92599,16975,30,13,27,3,308,514,594,14,Low,90,Low,Low,Medium
+2027-09-24,Friday,September,Gangapur Road,Normal Day,Sunny,35,53797,55384,10561,45,10,24,3,184,307,353,10,Low,97,Low,Low,Medium
+2027-09-25,Saturday,September,College Road,Shahi Snan,Sunny,37,263952,274675,45890,27,39,82,10,915,1525,1171,38,High,80,Medium,Medium,High
+2027-09-26,Sunday,September,College Road,Weekend,Rainy,27,56396,54029,6828,32,10,30,3,180,300,316,10,High,91,Low,Low,Medium
+2027-09-27,Monday,September,Gangapur Road,Normal Day,Sunny,33,58629,57843,10927,41,10,22,3,192,321,349,10,Normal,95,Low,Low,Medium
+2027-09-28,Tuesday,September,Mhasrul,Normal Day,Cloudy,28,20837,20802,3762,43,10,25,3,80,120,114,10,Normal,95,Low,Low,Low
+2027-09-29,Wednesday,September,Sadhugram,Normal Day,Cloudy,31,75189,75812,13111,38,10,35,3,252,421,374,10,Normal,90,Low,Low,Medium
+2027-09-30,Thursday,September,Shalimar,Festival,Cloudy,30,197410,218009,26275,23,31,74,8,726,1211,735,21,Low,82,Medium,Low,Medium
+2027-10-01,Friday,October,Nimani,Normal Day,Sunny,36,18228,18710,3112,30,10,29,3,80,120,108,10,Normal,99,Low,Low,Low
+2027-10-02,Saturday,October,Sadhugram,Normal Day,Sunny,32,57715,55409,8678,36,10,28,3,184,307,170,10,Low,95,Low,Low,Low
+2027-10-03,Sunday,October,Mhasrul,Weekend,Cloudy,25,89131,97448,16171,35,13,37,3,324,541,542,13,Normal,91,Low,Low,Medium
+2027-10-04,Monday,October,Dwarka Circle,Normal Day,Cloudy,29,57800,56545,8956,41,10,21,3,188,314,212,10,Normal,94,Low,Low,Low
+2027-10-05,Tuesday,October,Trimbakeshwar Temple,Shahi Snan,Sunny,30,1291460,1270202,196218,7,181,364,50,4234,7056,7850,100,High,40,High,High,Critical
+2027-10-06,Wednesday,October,Godavari Ghat,Normal Day,Sunny,30,46891,47730,8585,39,10,25,3,159,265,196,10,Normal,100,Low,Low,Low
+2027-10-07,Thursday,October,Gangapur Road,Normal Day,Cloudy,31,39231,36790,6654,42,10,24,3,122,204,190,10,Low,92,Low,Low,Low
+2027-10-08,Friday,October,CBS Nashik,Normal Day,Sunny,32,59274,59836,11405,42,10,28,3,199,332,304,10,Low,91,Low,Low,Medium
+2027-10-09,Saturday,October,CBS Nashik,Normal Day,Sunny,33,38684,35025,4437,37,10,20,3,116,194,134,10,Normal,100,Low,Low,Low
+2027-10-10,Sunday,October,Panchavati,Weekend,Cloudy,29,122684,125667,16820,42,17,40,5,418,698,591,14,Low,90,Medium,Low,Medium
+2027-10-11,Monday,October,Dwarka Circle,Normal Day,Sunny,30,65667,72336,13642,36,10,30,3,241,401,279,11,Normal,95,Low,Low,Low
+2027-10-12,Tuesday,October,Ramkund,Normal Day,Sunny,35,67041,60775,10636,29,10,28,3,202,337,225,10,Low,90,Low,Low,Low
+2027-10-13,Wednesday,October,Dwarka Circle,Normal Day,Cloudy,31,21108,19218,3216,35,10,26,3,80,120,50,10,Normal,99,Low,Low,Low
+2027-10-14,Thursday,October,Shalimar,Normal Day,Sunny,35,38439,36463,5783,34,10,32,3,121,202,188,10,Normal,93,Low,Low,Low
+2027-10-15,Friday,October,Sadhugram,Shahi Snan,Rainy,29,1023802,951148,182217,8,135,283,38,3170,5284,4521,100,High,40,High,High,Critical
+2027-10-16,Saturday,October,Nimani,Normal Day,Sunny,36,55775,54985,9775,40,10,32,3,183,305,264,10,Low,92,Low,Low,Low
+2027-10-17,Sunday,October,College Road,Weekend,Cloudy,28,61648,63847,9487,41,10,20,3,212,354,345,10,Low,90,Low,Low,Medium
+2027-10-18,Monday,October,Shalimar,Normal Day,Sunny,35,60272,63565,9466,41,10,25,3,211,353,181,10,Normal,98,Low,Low,Low
+2027-10-19,Tuesday,October,Shalimar,Normal Day,Sunny,38,23617,24986,4773,39,10,27,3,83,138,120,10,Normal,99,Low,Low,Low
+2027-10-20,Wednesday,October,CBS Nashik,Festival,Cloudy,26,273244,268028,41311,22,38,86,10,893,1489,787,34,Normal,74,Medium,Medium,High
+2027-10-21,Thursday,October,Sadhugram,Normal Day,Cloudy,30,88069,95478,16628,34,13,34,3,318,530,520,13,Low,96,Low,Low,Medium
+2027-10-22,Friday,October,College Road,Normal Day,Cloudy,31,14079,14880,2907,39,10,33,3,80,120,52,10,Low,98,Low,Low,Low
+2027-10-23,Saturday,October,Mumbai Naka,Normal Day,Sunny,34,61094,63092,11225,37,10,29,3,210,350,256,10,Normal,95,Low,Low,Low
+2027-10-24,Sunday,October,Panchavati,Weekend,Cloudy,27,134981,125726,20215,44,17,34,5,419,698,379,16,Low,90,Medium,Low,Medium
+2027-10-25,Monday,October,Dwarka Circle,Shahi Snan,Sunny,34,762877,811916,109202,10,115,233,32,2706,4510,4818,91,High,40,High,High,Critical
+2027-10-26,Tuesday,October,Sadhugram,Normal Day,Sunny,38,33438,31426,6006,36,10,25,3,104,174,177,10,Low,94,Low,Low,Low
+2027-10-27,Wednesday,October,Godavari Ghat,Normal Day,Rainy,28,72742,68489,13088,45,10,28,3,228,380,410,10,Normal,98,Low,Low,Medium
+2027-10-28,Thursday,October,Godavari Ghat,Normal Day,Sunny,30,36164,35674,6888,36,10,30,3,118,198,226,10,Normal,100,Low,Low,Low
+2027-07-01,Thursday,July,Panchavati,Normal Day,Sunny,34,59813,59532,7271,43,10,31,3,198,330,164,10,Normal,99,Low,Low,Low
+2027-07-02,Friday,July,Trimbakeshwar Temple,Normal Day,Sunny,32,76471,71378,13762,33,10,20,3,237,396,326,11,Low,90,Low,Low,Medium
+2027-07-03,Saturday,July,Tapovan,Normal Day,Sunny,30,52558,52464,7381,31,10,27,3,174,291,171,10,Normal,92,Low,Low,Low
+2027-07-04,Sunday,July,College Road,Weekend,Cloudy,29,95243,88217,10832,35,12,38,3,294,490,447,10,Normal,94,Low,Low,Medium
+2027-07-05,Monday,July,Panchavati,Shahi Snan,Cloudy,30,536108,548172,94193,13,78,168,21,1827,3045,1856,78,High,52,High,High,Critical
+2027-07-06,Tuesday,July,Mhasrul,Normal Day,Cloudy,29,38296,37704,5078,41,10,28,3,125,209,193,10,Low,94,Low,Low,Low
+2027-07-07,Wednesday,July,Gangapur Road,Normal Day,Rainy,26,37871,41344,6203,43,10,31,3,137,229,231,10,Normal,98,Low,Low,Low
+2027-07-08,Thursday,July,Sadhugram,Normal Day,Sunny,38,94398,96368,17122,34,13,27,3,321,535,394,14,Normal,92,Low,Low,Medium
+2027-07-09,Friday,July,College Road,Normal Day,Sunny,38,30440,27451,3572,45,10,22,3,91,152,150,10,Normal,95,Low,Low,Low
+2027-07-10,Saturday,July,CBS Nashik,Festival,Sunny,35,169734,171159,33279,25,24,52,6,570,950,945,27,Normal,84,Medium,Low,High
+2027-07-11,Sunday,July,Nimani,Weekend,Sunny,38,83220,84981,15299,32,12,30,3,283,472,533,12,Normal,93,Low,Low,Medium
+2027-07-12,Monday,July,Mhasrul,Normal Day,Cloudy,29,37407,35775,5566,32,10,21,3,119,198,190,10,Normal,94,Low,Low,Low
+2027-07-13,Tuesday,July,Adgaon Naka,Normal Day,Sunny,34,37904,42140,8186,37,10,25,3,140,234,251,10,Low,97,Low,Low,Low
+2027-07-14,Wednesday,July,Mumbai Naka,Normal Day,Sunny,34,41980,46902,8700,39,10,23,3,156,260,255,10,Low,98,Low,Low,Low
+2027-07-15,Thursday,July,Nimani,Shahi Snan,Sunny,31,519693,577648,111089,8,82,164,23,1925,3209,3217,92,High,47,High,High,Critical
+2027-07-16,Friday,July,Dwarka Circle,Normal Day,Cloudy,27,29862,27326,4930,41,10,33,3,91,151,105,10,Low,93,Low,Low,Low
+2027-07-17,Saturday,July,Tapovan,Normal Day,Sunny,34,72586,74610,10009,42,10,29,3,248,414,336,10,Low,91,Low,Low,Medium
+2027-07-18,Sunday,July,Godavari Ghat,Weekend,Sunny,35,156063,149905,29307,20,21,45,5,499,832,543,24,Normal,86,Medium,Medium,Medium
+2027-07-19,Monday,July,College Road,Normal Day,Sunny,34,20700,18888,3059,29,10,32,3,80,120,63,10,Normal,95,Low,Low,Low
+2027-07-20,Tuesday,July,Shalimar,Festival,Cloudy,30,235030,235540,46241,24,33,72,9,785,1308,1253,38,Low,84,Medium,Medium,High
+2027-07-21,Wednesday,July,Tapovan,Normal Day,Sunny,36,83442,80944,15990,38,11,33,3,269,449,306,13,Low,89,Low,Low,Medium
+2027-07-22,Thursday,July,Nimani,Normal Day,Rainy,28,40228,43404,6771,36,10,27,3,144,241,257,10,High,100,Low,Low,Low
+2027-07-23,Friday,July,CBS Nashik,Normal Day,Sunny,32,60047,65508,12591,32,10,21,3,218,363,403,10,Low,96,Low,Low,Medium
+2027-07-24,Saturday,July,Ramkund,Normal Day,Rainy,23,105576,103217,19832,29,14,42,4,344,573,593,16,Normal,95,Medium,Low,Medium
+2027-07-25,Sunday,July,Mhasrul,Weekend,Cloudy,32,77380,84050,16396,30,12,25,3,280,466,397,13,Low,89,Low,Low,Medium
+2027-07-26,Monday,July,Mumbai Naka,Normal Day,Rainy,25,29208,28574,4990,44,10,26,3,95,158,267,10,High,98,Low,Low,Low
+2027-07-27,Tuesday,July,Dwarka Circle,Normal Day,Rainy,24,25847,25793,4305,31,10,35,3,85,143,173,10,High,95,Low,Low,Low
+2027-07-28,Wednesday,July,Shalimar,Normal Day,Rainy,26,18904,18887,3143,38,10,21,3,80,120,180,10,High,100,Low,Low,Low
+2027-07-29,Thursday,July,Trimbakeshwar Temple,Normal Day,Sunny,33,55301,61091,9036,31,10,34,3,203,339,253,10,Normal,90,Low,Low,Low
+2027-07-30,Friday,July,Godavari Ghat,Festival,Rainy,24,200330,221142,42796,20,31,75,8,737,1228,832,35,High,82,Medium,Medium,Medium
+2027-07-31,Saturday,July,Godavari Ghat,Normal Day,Sunny,33,87124,90218,11588,36,12,29,3,300,501,289,10,Normal,91,Low,Low,Medium
+2027-08-01,Sunday,August,Tapovan,Weekend,Sunny,34,130313,137776,27513,28,19,45,5,459,765,760,22,Normal,85,Medium,Low,Medium
+2027-08-02,Monday,August,Adgaon Naka,Normal Day,Sunny,38,48405,48111,7649,30,10,30,3,160,267,141,10,Normal,96,Low,Low,Low
+2027-08-03,Tuesday,August,Godavari Ghat,Normal Day,Cloudy,26,78864,76130,14785,41,10,20,3,253,422,460,12,Normal,90,Low,Low,Medium
+2027-08-04,Wednesday,August,Shalimar,Normal Day,Rainy,27,58275,60859,8375,34,10,20,3,202,338,287,10,High,94,Low,Low,Low
+2027-08-05,Thursday,August,Sadhugram,Shahi Snan,Sunny,38,1022045,1043890,136533,7,149,311,41,3479,5799,4465,100,High,40,High,High,Critical
+2027-08-06,Friday,August,Dwarka Circle,Normal Day,Sunny,36,62776,58021,9904,40,10,27,3,193,322,166,10,Normal,98,Low,Low,Low
+2027-08-07,Saturday,August,Dwarka Circle,Normal Day,Rainy,29,46786,50579,8117,40,10,21,3,168,280,310,10,High,97,Low,Low,Medium
+2027-08-08,Sunday,August,Sadhugram,Weekend,Cloudy,25,141238,155775,20022,36,22,46,6,519,865,834,16,Normal,88,Medium,Low,Medium
+2027-08-09,Monday,August,Trimbakeshwar Temple,Normal Day,Sunny,33,68047,63584,8470,42,10,20,3,211,353,271,10,Normal,95,Low,Low,Low
