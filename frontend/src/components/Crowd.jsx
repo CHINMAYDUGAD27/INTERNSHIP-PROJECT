@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+ï»¿import React, { useState, useEffect } from 'react';
 import api from '../api';
 import { ShieldAlert, PlusCircle, X } from 'lucide-react';
 
@@ -77,7 +77,7 @@ export default function Crowd() {
                       {r.risk_level}
                     </span>
                   </td>
-                  <td>{r.date && !isNaN(new Date(r.date).getTime()) ? new Date(r.date).toLocaleDateString('en-IN') : (r.date || '—')}</td>
+                  <td>{r.date && !isNaN(new Date(r.date).getTime()) ? new Date(r.date).toLocaleDateString('en-IN') : (r.date || 'ï¿½')}</td>
                 </tr>
               ))
             )}
