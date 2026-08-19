@@ -341,7 +341,7 @@ def _build_rag_context(db: Session) -> str:
             total_actual   = sum(c.actual_visitors   or 0 for c in crowds)
             lines.append("CROWD DATA (per location):")
             lines.append(f"  Overall — Expected: {total_expected:,} | Actual: {total_actual:,}")
-            for c in crowds:
+            for c in crowds[-10:]:
                 lines.append(
                     f"  • {c.location}: actual={c.actual_visitors:,}, "
                     f"expected={c.expected_visitors:,}, risk={c.risk_level}, date={c.date}"
@@ -357,7 +357,7 @@ def _build_rag_context(db: Session) -> str:
         medicals = db.query(Medical).all()
         if medicals:
             lines.append("\nMEDICAL DATA (per camp):")
-            for m in medicals:
+            for m in medicals[-10:]:
                 lines.append(
                     f"  • {m.medical_camp} @ {m.location}: "
                     f"doctors={m.available_doctors}, nurses={m.available_nurses}, "
@@ -376,7 +376,7 @@ def _build_rag_context(db: Session) -> str:
         traffics = db.query(Traffic).all()
         if traffics:
             lines.append("\nTRAFFIC DATA (per road):")
-            for t in traffics:
+            for t in traffics[-10:]:
                 lines.append(
                     f"  • {t.road_name} @ {t.location}: "
                     f"vehicles={t.vehicle_count}, speed={t.average_speed} km/h, "
@@ -394,7 +394,7 @@ def _build_rag_context(db: Session) -> str:
         if safeties:
             total_officers = sum(s.officers_deployed or 0 for s in safeties)
             lines.append(f"\nSAFETY DATA (total officers: {total_officers}):")
-            for s in safeties:
+            for s in safeties[-10:]:
                 lines.append(
                     f"  • {s.checkpoint_name} (Zone: {s.zone}): "
                     f"officers={s.officers_deployed}, gate={s.gate_status}, "
@@ -411,7 +411,7 @@ def _build_rag_context(db: Session) -> str:
         projects = db.query(Project).all()
         if projects:
             lines.append("\nINFRASTRUCTURE PROJECTS:")
-            for p in projects:
+            for p in projects[-10:]:
                 lines.append(f"  • {p.project_name} ({p.department}): Budget=₹{p.budget:,}, Progress={p.progress}%, Status={p.status}, Ends: {p.end_date}")
     except Exception: pass
 
@@ -421,7 +421,7 @@ def _build_rag_context(db: Session) -> str:
         budgets = db.query(Budget).all()
         if budgets:
             lines.append("\nDEPARTMENT BUDGETS:")
-            for b in budgets:
+            for b in budgets[-10:]:
                 lines.append(f"  • {b.department}: Allocated=₹{b.allocated_budget:,.2f}, Spent=₹{b.spent_budget:,.2f}, Remaining=₹{b.remaining_budget:,.2f}")
     except Exception: pass
 
@@ -431,7 +431,7 @@ def _build_rag_context(db: Session) -> str:
         sadhus = db.query(SadhuGram).all()
         if sadhus:
             lines.append("\nSADHU GRAM (AKHARAS):")
-            for sg in sadhus:
+            for sg in sadhus[-10:]:
                 lines.append(f"  • {sg.akhara_name} (Zone {sg.zone}): Sadhus={sg.sadhu_count}/{sg.capacity}, Area={sg.allocated_area_sqm} sqm, Status={sg.status}")
     except Exception: pass
 
@@ -441,7 +441,7 @@ def _build_rag_context(db: Session) -> str:
         lands = db.query(LandAcquisition).all()
         if lands:
             lines.append("\nLAND ACQUISITION:")
-            for l in lands:
+            for l in lands[-10:]:
                 lines.append(f"  • {l.location} (Owner: {l.owner_name}): Area={l.area_sqm} sqm, Purpose={l.purpose}, Status={l.status}, Cost=₹{l.compensation_amount:,.2f}")
     except Exception: pass
 
@@ -451,7 +451,7 @@ def _build_rag_context(db: Session) -> str:
         acc = db.query(Accommodation).all()
         if acc:
             lines.append("\nACCOMMODATION (Devotees):")
-            for a in acc:
+            for a in acc[-10:]:
                 lines.append(f"  • {a.devotee_name} @ {a.location}: Status={a.status}, Darshan={a.darshan_slot}")
     except Exception: pass
 
@@ -461,7 +461,7 @@ def _build_rag_context(db: Session) -> str:
         cln = db.query(Cleanliness).all()
         if cln:
             lines.append("\nCLEANLINESS (Water & Ghats):")
-            for c in cln:
+            for c in cln[-10:]:
                 lines.append(f"  • {c.ghat_name} (Zone {c.zone}): Status={c.sanitation_status}, Water AQI={c.water_quality_index}, pH={c.ph_level}")
     except Exception: pass
 
