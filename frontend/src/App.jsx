@@ -51,8 +51,6 @@ function Sidebar({ setAuth, user }) {
           </NavLink>
         </li>
         
-        {(isAdmin || dept === 'General') && (
-          <>
             <li>
               <NavLink to="/sadhu-gram" className={({ isActive }) => isActive ? "active" : ""}>
                 <Home size={18} /> Sadhu Gram
@@ -73,11 +71,7 @@ function Sidebar({ setAuth, user }) {
                 <Wallet size={18} /> Budget Tracking
               </NavLink>
             </li>
-          </>
-        )}
 
-        {(isAdmin || dept === 'Medical') && (
-          <>
             <li>
               <NavLink to="/cleanliness" className={({ isActive }) => isActive ? "active" : ""}>
                 <Droplets size={18} /> Cleanliness & Godavari
@@ -88,11 +82,7 @@ function Sidebar({ setAuth, user }) {
                 <Activity size={18} /> Medical Emergency
               </NavLink>
             </li>
-          </>
-        )}
 
-        {(isAdmin || dept === 'Police') && (
-          <>
             <li>
               <NavLink to="/safety" className={({ isActive }) => isActive ? "active" : ""}>
                 <ShieldCheck size={18} /> Safety & Public Control
@@ -108,8 +98,6 @@ function Sidebar({ setAuth, user }) {
                 <Navigation size={18} /> Traffic Analysis
               </NavLink>
             </li>
-          </>
-        )}
 
         <li>
           <NavLink to="/ai-assistant" className={({ isActive }) => isActive ? "active" : ""}>
