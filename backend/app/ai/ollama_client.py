@@ -24,20 +24,34 @@ from groq import Groq
 # Initialise Groq client (reads GROQ_API_KEY from environment automatically)
 _client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
+# ---------------------------------------------------------------------------
+# Hardcode a safe, always-available Groq chat model.
+# Dynamic model discovery was picking 'canopylabs/orpheus' which requires
+# terms acceptance. We use a fixed priority list instead.
+# ---------------------------------------------------------------------------
+PREFERRED_MODELS = [
+    "llama-3.1-8b-instant",
+    "llama3-8b-8192",
+    "llama3-70b-8192",
+    "mixtral-8x7b-32768",
+]
+
 def _resolve_model():
-    """Fetch available models and pick a valid chat model dynamically."""
+    """Pick the first available model from our safe preferred list."""
     try:
-        available = [m.id for m in _client.models.list().data]
-        # Prefer standard Groq models if they exist
-        for m in ["llama-3.1-8b-instant", "llama3-8b-8192", "mixtral-8x7b-32768"]:
+        available = {m.id for m in _client.models.list().data}
+        for m in PREFERRED_MODELS:
             if m in available:
                 return m
-        
-        # Fallback to whatever non-audio models are available in the current API key's project
-        valid = [m for m in available if "whisper" not in m and "guard" not in m]
-        return valid[0] if valid else available[0]
+        # Last resort: any model that is NOT a restricted/terms-required one
+        restricted_keywords = ["whisper", "guard", "orpheus", "canopy"]
+        safe = [
+            m for m in available
+            if not any(kw in m.lower() for kw in restricted_keywords)
+        ]
+        return safe[0] if safe else PREFERRED_MODELS[0]
     except Exception:
-        return "llama-3.1-8b-instant"
+        return PREFERRED_MODELS[0]
 
 GROQ_CHAT_MODEL = _resolve_model()
 
