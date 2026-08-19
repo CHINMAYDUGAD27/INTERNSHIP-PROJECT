@@ -3,7 +3,7 @@ uvicorn
 sqlalchemy
 psycopg2-binary
 python-dotenv
-pydantic
+pydantic[email]
 requests
 scikit-learn
 joblib
@@ -13,4 +13,3 @@ python-jose[cryptography]
 passlib[bcrypt]
 python-multipart
 groq
-email-validator
