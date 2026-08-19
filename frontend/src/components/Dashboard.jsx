@@ -525,7 +525,7 @@ export default function Dashboard() {
         
         <div className="glass-card">
           <h3 className="card-title"><CloudSun size={20} className="text-primary" /> Real-Time Weather</h3>
-          <div className="stat-value">{stats.temperature}Â°C</div>
+          <div className="stat-value">{stats.temperature}&deg;C</div>
           <div className="stat-label">Nashik (Open-Meteo Live Data)</div>
         </div>
       </div>
