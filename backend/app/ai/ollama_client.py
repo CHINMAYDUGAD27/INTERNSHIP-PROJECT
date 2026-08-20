@@ -30,10 +30,11 @@ _client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 # terms acceptance. We use a fixed priority list instead.
 # ---------------------------------------------------------------------------
 PREFERRED_MODELS = [
-    "llama-3.3-70b-versatile",
+    "llama-3.3-70b-versatile",   # 128K context — handles large RAG prompts
+    "llama-3.1-70b-versatile",
     "llama-3.1-8b-instant",
-    "llama3-8b-8192",
     "llama3-70b-8192",
+    "llama3-8b-8192",
     "mixtral-8x7b-32768",
 ]
 
@@ -50,7 +51,6 @@ def _resolve_model():
             m for m in available
             if not any(kw in m.lower() for kw in restricted_keywords)
         ]
-        # Sort so we don't randomly pick a weird model
         safe.sort()
         return safe[0] if safe else PREFERRED_MODELS[0]
     except Exception:
@@ -62,18 +62,13 @@ GROQ_CHAT_MODEL = _resolve_model()
 def chat(messages: list[dict], temperature: float = 0.2) -> str:
     """
     Send a list of {role, content} messages to Groq and return the assistant reply.
-
-    Drop-in replacement for the old ollama_client.chat() — same signature.
-
-    Generation settings tuned for accurate, on-topic answers:
-      - temperature=0.2  → more deterministic / factual
-      - max_tokens=4096  → prevent cutoff for models that use chain of thought
+    Uses llama-3.3-70b-versatile with 128K context to handle large RAG prompts.
     """
     completion = _client.chat.completions.create(
         model=GROQ_CHAT_MODEL,
         messages=messages,
         temperature=temperature,
-        max_tokens=1500,
+        max_tokens=2048,
         top_p=0.9,
         stream=False,
     )

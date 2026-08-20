@@ -327,21 +327,20 @@ def _build_rag_context(db: Session) -> str:
     """
     Pull ALL real-time data from the database and build a structured context
     string injected into every chat prompt.
-
-    Includes per-location breakdown so questions like
-    "how many pilgrims at Ramkund?" can be answered with ACTUAL DB values.
+    Includes per-location breakdown and aggregate summaries.
     """
     lines = ["=== LIVE KUMBH MELA DATABASE (fetched right now) ===\n"]
 
-    # ── CROWD DATA (per location) ──────────────────────────────
+    # ── CROWD DATA ──────────────────────────────────────────────
     try:
         crowds = db.query(Crowd).all()
         if crowds:
             total_expected = sum(c.expected_visitors or 0 for c in crowds)
             total_actual   = sum(c.actual_visitors   or 0 for c in crowds)
-            lines.append("CROWD DATA (per location):")
-            lines.append(f"  Overall — Expected: {total_expected:,} | Actual: {total_actual:,}")
-            for c in crowds[-3:]:
+            high_risk      = [c for c in crowds if c.risk_level in ("High", "Critical")]
+            lines.append(f"CROWD DATA SUMMARY: Total Locations={len(crowds)}, Overall Expected={total_expected:,}, Overall Actual={total_actual:,}, High/Critical Risk Zones={len(high_risk)}")
+            lines.append("CROWD DATA (all locations):")
+            for c in crowds:
                 lines.append(
                     f"  • {c.location}: actual={c.actual_visitors:,}, "
                     f"expected={c.expected_visitors:,}, risk={c.risk_level}, date={c.date}"
@@ -351,13 +350,17 @@ def _build_rag_context(db: Session) -> str:
     except Exception as e:
         lines.append(f"CROWD DATA: Error fetching — {e}")
 
-    # ── MEDICAL DATA (per camp) ────────────────────────────────
+    # ── MEDICAL DATA ────────────────────────────────────────────
     try:
         from app.models.medical import Medical
         medicals = db.query(Medical).all()
         if medicals:
-            lines.append("\nMEDICAL DATA (per camp):")
-            for m in medicals[-3:]:
+            total_docs  = sum(m.available_doctors   or 0 for m in medicals)
+            total_ambs  = sum(m.available_ambulances or 0 for m in medicals)
+            total_pts   = sum(m.actual_patients      or 0 for m in medicals)
+            lines.append(f"\nMEDICAL DATA SUMMARY: Camps={len(medicals)}, Total Doctors={total_docs}, Total Ambulances={total_ambs}, Total Patients={total_pts}")
+            lines.append("MEDICAL DATA (all camps):")
+            for m in medicals:
                 lines.append(
                     f"  • {m.medical_camp} @ {m.location}: "
                     f"doctors={m.available_doctors}, nurses={m.available_nurses}, "
@@ -370,13 +373,16 @@ def _build_rag_context(db: Session) -> str:
     except Exception as e:
         lines.append(f"\nMEDICAL DATA: Error fetching — {e}")
 
-    # ── TRAFFIC DATA (per road) ────────────────────────────────
+    # ── TRAFFIC DATA ─────────────────────────────────────────────
     try:
         from app.models.traffic import Traffic
         traffics = db.query(Traffic).all()
         if traffics:
-            lines.append("\nTRAFFIC DATA (per road):")
-            for t in traffics[-3:]:
+            total_vehicles = sum(t.vehicle_count or 0 for t in traffics)
+            avg_speed = round(sum(t.average_speed or 0 for t in traffics) / len(traffics), 1)
+            lines.append(f"\nTRAFFIC DATA SUMMARY: Roads Monitored={len(traffics)}, Total Vehicles={total_vehicles:,}, Avg Speed={avg_speed} km/h")
+            lines.append("TRAFFIC DATA (all roads):")
+            for t in traffics:
                 lines.append(
                     f"  • {t.road_name} @ {t.location}: "
                     f"vehicles={t.vehicle_count}, speed={t.average_speed} km/h, "
@@ -387,14 +393,15 @@ def _build_rag_context(db: Session) -> str:
     except Exception as e:
         lines.append(f"\nTRAFFIC DATA: Error fetching — {e}")
 
-    # ── SAFETY DATA (per checkpoint) ──────────────────────────
+    # ── SAFETY DATA ──────────────────────────────────────────────
     try:
         from app.models.safety import Safety
         safeties = db.query(Safety).all()
         if safeties:
             total_officers = sum(s.officers_deployed or 0 for s in safeties)
-            lines.append(f"\nSAFETY DATA (total officers: {total_officers}):")
-            for s in safeties[-3:]:
+            lines.append(f"\nSAFETY DATA SUMMARY: Checkpoints={len(safeties)}, Total Officers Deployed={total_officers}")
+            lines.append("SAFETY DATA (all checkpoints):")
+            for s in safeties:
                 lines.append(
                     f"  • {s.checkpoint_name} (Zone: {s.zone}): "
                     f"officers={s.officers_deployed}, gate={s.gate_status}, "
@@ -405,69 +412,83 @@ def _build_rag_context(db: Session) -> str:
     except Exception as e:
         lines.append(f"\nSAFETY DATA: Error fetching — {e}")
 
-    # ── INFRASTRUCTURE & PROJECTS ──────────────────────────────
+    # ── INFRASTRUCTURE & PROJECTS ────────────────────────────────
     try:
         from app.models.project import Project
         projects = db.query(Project).all()
         if projects:
-            lines.append("\nINFRASTRUCTURE PROJECTS:")
-            for p in projects[-3:]:
+            total_budget = sum(p.budget or 0 for p in projects)
+            avg_progress = round(sum(p.progress or 0 for p in projects) / len(projects), 1)
+            lines.append(f"\nINFRASTRUCTURE SUMMARY: Projects={len(projects)}, Total Budget=₹{total_budget:,}, Avg Progress={avg_progress}%")
+            lines.append("INFRASTRUCTURE PROJECTS (all):")
+            for p in projects:
                 lines.append(f"  • {p.project_name} ({p.department}): Budget=₹{p.budget:,}, Progress={p.progress}%, Status={p.status}, Ends: {p.end_date}")
     except Exception: pass
 
-    # ── BUDGET & FINANCE ──────────────────────────────────────
+    # ── BUDGET & FINANCE ─────────────────────────────────────────
     try:
         from app.models.budget import Budget
         budgets = db.query(Budget).all()
         if budgets:
-            lines.append("\nDEPARTMENT BUDGETS:")
-            for b in budgets[-3:]:
+            total_alloc = sum(b.allocated_budget or 0 for b in budgets)
+            total_spent = sum(b.spent_budget or 0 for b in budgets)
+            lines.append(f"\nBUDGET SUMMARY: Departments={len(budgets)}, Total Allocated=₹{total_alloc:,.2f}, Total Spent=₹{total_spent:,.2f}, Remaining=₹{total_alloc - total_spent:,.2f}")
+            lines.append("DEPARTMENT BUDGETS (all):")
+            for b in budgets:
                 lines.append(f"  • {b.department}: Allocated=₹{b.allocated_budget:,.2f}, Spent=₹{b.spent_budget:,.2f}, Remaining=₹{b.remaining_budget:,.2f}")
     except Exception: pass
 
-    # ── SADHU GRAM & AKHARAS ──────────────────────────────────
+    # ── SADHU GRAM & AKHARAS ─────────────────────────────────────
     try:
         from app.models.sadhu_gram import SadhuGram
         sadhus = db.query(SadhuGram).all()
         if sadhus:
-            lines.append("\nSADHU GRAM (AKHARAS):")
-            for sg in sadhus[-3:]:
+            total_sadhus = sum(sg.sadhu_count or 0 for sg in sadhus)
+            lines.append(f"\nSADHU GRAM SUMMARY: Akharas={len(sadhus)}, Total Sadhus={total_sadhus:,}")
+            lines.append("SADHU GRAM (all akharas):")
+            for sg in sadhus:
                 lines.append(f"  • {sg.akhara_name} (Zone {sg.zone}): Sadhus={sg.sadhu_count}/{sg.capacity}, Area={sg.allocated_area_sqm} sqm, Status={sg.status}")
     except Exception: pass
 
-    # ── LAND ACQUISITION ──────────────────────────────────────
+    # ── LAND ACQUISITION ─────────────────────────────────────────
     try:
         from app.models.land_acquisition import LandAcquisition
         lands = db.query(LandAcquisition).all()
         if lands:
-            lines.append("\nLAND ACQUISITION:")
-            for l in lands[-3:]:
+            total_area = sum(l.area_sqm or 0 for l in lands)
+            total_comp = sum(l.compensation_amount or 0 for l in lands)
+            lines.append(f"\nLAND ACQUISITION SUMMARY: Parcels={len(lands)}, Total Area={total_area:,} sqm, Total Compensation=₹{total_comp:,.2f}")
+            lines.append("LAND ACQUISITION (all):")
+            for l in lands:
                 lines.append(f"  • {l.location} (Owner: {l.owner_name}): Area={l.area_sqm} sqm, Purpose={l.purpose}, Status={l.status}, Cost=₹{l.compensation_amount:,.2f}")
     except Exception: pass
 
-    # ── ACCOMMODATION ──────────────────────────────────────────
+    # ── ACCOMMODATION ────────────────────────────────────────────
     try:
         from app.models.accommodation import Accommodation
         acc = db.query(Accommodation).all()
         if acc:
-            lines.append("\nACCOMMODATION (Devotees):")
-            for a in acc[-3:]:
+            confirmed = len([a for a in acc if a.status == "Confirmed"])
+            lines.append(f"\nACCOMMODATION SUMMARY: Total Bookings={len(acc)}, Confirmed={confirmed}")
+            lines.append("ACCOMMODATION (all devotees):")
+            for a in acc:
                 lines.append(f"  • {a.devotee_name} @ {a.location}: Status={a.status}, Darshan={a.darshan_slot}")
     except Exception: pass
 
-    # ── CLEANLINESS & SANITATION ──────────────────────────────
+    # ── CLEANLINESS & SANITATION ─────────────────────────────────
     try:
         from app.models.cleanliness import Cleanliness
         cln = db.query(Cleanliness).all()
         if cln:
-            lines.append("\nCLEANLINESS (Water & Ghats):")
-            for c in cln[-3:]:
+            avg_aqi = round(sum(c.water_quality_index or 0 for c in cln) / len(cln), 1)
+            lines.append(f"\nCLEANLINESS SUMMARY: Ghats Monitored={len(cln)}, Avg Water AQI={avg_aqi}")
+            lines.append("CLEANLINESS (all ghats):")
+            for c in cln:
                 lines.append(f"  • {c.ghat_name} (Zone {c.zone}): Status={c.sanitation_status}, Water AQI={c.water_quality_index}, pH={c.ph_level}")
     except Exception: pass
 
-    # ── OFFICIAL EVENT SCHEDULE ──────────────────────────────
+    # ── OFFICIAL EVENT SCHEDULE ──────────────────────────────────
     lines.append("\nOFFICIAL NASHIK KUMBH MELA 2026-2028 EVENT SCHEDULE:")
-    lines.append("  (Each line: EVENT NUMBER | DATE | EVENT NAME)")
     lines.append("  01 | 31 October 2026      | Official Commencement - Flag Hoisting")
     lines.append("  02 | 24 July 2027         | Flag Hoisting Ceremony - Main Mela Begins")
     lines.append("  03 | 02 August 2027       | First Amrit Snan - Ashadh Somvati Amavasya")
@@ -487,7 +508,7 @@ def _build_rag_context(db: Session) -> str:
     lines.append("  17 | 25 May 2028          | Ganga Dussehra Utsav")
     lines.append("  18 | 24 July 2028         | Official Conclusion - Mela Ends")
 
-    # ── OFFICIALS & LEADERSHIP ────────────────────────────────
+    # ── OFFICIALS & LEADERSHIP ────────────────────────────────────
     lines.append("\nOFFICIALS & LEADERSHIP:")
     lines.append("  • President of India: Droupadi Murmu")
     lines.append("  • Prime Minister of India: Narendra Modi")
@@ -497,7 +518,7 @@ def _build_rag_context(db: Session) -> str:
     lines.append("  • Kumbh Mela Minister: Girish Mahajan")
     lines.append("  • Mayor of Nashik: Smt. Himgauri Aher-Adke")
 
-    # ── EMERGENCY CONTACTS ────────────────────────────────────
+    # ── EMERGENCY CONTACTS ────────────────────────────────────────
     lines.append("\nOFFICIAL EMERGENCY CONTACTS (Aaple Sarkar):")
     lines.append("  • Disaster Management: 1077")
     lines.append("  • Child Security & Welfare: 1098")
