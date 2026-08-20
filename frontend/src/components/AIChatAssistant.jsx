@@ -40,25 +40,9 @@ export default function AIChatAssistant() {
 
   const renderMessageContent = (content) => {
     if (!content) return null;
-    const thinkMatch = content.match(/<think>([\s\S]*?)<\/think>/);
-    if (thinkMatch) {
-      const thinkContent = thinkMatch[1].trim();
-      const restContent = content.replace(/<think>[\s\S]*?<\/think>/, '').trim();
-      return (
-        <>
-          {thinkContent && (
-            <details style={{ marginBottom: '1rem', background: 'rgba(255,255,255,0.05)', padding: '0.5rem', borderRadius: '0.5rem', fontSize: '0.85em' }}>
-              <summary style={{ cursor: 'pointer', color: 'var(--text-secondary)' }}>Reasoning Process</summary>
-              <div style={{ marginTop: '0.5rem', whiteSpace: 'pre-wrap', color: 'var(--text-secondary)' }}>
-                {thinkContent}
-              </div>
-            </details>
-          )}
-          <div style={{ whiteSpace: 'pre-wrap' }}>{restContent}</div>
-        </>
-      );
-    }
-    return <div style={{ whiteSpace: 'pre-wrap' }}>{content}</div>;
+    // Strip out the <think>...</think> block completely
+    const cleanContent = content.replace(/<think>[\s\S]*?<\/think>/, '').trim();
+    return <div style={{ whiteSpace: 'pre-wrap' }}>{cleanContent}</div>;
   };
 
   return (
