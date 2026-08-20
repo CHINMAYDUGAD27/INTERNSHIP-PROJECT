@@ -36,6 +36,11 @@ PREFERRED_MODELS = [
     "llama3-70b-8192",
     "llama3-8b-8192",
     "mixtral-8x7b-32768",
+    # New fallback models for changed Groq catalog
+    "openai/gpt-oss-120b",
+    "qwen/qwen3.6-27b",
+    "groq/compound",
+    "allam-2-7b"
 ]
 
 def _resolve_model():
