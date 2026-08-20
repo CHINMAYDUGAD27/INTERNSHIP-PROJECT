@@ -40,8 +40,8 @@ export default function AIChatAssistant() {
 
   const renderMessageContent = (content) => {
     if (!content) return null;
-    // Strip out the <think>...</think> block completely
-    const cleanContent = content.replace(/<think>[\s\S]*?<\/think>/, '').trim();
+    // Strip out the <think> block completely, even if </think> is missing
+    const cleanContent = content.replace(/<think>[\s\S]*?(?:<\/think>|$)/, '').trim();
     return <div style={{ whiteSpace: 'pre-wrap' }}>{cleanContent}</div>;
   };
 
