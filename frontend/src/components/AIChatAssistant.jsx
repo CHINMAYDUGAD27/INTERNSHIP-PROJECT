@@ -1,4 +1,4 @@
-﻿import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import api from '../api';
 import { Send, Bot, User } from 'lucide-react';
 
@@ -38,6 +38,29 @@ export default function AIChatAssistant() {
     }
   };
 
+  const renderMessageContent = (content) => {
+    if (!content) return null;
+    const thinkMatch = content.match(/<think>([\s\S]*?)<\/think>/);
+    if (thinkMatch) {
+      const thinkContent = thinkMatch[1].trim();
+      const restContent = content.replace(/<think>[\s\S]*?<\/think>/, '').trim();
+      return (
+        <>
+          {thinkContent && (
+            <details style={{ marginBottom: '1rem', background: 'rgba(255,255,255,0.05)', padding: '0.5rem', borderRadius: '0.5rem', fontSize: '0.85em' }}>
+              <summary style={{ cursor: 'pointer', color: 'var(--text-secondary)' }}>Reasoning Process</summary>
+              <div style={{ marginTop: '0.5rem', whiteSpace: 'pre-wrap', color: 'var(--text-secondary)' }}>
+                {thinkContent}
+              </div>
+            </details>
+          )}
+          <div style={{ whiteSpace: 'pre-wrap' }}>{restContent}</div>
+        </>
+      );
+    }
+    return <div style={{ whiteSpace: 'pre-wrap' }}>{content}</div>;
+  };
+
   return (
     <div className="chat-container">
       <h2 className="page-title">KumbhAI Assistant (Groq + RAG)</h2>
@@ -50,7 +73,7 @@ export default function AIChatAssistant() {
                 {msg.role === 'ai' ? <Bot size={16} /> : <User size={16} />}
                 {msg.role === 'ai' ? 'KumbhAI' : 'Admin'}
             </div>
-            <div style={{ whiteSpace: 'pre-wrap' }}>{msg.content}</div>
+            {renderMessageContent(msg.content)}
           </div>
         ))}
         {loading && (
