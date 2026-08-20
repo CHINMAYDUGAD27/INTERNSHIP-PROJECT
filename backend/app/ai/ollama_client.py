@@ -30,6 +30,7 @@ _client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 # terms acceptance. We use a fixed priority list instead.
 # ---------------------------------------------------------------------------
 PREFERRED_MODELS = [
+    "llama-3.3-70b-versatile",
     "llama-3.1-8b-instant",
     "llama3-8b-8192",
     "llama3-70b-8192",
@@ -43,12 +44,14 @@ def _resolve_model():
         for m in PREFERRED_MODELS:
             if m in available:
                 return m
-        # Last resort: any model that is NOT a restricted/terms-required one
-        restricted_keywords = ["whisper", "guard", "orpheus", "canopy"]
+        # Last resort: explicitly exclude deepseek and restricted
+        restricted_keywords = ["whisper", "guard", "orpheus", "canopy", "deepseek", "r1"]
         safe = [
             m for m in available
             if not any(kw in m.lower() for kw in restricted_keywords)
         ]
+        # Sort so we don't randomly pick a weird model
+        safe.sort()
         return safe[0] if safe else PREFERRED_MODELS[0]
     except Exception:
         return PREFERRED_MODELS[0]
@@ -64,13 +67,13 @@ def chat(messages: list[dict], temperature: float = 0.2) -> str:
 
     Generation settings tuned for accurate, on-topic answers:
       - temperature=0.2  → more deterministic / factual
-      - max_tokens=800   → enough for detailed answers without rambling
+      - max_tokens=4096  → prevent cutoff for models that use chain of thought
     """
     completion = _client.chat.completions.create(
         model=GROQ_CHAT_MODEL,
         messages=messages,
         temperature=temperature,
-        max_tokens=800,
+        max_tokens=4096,
         top_p=0.9,
         stream=False,
     )

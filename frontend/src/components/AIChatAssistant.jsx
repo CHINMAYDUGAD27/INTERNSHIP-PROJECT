@@ -42,6 +42,9 @@ export default function AIChatAssistant() {
     if (!content) return null;
     // Strip out the <think> block completely, even if </think> is missing
     const cleanContent = content.replace(/<think>[\s\S]*?(?:<\/think>|$)/, '').trim();
+    if (!cleanContent) {
+      return <div style={{ whiteSpace: 'pre-wrap', fontStyle: 'italic', color: 'var(--text-secondary)' }}>The AI's response was interrupted while processing. Please try asking again.</div>;
+    }
     return <div style={{ whiteSpace: 'pre-wrap' }}>{cleanContent}</div>;
   };
 
