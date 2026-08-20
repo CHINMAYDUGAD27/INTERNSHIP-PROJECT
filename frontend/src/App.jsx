@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import api from './api'
 import { BrowserRouter, Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom'
-import { LayoutDashboard, Users, Activity, Wallet, Bot, Navigation, LogOut, BookOpen, Home, Ticket, Droplets, MapPin, ShieldCheck } from 'lucide-react'
+import { LayoutDashboard, Users, Activity, Wallet, Bot, Navigation, LogOut, BookOpen, Home, Ticket, Droplets, MapPin, ShieldCheck, Menu, X } from 'lucide-react'
 import Dashboard from './components/Dashboard'
 import AIChatAssistant from './components/AIChatAssistant'
 import Crowd from './components/Crowd'
@@ -17,7 +17,7 @@ import Cleanliness from './components/Cleanliness'
 import LandAcquisition from './components/LandAcquisition'
 import Safety from './components/Safety'
 
-function Sidebar({ setAuth, user }) {
+function Sidebar({ setAuth, user, isOpen, setIsOpen }) {
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -30,8 +30,13 @@ function Sidebar({ setAuth, user }) {
   const dept = user?.department || 'General';
 
   return (
-    <div className="sidebar">
-      <h1 style={{fontSize: '1.1rem'}}>Nashik KumbhMela 2027-2028</h1>
+    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+      <div className="sidebar-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+        <h1 style={{fontSize: '1.1rem', margin: 0, textAlign: 'left'}}>Nashik KumbhMela 2027</h1>
+        <button className="mobile-close-btn" onClick={() => setIsOpen(false)}>
+          <X size={24} />
+        </button>
+      </div>
       
       {/* User Info Badge */}
       <div style={{ background: 'rgba(255,255,255,0.05)', padding: '0.75rem', borderRadius: '0.5rem', marginBottom: '1.5rem', textAlign: 'center', fontSize: '0.85rem' }}>
@@ -139,9 +144,20 @@ function ProtectedRoute({ children, isAuthenticated, user, allowedDepts }) {
 }
 
 function MainLayout({ children, setAuth, user }) {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   return (
     <div className="app-container">
-      <Sidebar setAuth={setAuth} user={user} />
+      {isSidebarOpen && <div className="sidebar-overlay" onClick={() => setIsSidebarOpen(false)} />}
+      <Sidebar setAuth={setAuth} user={user} isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
+      
+      <div className="mobile-header">
+        <button className="mobile-menu-btn" onClick={() => setIsSidebarOpen(true)}>
+          <Menu size={24} />
+        </button>
+        <span className="mobile-title">AI KumbhMela DSS</span>
+      </div>
+
       <main className="main-content">
         {children}
       </main>
