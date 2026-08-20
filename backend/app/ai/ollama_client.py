@@ -73,7 +73,7 @@ def chat(messages: list[dict], temperature: float = 0.2) -> str:
         model=GROQ_CHAT_MODEL,
         messages=messages,
         temperature=temperature,
-        max_tokens=1024,
+        max_tokens=1500,
         top_p=0.9,
         stream=False,
     )

@@ -530,7 +530,12 @@ def generic_ai_chat(request: ChatRequest, db: Session = Depends(get_db)):
             "• Chief Minister of Maharashtra: Devendra Fadnavis\n"
             "• Kumbh Mela Minister: Girish Mahajan\n"
             "• Mayor of Nashik: Smt. Himgauri Aher-Adke\n"
-            "• Key Bathing Dates: 2 Aug 2027, 31 Aug 2027, 11 Sep 2027, 12 Sep 2027, 27 Feb 2028\n\n"
+            "• Key Bathing Dates (Amrit Snan):\n"
+            "  - First Amrit Snan: 2 August 2027 (Ashadh Somvati Amavasya) at Ramkund & Kushavarta Kund\n"
+            "  - Second Amrit Snan: 31 August 2027 (Shravan Amavasya)\n"
+            "  - Third Amrit Snan (Vaishnava): 11 September 2027\n"
+            "  - Third Amrit Snan (Shaiva): 12 September 2027\n"
+            "  - Maha Shivratri Snan: 27 February 2028\n\n"
 
             "=== CRITICAL RULES (NEVER BREAK THESE) ===\n"
             "RULE 1 - STATIC FACTS: You MUST use the STATIC FACTS above for any question about dates, duration, location, or officials. NEVER use your own training data for these — it may be wrong.\n"
@@ -539,7 +544,7 @@ def generic_ai_chat(request: ChatRequest, db: Session = Depends(get_db)):
             "RULE 3 - OFFICIALS: ONLY use names from the STATIC FACTS or OFFICIALS section. Never guess.\n"
             "RULE 4 - GENERAL KNOWLEDGE FALLBACK: First, always try to answer based on the LIVE DATA and STATIC FACTS provided. If the information requested is NOT available there (e.g., historical context, general Kumbh Mela traditions, religious significance), use your general intelligence to provide an accurate and helpful answer.\n"
             "RULE 5 - GREETINGS: For hi/hello/greetings — respond warmly and briefly, offer to help.\n"
-            "RULE 6 - FORMAT: Be direct. No preamble. Keep answers under 200 words.\n\n"
+            "RULE 6 - FORMAT: Be DIRECT. Do NOT start with preambles like 'Based on the provided data...' or 'According to...'. Answer immediately and concisely in under 200 words.\n\n"
             "=== LIVE PROJECT DATA ===\n"
             + rag_context
         )
