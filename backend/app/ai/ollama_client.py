@@ -34,36 +34,53 @@ _primary_client = _clients[0]
 # ---------------------------------------------------------------------------
 # Model selection
 # ---------------------------------------------------------------------------
+# Ordered by availability & reliability — most stable models first.
+# NOTE: Classic llama models (llama-3.x) are NOT available on this account's keys.
+# Available models discovered at startup (see logs):
+#   openai/gpt-oss-120b, openai/gpt-oss-20b, qwen/qwen3.8-27b,
+#   qwen/qwen3.6-27b, groq/compound, groq/compound-mini, allam-2-7b
 PREFERRED_MODELS = [
-    "llama-3.3-70b-versatile",   # 128K context — handles large RAG prompts
-    "llama-3.1-70b-versatile",
-    "llama-3.1-8b-instant",
-    "llama3-70b-8192",
-    "llama3-8b-8192",
-    "mixtral-8x7b-32768",
-    # New fallback models for changed Groq catalog
-    "openai/gpt-oss-120b",
-    "qwen/qwen3.6-27b",
-    "groq/compound",
-    "allam-2-7b"
+    "openai/gpt-oss-120b",       # Best quality available on this account
+    "openai/gpt-oss-20b",        # Faster GPT OSS variant
+    "qwen/qwen3.8-27b",          # Qwen 3.8 27B
+    "qwen/qwen3.6-27b",          # Qwen 3.6 27B
+    "groq/compound",             # Groq compound model
+    "groq/compound-mini",        # Groq compound mini
+    "llama-3.1-8b-instant",      # Fast llama (if access is granted)
+    "llama-3.3-70b-versatile",   # 128K context llama (if access is granted)
+    "llama-3.1-70b-versatile",   # Large llama (if access is granted)
+    "llama3-8b-8192",            # Legacy llama fallback
+    "llama3-70b-8192",           # Legacy llama fallback
+    "mixtral-8x7b-32768",        # Legacy mixtral fallback
+    "gemma2-9b-it",              # Google Gemma fallback
+    "allam-2-7b",                # Last resort — always available
 ]
 
 def _resolve_model():
     """Pick the first available model from our safe preferred list."""
     try:
         available = {m.id for m in _primary_client.models.list().data}
+        print(f"[Groq Client] Available models: {sorted(available)}")
+        # Exclude audio/vision-only and restricted models
+        restricted_keywords = ["whisper", "guard", "orpheus", "canopy", "deepseek", "r1", "tts", "vision"]
         for m in PREFERRED_MODELS:
             if m in available:
+                print(f"[Groq Client] Selected model: {m}")
                 return m
-        # Last resort: explicitly exclude deepseek and restricted
-        restricted_keywords = ["whisper", "guard", "orpheus", "canopy", "deepseek", "r1"]
+        # Last resort: pick any safe text model
         safe = [
-            m for m in available
+            m for m in sorted(available)
             if not any(kw in m.lower() for kw in restricted_keywords)
         ]
-        safe.sort()
-        return safe[0] if safe else PREFERRED_MODELS[0]
-    except Exception:
+        if safe:
+            print(f"[Groq Client] No preferred model found. Using fallback: {safe[0]}")
+            return safe[0]
+        # Absolute last resort
+        print(f"[Groq Client] WARNING: Could not find any available model. Using: {PREFERRED_MODELS[0]}")
+        return PREFERRED_MODELS[0]
+    except Exception as e:
+        # On auth failure or network error, default to the smallest/most-available model
+        print(f"[Groq Client] WARNING: Could not list models ({e}). Defaulting to: {PREFERRED_MODELS[0]}")
         return PREFERRED_MODELS[0]
 
 GROQ_CHAT_MODEL = _resolve_model()
