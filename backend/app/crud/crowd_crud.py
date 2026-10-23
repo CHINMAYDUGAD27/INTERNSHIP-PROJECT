@@ -2,9 +2,16 @@ from sqlalchemy.orm import Session
 
 from app.models.crowd import Crowd
 from app.schemas.crowd_schema import CrowdCreate
+from app.ml.prediction import predict_risk
 
 
 def create_crowd(db: Session, crowd: CrowdCreate):
+
+    # ML auto-predicts risk level based on visitor counts
+    predicted_risk = predict_risk(
+        previous_visitors=crowd.expected_visitors,
+        current_visitors=crowd.actual_visitors
+    )
 
     new_record = Crowd(
 
@@ -16,7 +23,7 @@ def create_crowd(db: Session, crowd: CrowdCreate):
 
         actual_visitors=crowd.actual_visitors,
 
-        risk_level=crowd.risk_level
+        risk_level=predicted_risk  # ML-predicted, not manually entered
 
     )
 

@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import api from '../api';
 import { ShieldAlert, PlusCircle, X } from 'lucide-react';
 
@@ -6,7 +6,7 @@ export default function Crowd() {
   const [records, setRecords] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
-  const [formData, setFormData] = useState({ date: new Date().toISOString().split('T')[0], location: '', expected_visitors: 0, actual_visitors: 0, risk_level: 'Low' });
+  const [formData, setFormData] = useState({ date: new Date().toISOString().split('T')[0], location: '', expected_visitors: 0, actual_visitors: 0 });
 
   const fetchCrowd = async () => {
     try {
@@ -111,12 +111,7 @@ export default function Crowd() {
                   <input type="number" className="form-input" required onChange={e => setFormData({...formData, actual_visitors: parseInt(e.target.value)})} />
                 </div>
                 <div className="form-group">
-                  <label className="form-label">Risk Level</label>
-                  <select className="form-input" onChange={e => setFormData({...formData, risk_level: e.target.value})}>
-                    <option value="Low">Low</option>
-                    <option value="Medium">Medium</option>
-                    <option value="High">High</option>
-                  </select>
+                  <p className="form-label" style={{color: 'var(--text-muted)', fontSize: '0.85rem'}}>⚡ Risk Level will be <strong>auto-predicted by ML</strong> based on visitor counts.</p>
                 </div>
                 <button type="submit" className="btn-primary" style={{marginTop: '1rem', justifyContent: 'center'}}>Submit Data</button>
               </form>

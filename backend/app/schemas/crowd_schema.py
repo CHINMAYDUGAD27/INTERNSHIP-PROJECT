@@ -12,12 +12,12 @@ class CrowdCreate(BaseModel):
 
     actual_visitors: int
 
-    risk_level: str
-
 
 class CrowdResponse(CrowdCreate):
 
     id: int
+
+    risk_level: str
 
     class Config:
         from_attributes = True
