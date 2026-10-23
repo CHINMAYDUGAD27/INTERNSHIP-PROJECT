@@ -1,9 +1,9 @@
-from fastapi import APIRouter, Depends,HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.database.database import get_db
 from app.models.traffic import Traffic
-from app.traffic.traffic_prediction import predict_traffic
+from app.ml.traffic_prediction import predict_traffic
 from app.ai.traffic_ai import analyze_traffic
 
 
@@ -24,7 +24,6 @@ def create_traffic(
     event_type: str,
     db: Session = Depends(get_db)
 ):
-
     traffic = Traffic(
         location=location,
         road_name=road_name,
@@ -38,33 +37,57 @@ def create_traffic(
     db.commit()
     db.refresh(traffic)
 
+    # ML Congestion prediction
+    congestion = predict_traffic(
+        traffic.vehicle_count,
+        traffic.average_speed
+    )
+
     return {
         "message": "Traffic data added successfully",
-        "data": traffic
+        "data": {
+            "id": traffic.id,
+            "location": traffic.location,
+            "road_name": traffic.road_name,
+            "vehicle_count": traffic.vehicle_count,
+            "average_speed": traffic.average_speed,
+            "weather_condition": traffic.weather_condition,
+            "event_type": traffic.event_type,
+            "congestion_level": congestion
+        }
     }
 
 
-
-# Get All Traffic Records
+# Get All Traffic Records with ML Congestion Prediction
 @router.get("/")
 def get_traffic(
     db: Session = Depends(get_db)
 ):
-
     traffic_data = db.query(Traffic).all()
+    results = []
+    for t in traffic_data:
+        congestion = predict_traffic(t.vehicle_count, t.average_speed)
+        results.append({
+            "id": t.id,
+            "location": t.location,
+            "road_name": t.road_name,
+            "vehicle_count": t.vehicle_count,
+            "average_speed": t.average_speed,
+            "weather_condition": t.weather_condition,
+            "event_type": t.event_type,
+            "congestion_level": congestion
+        })
+    return results
 
-    return traffic_data
 
 @router.get("/predict/{traffic_id}")
 def predict_traffic_level(
     traffic_id: int,
     db: Session = Depends(get_db)
 ):
-
     traffic = db.query(Traffic).filter(
         Traffic.id == traffic_id
     ).first()
-
 
     if not traffic:
         raise HTTPException(
@@ -72,12 +95,10 @@ def predict_traffic_level(
             detail="Traffic record not found"
         )
 
-
     prediction = predict_traffic(
         traffic.vehicle_count,
         traffic.average_speed
     )
-
 
     return {
         "traffic_data": {
@@ -87,22 +108,20 @@ def predict_traffic_level(
             "average_speed": traffic.average_speed,
             "event_type": traffic.event_type
         },
-
         "ml_prediction": {
             "congestion_level": prediction
         }
     }
 
+
 @router.get("/smart-analysis/{traffic_id}")
 def smart_traffic_analysis(
-    traffic_id:int,
-    db:Session = Depends(get_db)
+    traffic_id: int,
+    db: Session = Depends(get_db)
 ):
-
     traffic = db.query(Traffic).filter(
         Traffic.id == traffic_id
     ).first()
-
 
     if not traffic:
         raise HTTPException(
@@ -110,17 +129,13 @@ def smart_traffic_analysis(
             detail="Traffic record not found"
         )
 
-
     # ML Prediction
-
     congestion = predict_traffic(
         traffic.vehicle_count,
         traffic.average_speed
     )
 
-
-    # Groq AI Recommendation
-
+    # AI Recommendation
     recommendation = analyze_traffic(
         traffic.location,
         traffic.road_name,
@@ -129,22 +144,15 @@ def smart_traffic_analysis(
         congestion
     )
 
-
     return {
-
-        "traffic_data":{
-            "location":traffic.location,
-            "road_name":traffic.road_name,
-            "vehicle_count":traffic.vehicle_count,
-            "average_speed":traffic.average_speed
+        "traffic_data": {
+            "location": traffic.location,
+            "road_name": traffic.road_name,
+            "vehicle_count": traffic.vehicle_count,
+            "average_speed": traffic.average_speed
         },
-
-
-        "ml_prediction":{
-            "congestion_level":congestion
+        "ml_prediction": {
+            "congestion_level": congestion
         },
-
-
-        "ai_recommendation":recommendation
-
+        "ai_recommendation": recommendation
     }

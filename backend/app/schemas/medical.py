@@ -1,3 +1,4 @@
+from typing import Optional
 from pydantic import BaseModel
 
 
@@ -9,7 +10,7 @@ class MedicalCreate(BaseModel):
     available_ambulances: int
     expected_patients: int
     actual_patients: int
-    emergency_level: str
+    emergency_level: Optional[str] = None
 
 
 class MedicalUpdate(BaseModel):
@@ -20,7 +21,7 @@ class MedicalUpdate(BaseModel):
     available_ambulances: int
     expected_patients: int
     actual_patients: int
-    emergency_level: str
+    emergency_level: Optional[str] = None
 
 
 class MedicalResponse(BaseModel):

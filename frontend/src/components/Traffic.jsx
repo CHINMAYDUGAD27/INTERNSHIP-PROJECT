@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import api from '../api';
 import { Navigation, PlusCircle, X } from 'lucide-react';
 
@@ -82,14 +82,15 @@ export default function Traffic() {
               <th>Road Name</th>
               <th>Vehicle Count</th>
               <th>Avg Speed (km/h)</th>
+              <th>Congestion Level (ML)</th>
               <th>Event Type</th>
             </tr>
           </thead>
           <tbody>
             {loading ? (
-              <tr><td colSpan="6" style={{textAlign:'center'}}>Loading...</td></tr>
+              <tr><td colSpan="7" style={{textAlign:'center'}}>Loading...</td></tr>
             ) : records.length === 0 ? (
-              <tr><td colSpan="6" style={{textAlign:'center'}}>No traffic records found.</td></tr>
+              <tr><td colSpan="7" style={{textAlign:'center'}}>No traffic records found.</td></tr>
             ) : (
               records.map(r => (
                 <tr key={r.id}>
@@ -99,6 +100,11 @@ export default function Traffic() {
                   <td>{r.vehicle_count.toLocaleString()}</td>
                   <td style={{ fontWeight: 600 }}>
                     {r.average_speed} km/h
+                  </td>
+                  <td>
+                    <span className={`badge ${r.congestion_level?.toLowerCase() === 'high' ? 'danger' : r.congestion_level?.toLowerCase() === 'medium' ? 'warning' : 'success'}`}>
+                      {r.congestion_level || 'Low'}
+                    </span>
                   </td>
                   <td>{r.event_type}</td>
                 </tr>
@@ -132,6 +138,9 @@ export default function Traffic() {
                 <div className="form-group">
                   <label className="form-label">Avg Speed (km/h)</label>
                   <input type="number" className="form-input" required value={formData.average_speed} onChange={e => setFormData({...formData, average_speed: parseInt(e.target.value)})} />
+                </div>
+                <div className="form-group">
+                  <p className="form-label" style={{color: 'var(--text-muted)', fontSize: '0.85rem'}}>⚡ Congestion Level will be <strong>auto-predicted by ML model</strong> based on vehicle count & speed.</p>
                 </div>
                 <button type="submit" className="btn-primary" style={{marginTop: '1rem', justifyContent: 'center'}}>Submit Data</button>
               </form>

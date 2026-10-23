@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import api from '../api';
 import { Activity, PlusCircle, X } from 'lucide-react';
 
@@ -13,8 +13,7 @@ export default function Medical() {
     available_nurses: 0, 
     available_ambulances: 0, 
     expected_patients: 0, 
-    actual_patients: 0, 
-    emergency_level: 'Normal' 
+    actual_patients: 0 
   });
 
   const fetchMedical = async () => {
@@ -129,7 +128,7 @@ export default function Medical() {
               <th>Nurses</th>
               <th>Ambulances</th>
               <th>Patients (Expected / Actual)</th>
-              <th>Level</th>
+              <th>Emergency Level (ML)</th>
             </tr>
           </thead>
           <tbody>
@@ -189,20 +188,15 @@ export default function Medical() {
                   <input type="number" className="form-input" required value={formData.available_ambulances} onChange={e => setFormData({...formData, available_ambulances: parseInt(e.target.value)})} />
                 </div>
                 <div className="form-group">
-                  <label className="form-label">Emergency Level</label>
-                  <select className="form-input" value={formData.emergency_level} onChange={e => setFormData({...formData, emergency_level: e.target.value})}>
-                    <option value="Normal">Normal</option>
-                    <option value="High">High</option>
-                    <option value="Critical">Critical</option>
-                  </select>
-                </div>
-                <div className="form-group">
                   <label className="form-label">Expected Patients</label>
                   <input type="number" className="form-input" required value={formData.expected_patients} onChange={e => setFormData({...formData, expected_patients: parseInt(e.target.value)})} />
                 </div>
                 <div className="form-group">
                   <label className="form-label">Actual Patients</label>
                   <input type="number" className="form-input" required value={formData.actual_patients} onChange={e => setFormData({...formData, actual_patients: parseInt(e.target.value)})} />
+                </div>
+                <div className="form-group" style={{gridColumn: '1 / -1'}}>
+                  <p className="form-label" style={{color: 'var(--text-muted)', fontSize: '0.85rem'}}>⚡ Emergency Level will be <strong>auto-predicted by ML model</strong> based on patient surge and medical staff.</p>
                 </div>
                 
                 <button type="submit" className="btn-primary" style={{gridColumn: '1 / -1', marginTop: '1rem', justifyContent: 'center'}}>Submit Data</button>
