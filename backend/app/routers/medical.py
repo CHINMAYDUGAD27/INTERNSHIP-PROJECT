@@ -64,7 +64,21 @@ def create_medical(
 def get_all_medical(
     db: Session = Depends(get_db)
 ):
-    return db.query(Medical).all()
+    records = db.query(Medical).all()
+    # Ensure every record in the table dynamically reflects the calibrated ML prediction
+    for r in records:
+        pred = predict_emergency_level(
+            available_doctors=r.available_doctors,
+            available_nurses=r.available_nurses,
+            available_ambulances=r.available_ambulances,
+            expected_patients=r.expected_patients,
+            actual_patients=r.actual_patients
+        )
+        if r.emergency_level != pred:
+            r.emergency_level = pred
+            db.add(r)
+    db.commit()
+    return records
 
 
 @router.get("/predict/{medical_id}")
