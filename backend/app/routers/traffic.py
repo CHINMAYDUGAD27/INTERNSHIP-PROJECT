@@ -13,6 +13,17 @@ router = APIRouter(
 )
 
 
+# Live ML prediction preview (no DB write)
+@router.post("/preview-predict")
+def preview_predict_traffic(
+    vehicle_count: int = 0,
+    average_speed: int = 1
+):
+    """Live ML congestion prediction preview — no DB write."""
+    congestion = predict_traffic(vehicle_count, average_speed)
+    return {"congestion_level": congestion}
+
+
 # Create Traffic Record
 @router.post("/")
 def create_traffic(

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import api from '../api';
-import { Activity, PlusCircle, X } from 'lucide-react';
+import { Activity, PlusCircle, X, Brain, Loader2 } from 'lucide-react';
 
 export default function Medical() {
   const [records, setRecords] = useState([]);
@@ -15,6 +15,11 @@ export default function Medical() {
     expected_patients: 0, 
     actual_patients: 0 
   });
+
+  // ML Preview State
+  const [mlPreview, setMlPreview] = useState(null);       // "Normal" | "High" | "Critical"
+  const [mlLoading, setMlLoading] = useState(false);
+  const debounceRef = useRef(null);
 
   const fetchMedical = async () => {
     try {
@@ -31,6 +36,54 @@ export default function Medical() {
   };
 
   useEffect(() => { fetchMedical(); }, []);
+
+  // ── Live ML Prediction Preview ───────────────────────────────
+  const fetchMLPreview = useCallback(async (data) => {
+    const { available_doctors, available_nurses, available_ambulances, expected_patients, actual_patients } = data;
+    // Only predict when we have meaningful values
+    if (available_doctors <= 0 && available_nurses <= 0) {
+      setMlPreview(null);
+      return;
+    }
+    setMlLoading(true);
+    try {
+      const token = localStorage.getItem('token');
+      const params = new URLSearchParams({
+        available_doctors: Math.max(available_doctors, 1),
+        available_nurses: Math.max(available_nurses, 1),
+        available_ambulances: Math.max(available_ambulances, 1),
+        expected_patients: Math.max(expected_patients, 1),
+        actual_patients: Math.max(actual_patients, 0)
+      });
+      const res = await api.post(`/api/medical/preview-predict?${params}`, {}, {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      setMlPreview(res.data.emergency_level);
+    } catch (err) {
+      console.error("ML preview failed", err);
+      setMlPreview(null);
+    } finally {
+      setMlLoading(false);
+    }
+  }, []);
+
+  // Debounced trigger on form data change
+  useEffect(() => {
+    if (!showModal) return;
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    debounceRef.current = setTimeout(() => {
+      fetchMLPreview(formData);
+    }, 400);
+    return () => clearTimeout(debounceRef.current);
+  }, [formData.available_doctors, formData.available_nurses, formData.available_ambulances, formData.expected_patients, formData.actual_patients, showModal, fetchMLPreview]);
+
+  // Reset preview when modal closes
+  useEffect(() => {
+    if (!showModal) {
+      setMlPreview(null);
+      setMlLoading(false);
+    }
+  }, [showModal]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -77,6 +130,16 @@ export default function Medical() {
       available_nurses: autoNurses,
       available_ambulances: autoAmbulances
     });
+  };
+
+  // ── ML Badge helper ──────────────────────────────────────────
+  const mlBadgeStyle = (level) => {
+    const colors = {
+      Critical: { bg: 'rgba(239,68,68,0.15)', border: '#EF4444', text: '#F87171', glow: '0 0 18px rgba(239,68,68,0.4)' },
+      High:     { bg: 'rgba(245,158,11,0.15)', border: '#F59E0B', text: '#FBBF24', glow: '0 0 18px rgba(245,158,11,0.4)' },
+      Normal:   { bg: 'rgba(16,185,129,0.15)', border: '#10B981', text: '#34D399', glow: '0 0 18px rgba(16,185,129,0.4)' },
+    };
+    return colors[level] || colors.Normal;
   };
 
   return (
@@ -177,26 +240,57 @@ export default function Medical() {
                 </div>
                 <div className="form-group">
                   <label className="form-label">Doctors Available</label>
-                  <input type="number" className="form-input" required value={formData.available_doctors} onChange={e => setFormData({...formData, available_doctors: parseInt(e.target.value)})} />
+                  <input type="number" className="form-input" required value={formData.available_doctors} onChange={e => setFormData({...formData, available_doctors: parseInt(e.target.value) || 0})} />
                 </div>
                 <div className="form-group">
                   <label className="form-label">Nurses Available</label>
-                  <input type="number" className="form-input" required value={formData.available_nurses} onChange={e => setFormData({...formData, available_nurses: parseInt(e.target.value)})} />
+                  <input type="number" className="form-input" required value={formData.available_nurses} onChange={e => setFormData({...formData, available_nurses: parseInt(e.target.value) || 0})} />
                 </div>
                 <div className="form-group">
                   <label className="form-label">Ambulances</label>
-                  <input type="number" className="form-input" required value={formData.available_ambulances} onChange={e => setFormData({...formData, available_ambulances: parseInt(e.target.value)})} />
+                  <input type="number" className="form-input" required value={formData.available_ambulances} onChange={e => setFormData({...formData, available_ambulances: parseInt(e.target.value) || 0})} />
                 </div>
                 <div className="form-group">
                   <label className="form-label">Expected Patients</label>
-                  <input type="number" className="form-input" required value={formData.expected_patients} onChange={e => setFormData({...formData, expected_patients: parseInt(e.target.value)})} />
+                  <input type="number" className="form-input" required value={formData.expected_patients} onChange={e => setFormData({...formData, expected_patients: parseInt(e.target.value) || 0})} />
                 </div>
                 <div className="form-group">
                   <label className="form-label">Actual Patients</label>
-                  <input type="number" className="form-input" required value={formData.actual_patients} onChange={e => setFormData({...formData, actual_patients: parseInt(e.target.value)})} />
+                  <input type="number" className="form-input" required value={formData.actual_patients} onChange={e => setFormData({...formData, actual_patients: parseInt(e.target.value) || 0})} />
                 </div>
-                <div className="form-group" style={{gridColumn: '1 / -1'}}>
-                  <p className="form-label" style={{color: 'var(--text-muted)', fontSize: '0.85rem'}}>⚡ Emergency Level will be <strong>auto-predicted by ML model</strong> based on patient surge and medical staff.</p>
+
+                {/* ── ML Live Prediction Preview ─────────────── */}
+                <div style={{
+                  gridColumn: '1 / -1',
+                  background: mlPreview ? mlBadgeStyle(mlPreview).bg : 'rgba(99,102,241,0.08)',
+                  border: `1.5px solid ${mlPreview ? mlBadgeStyle(mlPreview).border : 'rgba(99,102,241,0.25)'}`,
+                  borderRadius: '0.85rem',
+                  padding: '1rem 1.25rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.85rem',
+                  transition: 'all 0.4s ease',
+                  boxShadow: mlPreview ? mlBadgeStyle(mlPreview).glow : 'none',
+                }}>
+                  {mlLoading ? (
+                    <Loader2 size={22} style={{ color: '#818CF8', animation: 'spin 1s linear infinite' }} />
+                  ) : (
+                    <Brain size={22} style={{ color: mlPreview ? mlBadgeStyle(mlPreview).text : '#818CF8' }} />
+                  )}
+                  <div style={{ flex: 1 }}>
+                    <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-muted)', marginBottom: '0.15rem' }}>
+                      ML Prediction Preview
+                    </div>
+                    {mlLoading ? (
+                      <div style={{ fontSize: '0.95rem', color: '#818CF8', fontWeight: 600 }}>Analyzing...</div>
+                    ) : mlPreview ? (
+                      <div style={{ fontSize: '1.15rem', fontWeight: 800, color: mlBadgeStyle(mlPreview).text, letterSpacing: '0.02em' }}>
+                        {mlPreview === 'Critical' ? '🔴' : mlPreview === 'High' ? '🟠' : '🟢'} Emergency Level: {mlPreview}
+                      </div>
+                    ) : (
+                      <div style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Fill in staff & patient data to see live prediction</div>
+                    )}
+                  </div>
                 </div>
                 
                 <button type="submit" className="btn-primary" style={{gridColumn: '1 / -1', marginTop: '1rem', justifyContent: 'center'}}>Submit Data</button>
@@ -205,6 +299,14 @@ export default function Medical() {
           </div>
         </div>
       )}
+
+      {/* Spin animation for loader */}
+      <style>{`
+        @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+      `}</style>
     </div>
   );
 }

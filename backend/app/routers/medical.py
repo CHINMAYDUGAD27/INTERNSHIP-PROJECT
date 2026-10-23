@@ -15,6 +15,25 @@ router = APIRouter(
     tags=["Medical Emergency"]
 )
 
+@router.post("/preview-predict")
+def preview_predict_medical(
+    available_doctors: int = 1,
+    available_nurses: int = 1,
+    available_ambulances: int = 1,
+    expected_patients: int = 1,
+    actual_patients: int = 0
+):
+    """Live ML prediction preview — no DB write."""
+    predicted = predict_emergency_level(
+        available_doctors=available_doctors,
+        available_nurses=available_nurses,
+        available_ambulances=available_ambulances,
+        expected_patients=expected_patients,
+        actual_patients=actual_patients
+    )
+    return {"emergency_level": predicted}
+
+
 @router.post("/", response_model=MedicalResponse)
 def create_medical(
     medical: MedicalCreate,
