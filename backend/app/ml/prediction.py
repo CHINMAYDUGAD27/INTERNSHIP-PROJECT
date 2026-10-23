@@ -11,13 +11,26 @@ model = joblib.load(
 
 
 def predict_risk(previous_visitors, current_visitors):
+    """
+    Predict crowd risk level using ML model.
+
+    Uses 4 features:
+      - expected_visitors (previous_visitors)
+      - actual_visitors   (current_visitors)
+      - ratio             = actual / expected  (key: catches 100→1000 as High)
+      - overflow          = actual - expected
+
+    Returns: "Low", "Medium", or "High"
+    """
+    expected = previous_visitors
+    actual = current_visitors
+
+    ratio = actual / expected if expected > 0 else float(actual)
+    overflow = actual - expected
 
     prediction = model.predict(
         [
-            [
-                previous_visitors,
-                current_visitors
-            ]
+            [expected, actual, ratio, overflow]
         ]
     )
 
