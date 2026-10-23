@@ -1,0 +1,61 @@
+water_quality_index,ph_level,dissolved_oxygen,sanitation_status
+85.0,7.2,6.8,Clean
+90.0,7.4,7.2,Clean
+95.0,7.1,7.5,Clean
+80.0,7.0,6.2,Clean
+82.0,7.5,6.5,Clean
+88.0,7.3,7.0,Clean
+75.0,6.8,5.8,Clean
+78.0,7.6,6.0,Clean
+72.0,7.0,5.5,Clean
+70.0,6.9,5.2,Clean
+84.0,7.1,6.6,Clean
+89.0,7.3,6.9,Clean
+92.0,7.2,7.1,Clean
+76.0,7.5,5.6,Clean
+81.0,6.8,6.1,Clean
+86.0,7.2,6.7,Clean
+74.0,7.0,5.4,Clean
+77.0,7.3,5.9,Clean
+83.0,7.4,6.4,Clean
+87.0,7.1,6.8,Clean
+65.0,6.4,4.8,Needs Attention
+60.0,6.3,4.5,Needs Attention
+58.0,8.6,4.6,Needs Attention
+62.0,6.5,4.7,Needs Attention
+55.0,8.7,4.2,Needs Attention
+68.0,6.4,4.9,Needs Attention
+52.0,6.2,4.0,Needs Attention
+66.0,8.6,4.8,Needs Attention
+50.0,6.3,3.8,Needs Attention
+57.0,8.8,4.3,Needs Attention
+63.0,6.4,4.6,Needs Attention
+59.0,6.2,4.4,Needs Attention
+54.0,8.7,4.1,Needs Attention
+67.0,6.5,4.9,Needs Attention
+51.0,6.3,3.9,Needs Attention
+64.0,8.6,4.7,Needs Attention
+56.0,6.4,4.2,Needs Attention
+61.0,8.8,4.5,Needs Attention
+53.0,6.2,4.0,Needs Attention
+69.0,6.4,5.0,Needs Attention
+35.0,5.8,2.8,Critical
+30.0,5.5,2.2,Critical
+40.0,9.2,3.1,Critical
+25.0,5.2,1.8,Critical
+42.0,9.4,3.2,Critical
+28.0,5.4,2.0,Critical
+38.0,5.6,2.9,Critical
+20.0,5.0,1.5,Critical
+44.0,9.3,3.3,Critical
+32.0,5.7,2.4,Critical
+22.0,5.1,1.6,Critical
+41.0,9.5,3.0,Critical
+36.0,5.8,2.7,Critical
+26.0,5.3,1.9,Critical
+43.0,9.2,3.2,Critical
+18.0,4.8,1.2,Critical
+34.0,5.6,2.5,Critical
+24.0,5.2,1.7,Critical
+39.0,9.4,3.0,Critical
+15.0,4.5,1.0,Critical

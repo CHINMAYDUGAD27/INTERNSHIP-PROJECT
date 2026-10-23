@@ -1,6 +1,6 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import api from '../api';
-import { Droplets, PlusCircle, X, Edit2, Trash2 } from 'lucide-react';
+import { Droplets, PlusCircle, X, Edit2, Trash2, Brain, Loader2 } from 'lucide-react';
 
 const API = '/api/cleanliness';
 
@@ -28,6 +28,11 @@ export default function Cleanliness() {
     last_checked: today, remarks: ''
   });
 
+  // ML Preview State
+  const [mlPreview, setMlPreview] = useState(null);
+  const [mlLoading, setMlLoading] = useState(false);
+  const debounceRef = useRef(null);
+
   const token = () => localStorage.getItem('token');
   const headers = () => ({ Authorization: `Bearer ${token()}` });
 
@@ -41,6 +46,44 @@ export default function Cleanliness() {
   };
 
   useEffect(() => { fetchRecords(); }, []);
+
+  // ── Live ML Prediction Preview ───────────────────────────────
+  const fetchMLPreview = useCallback(async (data) => {
+    const { water_quality_index, ph_level, dissolved_oxygen } = data;
+    if (!water_quality_index && !ph_level && !dissolved_oxygen) {
+      setMlPreview(null);
+      return;
+    }
+    setMlLoading(true);
+    try {
+      const params = new URLSearchParams({
+        water_quality_index: parseFloat(water_quality_index) || 70,
+        ph_level: parseFloat(ph_level) || 7.0,
+        dissolved_oxygen: parseFloat(dissolved_oxygen) || 6.0
+      });
+      const res = await api.post(`${API}/preview-predict?${params}`, {}, { headers: headers() });
+      setMlPreview(res.data.sanitation_status);
+      setFormData(prev => ({ ...prev, sanitation_status: res.data.sanitation_status }));
+    } catch (err) {
+      console.error("Cleanliness ML preview failed", err);
+      setMlPreview(null);
+    } finally {
+      setMlLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!showModal) return;
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    debounceRef.current = setTimeout(() => {
+      fetchMLPreview(formData);
+    }, 400);
+    return () => clearTimeout(debounceRef.current);
+  }, [formData.water_quality_index, formData.ph_level, formData.dissolved_oxygen, showModal, fetchMLPreview]);
+
+  useEffect(() => {
+    if (!showModal) { setMlPreview(null); setMlLoading(false); }
+  }, [showModal]);
 
   const openAdd = () => {
     setEditRecord(null);
@@ -76,6 +119,16 @@ export default function Cleanliness() {
     } catch (err) { console.error(err); }
   };
 
+  // ── ML Badge Helper ──────────────────────────────────────────
+  const mlBadgeStyle = (status) => {
+    const colors = {
+      Critical:         { bg: 'rgba(239,68,68,0.15)', border: '#EF4444', text: '#F87171', glow: '0 0 18px rgba(239,68,68,0.4)' },
+      'Needs Attention': { bg: 'rgba(245,158,11,0.15)', border: '#F59E0B', text: '#FBBF24', glow: '0 0 18px rgba(245,158,11,0.4)' },
+      Clean:            { bg: 'rgba(16,185,129,0.15)', border: '#10B981', text: '#34D399', glow: '0 0 18px rgba(16,185,129,0.4)' },
+    };
+    return colors[status] || colors.Clean;
+  };
+
   const avgWQI = records.length > 0 ? (records.reduce((s, r) => s + r.water_quality_index, 0) / records.length).toFixed(1) : 0;
   const criticalCount = records.filter(r => r.sanitation_status === 'Critical').length;
 
@@ -109,7 +162,7 @@ export default function Cleanliness() {
         <table className="data-table">
           <thead>
             <tr>
-              <th>ID</th><th>Zone</th><th>Ghat Name</th><th>Sanitation</th>
+              <th>ID</th><th>Zone</th><th>Ghat Name</th><th>Sanitation Status (ML)</th>
               <th>WQI</th><th>pH</th><th>DO (mg/L)</th><th>Last Checked</th><th>Remarks</th><th>Actions</th>
             </tr>
           </thead>
@@ -154,32 +207,76 @@ export default function Cleanliness() {
             </div>
             <div className="modal-body">
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {[
-                  { label: 'Zone', key: 'zone', type: 'text' },
-                  { label: 'Ghat Name', key: 'ghat_name', type: 'text' },
-                  { label: 'Water Quality Index (0–100)', key: 'water_quality_index', type: 'number' },
-                  { label: 'pH Level', key: 'ph_level', type: 'number' },
-                  { label: 'Dissolved Oxygen (mg/L)', key: 'dissolved_oxygen', type: 'number' },
-                  { label: 'Last Checked Date', key: 'last_checked', type: 'date' },
-                ].map(f => (
-                  <div key={f.key} className="form-group">
-                    <label className="form-label">{f.label}</label>
-                    <input type={f.type} className="form-input" required value={formData[f.key]}
-                      step={f.type === 'number' ? '0.1' : undefined}
-                      onChange={e => setFormData({ ...formData, [f.key]: f.type === 'number' ? parseFloat(e.target.value) || 0 : e.target.value })} />
-                  </div>
-                ))}
                 <div className="form-group">
-                  <label className="form-label">Sanitation Status</label>
-                  <select className="form-input" value={formData.sanitation_status} onChange={e => setFormData({ ...formData, sanitation_status: e.target.value })}>
-                    <option value="Clean">Clean</option>
-                    <option value="Needs Attention">Needs Attention</option>
-                    <option value="Critical">Critical</option>
-                  </select>
+                  <label className="form-label">Zone</label>
+                  <input type="text" className="form-input" required value={formData.zone}
+                    placeholder="e.g. Zone A - Ramkund"
+                    onChange={e => setFormData({ ...formData, zone: e.target.value })} />
                 </div>
+                <div className="form-group">
+                  <label className="form-label">Ghat Name</label>
+                  <input type="text" className="form-input" required value={formData.ghat_name}
+                    placeholder="e.g. Ramkund Main Ghat"
+                    onChange={e => setFormData({ ...formData, ghat_name: e.target.value })} />
+                </div>
+                <div className="form-group">
+                  <label className="form-label">Water Quality Index (0–100)</label>
+                  <input type="number" step="0.1" className="form-input" required value={formData.water_quality_index}
+                    onChange={e => setFormData({ ...formData, water_quality_index: parseFloat(e.target.value) || 0 })} />
+                </div>
+                <div className="form-group">
+                  <label className="form-label">pH Level (6.5 – 8.5 ideal)</label>
+                  <input type="number" step="0.1" className="form-input" required value={formData.ph_level}
+                    onChange={e => setFormData({ ...formData, ph_level: parseFloat(e.target.value) || 0 })} />
+                </div>
+                <div className="form-group">
+                  <label className="form-label">Dissolved Oxygen (mg/L, &gt;5.0 ideal)</label>
+                  <input type="number" step="0.1" className="form-input" required value={formData.dissolved_oxygen}
+                    onChange={e => setFormData({ ...formData, dissolved_oxygen: parseFloat(e.target.value) || 0 })} />
+                </div>
+                <div className="form-group">
+                  <label className="form-label">Last Checked Date</label>
+                  <input type="date" className="form-input" required value={formData.last_checked}
+                    onChange={e => setFormData({ ...formData, last_checked: e.target.value })} />
+                </div>
+
+                {/* ── ML Live Prediction Preview ─────────────── */}
+                <div style={{
+                  background: mlPreview ? mlBadgeStyle(mlPreview).bg : 'rgba(99,102,241,0.08)',
+                  border: `1.5px solid ${mlPreview ? mlBadgeStyle(mlPreview).border : 'rgba(99,102,241,0.25)'}`,
+                  borderRadius: '0.85rem',
+                  padding: '1rem 1.25rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.85rem',
+                  transition: 'all 0.4s ease',
+                  boxShadow: mlPreview ? mlBadgeStyle(mlPreview).glow : 'none',
+                }}>
+                  {mlLoading ? (
+                    <Loader2 size={22} style={{ color: '#818CF8', animation: 'spin 1s linear infinite' }} />
+                  ) : (
+                    <Brain size={22} style={{ color: mlPreview ? mlBadgeStyle(mlPreview).text : '#818CF8' }} />
+                  )}
+                  <div style={{ flex: 1 }}>
+                    <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-muted)', marginBottom: '0.15rem' }}>
+                      ML Water Sanitation Preview
+                    </div>
+                    {mlLoading ? (
+                      <div style={{ fontSize: '0.95rem', color: '#818CF8', fontWeight: 600 }}>Analyzing Water Quality...</div>
+                    ) : mlPreview ? (
+                      <div style={{ fontSize: '1.15rem', fontWeight: 800, color: mlBadgeStyle(mlPreview).text, letterSpacing: '0.02em' }}>
+                        {mlPreview === 'Critical' ? '🔴' : mlPreview === 'Needs Attention' ? '🟠' : '🟢'} Sanitation: {mlPreview}
+                      </div>
+                    ) : (
+                      <div style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Enter WQI, pH, and DO to see live prediction</div>
+                    )}
+                  </div>
+                </div>
+
                 <div className="form-group">
                   <label className="form-label">Remarks (optional)</label>
                   <input type="text" className="form-input" value={formData.remarks}
+                    placeholder="e.g. Regular river cleaning completed"
                     onChange={e => setFormData({ ...formData, remarks: e.target.value })} />
                 </div>
                 <button type="submit" className="btn-primary" style={{ marginTop: '1rem', justifyContent: 'center' }}>
@@ -190,6 +287,14 @@ export default function Cleanliness() {
           </div>
         </div>
       )}
+
+      {/* Spin animation for loader */}
+      <style>{`
+        @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+      `}</style>
     </div>
   );
 }
